@@ -34,6 +34,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="moveit_tutorials Noetic documentation" href="../../index.html"/>
         <link rel="next" title="Visualizing Collisions" href="../visualizing_collisions/visualizing_collisions_tutorial.html"/>
         <link rel="prev" title="Motion Planning Pipeline" href="../motion_planning_pipeline/motion_planning_pipeline_tutorial.html"/> 
@@ -65,18 +68,18 @@
         <a href="http://moveit.ros.org">
           <img src="../../_static/logo.png"/>
         </a>
-        
+
         <div class="version">
-          <div class="version-dropdown">
-            <lable for="version-list">Version:</lable>
-          <select class="version-list" id="version-list" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-              <option value=''>Noetic</option>
-              <option value="http://docs.ros.org/en/melodic/api/moveit_tutorials/html/index.html">Melodic</option>
-              <option value="http://docs.ros.org/en/kinetic/api/moveit_tutorials/html/index.html">Kinetic</option>
-              <option value="http://docs.ros.org/en/indigo/api/moveit_tutorials/html/index.html">Indigo (EOL)</option>
-          </select>
-          </div>
-        </div><br>
+    <div class="version-dropdown">
+        <lable for="version-list">Version:</lable>
+    <select class="version-list" id="version-list" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+        <option value="http://moveit2_tutorials.picknik.ai">Moveit 2 - Foxy</option>
+        <option value='' selected>MoveIt 1 - Noetic</option>
+        <option value="http://docs.ros.org/en/melodic/api/moveit_tutorials/html/index.html">MoveIt 1 - Melodic</option>
+        <option value="http://docs.ros.org/en/kinetic/api/moveit_tutorials/html/index.html">MoveIt 1 - Kinetic</option>
+    </select>
+    </div>
+</div><br>
         
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -113,6 +116,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#step-4-use-motion-planning-with-the-panda">Step 4: Use Motion Planning with the Panda</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#choosing-specific-start-goal-states">Choosing Specific Start/Goal States</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#introspecting-trajectory-waypoints">Introspecting Trajectory Waypoints</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#plan-cartesian-motions">Plan Cartesian motions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#executing-trajectories-adjusting-speed">Executing Trajectories, Adjusting Speed</a></li>
@@ -285,7 +289,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../motion_planning_pipeline/motion_planning_pipeline_tutorial.html#the-launch-file">The Launch File</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Creating MoveIt Plugins</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Creating MoveIt Plugins</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#motion-planner-plugin">Motion Planner Plugin</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#export-the-plugin">Export the plugin</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#check-the-plugin">Check the plugin</a></li>
@@ -346,7 +350,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../pick_place/pick_place_tutorial.html">Pick and Place</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#running-the-demo">Running The Demo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#understanding-moveit-msgs-grasp">Understanding <code class="docutils literal"><span class="pre">moveit_msgs::Grasp</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#understanding-moveit-msgs-grasp">Understanding <code class="docutils literal notranslate"><span class="pre">moveit_msgs::Grasp</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#the-entire-code">The Entire Code</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#creating-environment">Creating Environment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#pick-pipeline">Pick Pipeline</a><ul>
@@ -461,6 +465,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../bullet_collision_checker/bullet_collision_checker.html#launch-file">Launch file</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html">Mesh Filter with UR5 and Kinect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#running-the-demo">Running the Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#how-to-add-sensor-to-arm-in-simulation">How to add sensor to arm in simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#references">References</a></li>
+</ul>
+</li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html">MoveIt Setup Assistant</a><ul>
@@ -478,7 +489,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-10-ros-control">Step 10: ROS Control</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-11-add-author-information">Step 11: Add Author Information</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-12-generate-configuration-files">Step 12: Generate Configuration Files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#what-s-next">What&#8217;s Next</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#what-s-next">What’s Next</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#additional-reading">Additional Reading</a></li>
 </ul>
 </li>
@@ -591,6 +602,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../trac_ik/trac_ik_tutorial.html#usage">Usage</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html">OPW Kinematics Solver for Industrial Manipulators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#intro">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#sharing-opw-descriptions">Sharing OPW descriptions</a></li>
+</ul>
+</li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html">Kinematics Configuration</a><ul>
@@ -598,6 +617,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#parameters">Parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-kdl-kinematics-plugin">The KDL Kinematics Plugin</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-lma-kinematics-plugin">The LMA Kinematics Plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-cached-ik-plugin">The Cached IK Plugin</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#position-only-ik">Position Only IK</a></li>
@@ -607,6 +627,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#creating-a-constraint-sampler">Creating a constraint sampler</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../planning_constraints/planning_constraints.html">Representation and Evaluation of Constraints</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../planning_constraints/planning_constraints.html#see-also">See Also</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../ompl_interface/ompl_interface_tutorial.html">OMPL Planner</a><ul>
@@ -668,18 +692,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#cartesian-limits">Cartesian Limits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-interface">Planning Interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-ptp-motion-command">The PTP motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#input-parameters-in-moveit-msgs-motionplanrequest">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-results-in-moveit-msg-motionplanresponse">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#input-parameters-in-moveit-msgs-motionplanrequest">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-results-in-moveit-msg-motionplanresponse">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-lin-motion-command">The LIN motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id1">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id2">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id1">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id2">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-circ-motion-command">The CIRC motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id3">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id4">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id3">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id4">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#example">Example</a></li>
@@ -688,7 +712,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#sequence-of-multiple-segments">Sequence of multiple segments</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#user-interface-sequence-capability">User interface sequence capability</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#restrictions-for-motionsequencerequest">Restrictions for <code class="docutils literal"><span class="pre">MotionSequenceRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#restrictions-for-motionsequencerequest">Restrictions for <code class="docutils literal notranslate"><span class="pre">MotionSequenceRequest</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#action-interface">Action interface</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#service-interface">Service interface</a></li>
 </ul>
@@ -711,6 +735,20 @@
 </li>
 </ul>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html">Gazebo Simulation Integration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#after-moveit-setup-assistant">After MoveIt Setup Assistant</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#fix-the-robot-to-the-world-coordinate-system">1. Fix the robot to the world coordinate system</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-damping-to-the-joint-specifications">2. Add damping to the joint specifications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-inertia-matrices-and-masses-to-the-links">3. Add inertia matrices and masses to the links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-friction-and-colorize-the-links">4. Add friction and colorize the links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#configure-gazebo-ros-control-transmissions-and-actuators">5. Configure gazebo_ros_control, transmissions and actuators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#adjust-auto-generated-ros-controllers-yaml">6. Adjust auto-generated ros_controllers.yaml</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#adjust-auto-generated-ros-controllers-launch-in-the-panda-moveit-config-package">7. Adjust auto-generated <code class="code docutils literal notranslate"><span class="pre">ros_controllers.launch</span></code> in the <code class="code docutils literal notranslate"><span class="pre">panda_moveit_config</span></code> package.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#change-the-way-robot-description-is-loaded-to-parameter-server">8. Change the way <code class="code docutils literal notranslate"><span class="pre">robot_description</span></code> is loaded to Parameter Server.</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html">Joystick Control Teleoperation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html#running-the-code">Running the Code</a></li>
@@ -753,6 +791,19 @@
 <li class="toctree-l2"><a class="reference internal" href="../tests/tests_tutorial.html#code-coverage">Code Coverage</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html">Debugging Tests</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#ci-failures">CI Failures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#launch-docker-environment">Launch Docker Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#setup-environment">Setup Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#checkout-code">Checkout Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#install-dependencies">Install Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#configure-and-build">Configure and Build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#build-the-tests">Build the Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#run-the-tests">Run the Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#run-one-test">Run One Test</a></li>
+</ul>
+</li>
 </ul>
 
           
@@ -789,7 +840,8 @@
   <br />
 <div class="admonition note">
 <p class="first admonition-title">Tutorials Version: Noetic</p>
-<p class="last">This is the latest version, which is actively developed and best for beginners. If you are still running a Melodic release, please use the <a class="reference external" href="http://docs.ros.org/melodic/api/moveit_tutorials/html/index.html">Melodic tutorials</a>.</p>
+<p class="last">This is the latest (and last) version of MoveIt 1 for ROS Noetic, which is still actively developed. See also <a class="reference external" href="http://moveit2_tutorials.picknik.ai/">MoveIt 2 tutorials</a> and other available versions in drop down box on left.
+</p>
 </div>
   <hr/>
 </div>
@@ -805,80 +857,80 @@
 <p><a class="reference external" href="http://wiki.ros.org/pluginlib">This Page</a> gives a detailed explanation of how to add plugins in ROS in general. The two necessary elements are base and plugin classes. The plugin class inherits from the base class and overrides its virtual functions. The main library used for this purpose is pluginlib. This tutorials contains three different types of plugins, namely, motion planner, controller manager and constraint sampler.</p>
 <div class="section" id="motion-planner-plugin">
 <h2>Motion Planner Plugin<a class="headerlink" href="#motion-planner-plugin" title="Permalink to this headline">¶</a></h2>
-<p>In this section, we will show how to add a new motion planner to MoveIt as a plugin. The base class in MoveIt is <code class="docutils literal"><span class="pre">planning_interface</span></code> from  which any new planner plugin should inherit. For demonstration purposes, a linear interpolation planner (lerp) which plans the motion between two states in joint space is created. This planner could be used as a start point for adding any new planner as it contains the necessary basics. The final source files designed in this tutorial are available <a class="reference external" href="https://github.com/ros-planning/moveit_tutorials/blob/master/doc/creating_moveit_plugins/lerp_motion_planner/src">here</a>. The following graph shows a brief overall view of the relation between classes for adding a new planner in MoveIt.</p>
+<p>In this section, we will show how to add a new motion planner to MoveIt as a plugin. The base class in MoveIt is <code class="docutils literal notranslate"><span class="pre">planning_interface</span></code> from  which any new planner plugin should inherit. For demonstration purposes, a linear interpolation planner (lerp) which plans the motion between two states in joint space is created. This planner could be used as a start point for adding any new planner as it contains the necessary basics. The final source files designed in this tutorial are available <a class="reference external" href="https://github.com/ros-planning/moveit_tutorials/blob/master/doc/creating_moveit_plugins/lerp_motion_planner/src">here</a>. The following graph shows a brief overall view of the relation between classes for adding a new planner in MoveIt.</p>
 <img alt="../../_images/lerp_planner.png" src="../../_images/lerp_planner.png" />
-<p>First we create the plugin class in the  <code class="docutils literal"><span class="pre">moveit_tutorials</span></code> package. To make the plugin class for <code class="docutils literal"><span class="pre">lerp</span></code>, create a file named <code class="docutils literal"><span class="pre">lerp_planner_manager.cpp</span></code> in src folder. In this file, <code class="docutils literal"><span class="pre">LERPPlanPlannerManager</span></code> overrides the functions of <code class="docutils literal"><span class="pre">PlannerManager</span></code> class from <code class="docutils literal"><span class="pre">planning_interface</span></code>. In the end of this file, we need to register <code class="docutils literal"><span class="pre">LERPPlanPlannerManager</span></code> class as a plugin, this is done by <code class="docutils literal"><span class="pre">CLASS_LOADER_REGISTER_CLASS</span></code> macro from <code class="docutils literal"><span class="pre">class_loader</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre>CLASS_LOADER_REGISTER_CLASS(emptyplan_interface::EmptyPlanPlannerManager, planning_interface::PlannerManager);
+<p>First we create the plugin class in the  <code class="docutils literal notranslate"><span class="pre">moveit_tutorials</span></code> package. To make the plugin class for <code class="docutils literal notranslate"><span class="pre">lerp</span></code>, create a file named <code class="docutils literal notranslate"><span class="pre">lerp_planner_manager.cpp</span></code> in src folder. In this file, <code class="docutils literal notranslate"><span class="pre">LERPPlanPlannerManager</span></code> overrides the functions of <code class="docutils literal notranslate"><span class="pre">PlannerManager</span></code> class from <code class="docutils literal notranslate"><span class="pre">planning_interface</span></code>. In the end of this file, we need to register <code class="docutils literal notranslate"><span class="pre">LERPPlanPlannerManager</span></code> class as a plugin, this is done by <code class="docutils literal notranslate"><span class="pre">CLASS_LOADER_REGISTER_CLASS</span></code> macro from <code class="docutils literal notranslate"><span class="pre">class_loader</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CLASS_LOADER_REGISTER_CLASS</span><span class="p">(</span><span class="n">emptyplan_interface</span><span class="p">::</span><span class="n">EmptyPlanPlannerManager</span><span class="p">,</span> <span class="n">planning_interface</span><span class="p">::</span><span class="n">PlannerManager</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>Next we create the <code class="docutils literal"><span class="pre">LERPPlanningContext</span></code> class that overrides the functions of <code class="docutils literal"><span class="pre">PlanningContext</span></code>. This class will override the solve function where the planner solves the problem and returns the solution. As the solve function implementation may need many classes from the planner code base, it is more readable to make another class called <code class="docutils literal"><span class="pre">LERPInterface</span></code> where the actual implementation of the planner solve method will take place. Basically, this class is the entry point to the new motion planner algorithm. The response in this solve function is prepared in the type of <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanDetailedResponse</span></code> which is converted to <code class="docutils literal"><span class="pre">planning_interface::MotionPlanDetailedResponse</span></code> in <code class="docutils literal"><span class="pre">LERPPlanningContext</span></code> class.</p>
-<p>Moreover, <code class="docutils literal"><span class="pre">PlannerConfigurationSettings</span></code> could be used to pass the planner-specific parameters. Another way to pass these parameters is using ROS param server which reads from a yaml file. In this tutorial, for our lerp planner, we use <code class="docutils literal"><span class="pre">lerp_planning.yaml</span></code> in <code class="docutils literal"><span class="pre">panda_moveit_config</span></code> package that contains only one parameter, <code class="docutils literal"><span class="pre">num_steps</span></code> which gets loaded in <code class="docutils literal"><span class="pre">lerp_interface</span></code> whenever its solve function is called.</p>
+<p>Next we create the <code class="docutils literal notranslate"><span class="pre">LERPPlanningContext</span></code> class that overrides the functions of <code class="docutils literal notranslate"><span class="pre">PlanningContext</span></code>. This class will override the solve function where the planner solves the problem and returns the solution. As the solve function implementation may need many classes from the planner code base, it is more readable to make another class called <code class="docutils literal notranslate"><span class="pre">LERPInterface</span></code> where the actual implementation of the planner solve method will take place. Basically, this class is the entry point to the new motion planner algorithm. The response in this solve function is prepared in the type of <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanDetailedResponse</span></code> which is converted to <code class="docutils literal notranslate"><span class="pre">planning_interface::MotionPlanDetailedResponse</span></code> in <code class="docutils literal notranslate"><span class="pre">LERPPlanningContext</span></code> class.</p>
+<p>Moreover, <code class="docutils literal notranslate"><span class="pre">PlannerConfigurationSettings</span></code> could be used to pass the planner-specific parameters. Another way to pass these parameters is using ROS param server which reads from a yaml file. In this tutorial, for our lerp planner, we use <code class="docutils literal notranslate"><span class="pre">lerp_planning.yaml</span></code> in <code class="docutils literal notranslate"><span class="pre">panda_moveit_config</span></code> package that contains only one parameter, <code class="docutils literal notranslate"><span class="pre">num_steps</span></code> which gets loaded in <code class="docutils literal notranslate"><span class="pre">lerp_interface</span></code> whenever its solve function is called.</p>
 <div class="section" id="export-the-plugin">
 <h3>Export the plugin<a class="headerlink" href="#export-the-plugin" title="Permalink to this headline">¶</a></h3>
-<p>First, we need to make the plugin available to the ROS Toolchain. To this end, a plugin description xml file (<code class="docutils literal"><span class="pre">emptyplan_interface_plugin_description.xml</span></code>) containing the <code class="docutils literal"><span class="pre">library</span></code> tag with the following options should be created:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;library  path=&quot;libmoveit_emptyplan_planner_plugin&quot;&gt;
-  &lt;class name=&quot;emptyplan_interface/EmptyPlanPlanner&quot; type=&quot;emptyplan_interface::EmptyPlanPlannerManager&quot; base_class_type=&quot;planning_interface::PlannerManager&quot;&gt;
-   &lt;description&gt;
-   &lt;/description&gt;
-  &lt;/class&gt;
-&lt;/library&gt;
+<p>First, we need to make the plugin available to the ROS Toolchain. To this end, a plugin description xml file (<code class="docutils literal notranslate"><span class="pre">emptyplan_interface_plugin_description.xml</span></code>) containing the <code class="docutils literal notranslate"><span class="pre">library</span></code> tag with the following options should be created:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">library</span>  <span class="n">path</span><span class="o">=</span><span class="s2">&quot;libmoveit_emptyplan_planner_plugin&quot;</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="k">class</span> <span class="nc">name</span><span class="o">=</span><span class="s2">&quot;emptyplan_interface/EmptyPlanPlanner&quot;</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;emptyplan_interface::EmptyPlanPlannerManager&quot;</span> <span class="n">base_class_type</span><span class="o">=</span><span class="s2">&quot;planning_interface::PlannerManager&quot;</span><span class="o">&gt;</span>
+   <span class="o">&lt;</span><span class="n">description</span><span class="o">&gt;</span>
+   <span class="o">&lt;/</span><span class="n">description</span><span class="o">&gt;</span>
+  <span class="o">&lt;/</span><span class="n">class</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">library</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>Then, to export the plugin, we use the address of the above xml file and the <code class="docutils literal"><span class="pre">export</span></code> tag in package.xml file:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;export&gt;
-   &lt;moveit_core plugin=&quot;${prefix}/emptyplan_interface_plugin_description.xml&quot;/&gt;
-&lt;/export&gt;
+<p>Then, to export the plugin, we use the address of the above xml file and the <code class="docutils literal notranslate"><span class="pre">export</span></code> tag in package.xml file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">export</span><span class="o">&gt;</span>
+   <span class="o">&lt;</span><span class="n">moveit_core</span> <span class="n">plugin</span><span class="o">=</span><span class="s2">&quot;$</span><span class="si">{prefix}</span><span class="s2">/emptyplan_interface_plugin_description.xml&quot;</span><span class="o">/&gt;</span>
+<span class="o">&lt;/</span><span class="n">export</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>Note that the name of the tag, <code class="docutils literal"><span class="pre">moveit_core</span></code>, is the same as that of the package where the base class, <code class="docutils literal"><span class="pre">planning_interface</span></code>, lives in.</p>
+<p>Note that the name of the tag, <code class="docutils literal notranslate"><span class="pre">moveit_core</span></code>, is the same as that of the package where the base class, <code class="docutils literal notranslate"><span class="pre">planning_interface</span></code>, lives in.</p>
 </div>
 <div class="section" id="check-the-plugin">
 <h3>Check the plugin<a class="headerlink" href="#check-the-plugin" title="Permalink to this headline">¶</a></h3>
 <p>With the following command, one can verify if the new plugin is created and exported correctly or not:</p>
-<div class="highlight-python"><div class="highlight"><pre>rospack plugins --attrib=plugin moveit_core
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rospack</span> <span class="n">plugins</span> <span class="o">--</span><span class="n">attrib</span><span class="o">=</span><span class="n">plugin</span> <span class="n">moveit_core</span>
 </pre></div>
 </div>
-<p>The result should contain <code class="docutils literal"><span class="pre">moveit_planners_lerp</span></code> with the address of the plugin description xml file:</p>
-<div class="highlight-python"><div class="highlight"><pre>moveit_tutorials &lt;ros_workspace&gt;/src/moveit_tutorials/creating_moveit_plugins/lerp_motion_planner/lerp_interface_plugin_description.xml
+<p>The result should contain <code class="docutils literal notranslate"><span class="pre">moveit_planners_lerp</span></code> with the address of the plugin description xml file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">moveit_tutorials</span> <span class="o">&lt;</span><span class="n">ros_workspace</span><span class="o">&gt;/</span><span class="n">src</span><span class="o">/</span><span class="n">moveit_tutorials</span><span class="o">/</span><span class="n">creating_moveit_plugins</span><span class="o">/</span><span class="n">lerp_motion_planner</span><span class="o">/</span><span class="n">lerp_interface_plugin_description</span><span class="o">.</span><span class="n">xml</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="plugin-usage">
 <h3>Plugin usage<a class="headerlink" href="#plugin-usage" title="Permalink to this headline">¶</a></h3>
-<p>In this subsection, we explain how to load and use the lerp planner that we have created previously. To this end, a ros node called <code class="docutils literal"><span class="pre">lerp_example.cpp</span></code> is created. The first step is to get the state and  group of joints of the robot that are related to the requested planning group as well as the planning scene by the following lines of code:</p>
-<div class="highlight-python"><div class="highlight"><pre>moveit::core::RobotStatePtr robot_state(new moveit::core::RobotState(robot_model));
-const moveit::core::JointModelGroup* joint_model_group = robot_state-&gt;getJointModelGroup(PLANNING_GROUP);
-const std::vector&lt;std::string&gt;&amp; joint_names = joint_model_group-&gt;getVariableNames();
-planning_scene::PlanningScenePtr planning_scene(new planning_scene::PlanningScene(robot_model));
+<p>In this subsection, we explain how to load and use the lerp planner that we have created previously. To this end, a ros node called <code class="docutils literal notranslate"><span class="pre">lerp_example.cpp</span></code> is created. The first step is to get the state and  group of joints of the robot that are related to the requested planning group as well as the planning scene by the following lines of code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">moveit</span><span class="p">::</span><span class="n">core</span><span class="p">::</span><span class="n">RobotStatePtr</span> <span class="n">robot_state</span><span class="p">(</span><span class="n">new</span> <span class="n">moveit</span><span class="p">::</span><span class="n">core</span><span class="p">::</span><span class="n">RobotState</span><span class="p">(</span><span class="n">robot_model</span><span class="p">));</span>
+<span class="n">const</span> <span class="n">moveit</span><span class="p">::</span><span class="n">core</span><span class="p">::</span><span class="n">JointModelGroup</span><span class="o">*</span> <span class="n">joint_model_group</span> <span class="o">=</span> <span class="n">robot_state</span><span class="o">-&gt;</span><span class="n">getJointModelGroup</span><span class="p">(</span><span class="n">PLANNING_GROUP</span><span class="p">);</span>
+<span class="n">const</span> <span class="n">std</span><span class="p">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="p">::</span><span class="n">string</span><span class="o">&gt;&amp;</span> <span class="n">joint_names</span> <span class="o">=</span> <span class="n">joint_model_group</span><span class="o">-&gt;</span><span class="n">getVariableNames</span><span class="p">();</span>
+<span class="n">planning_scene</span><span class="p">::</span><span class="n">PlanningScenePtr</span> <span class="n">planning_scene</span><span class="p">(</span><span class="n">new</span> <span class="n">planning_scene</span><span class="p">::</span><span class="n">PlanningScene</span><span class="p">(</span><span class="n">robot_model</span><span class="p">));</span>
 </pre></div>
 </div>
-<p>The next step is to load the planner using pluginlib and set the parameter <code class="docutils literal"><span class="pre">planner_plugin_name</span></code> to the one that we have created:</p>
-<div class="highlight-python"><div class="highlight"><pre>boost::scoped_ptr&lt;pluginlib::ClassLoader&lt;planning_interface::PlannerManager&gt;&gt; planner_plugin_loader;
-planning_interface::PlannerManagerPtr planner_instance;
-std::string planner_plugin_name =  &quot;lerp_interface/LERPPlanner&quot;;
-node_handle.setParam(&quot;planning_plugin&quot;, planner_plugin_name);
+<p>The next step is to load the planner using pluginlib and set the parameter <code class="docutils literal notranslate"><span class="pre">planner_plugin_name</span></code> to the one that we have created:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">boost</span><span class="p">::</span><span class="n">scoped_ptr</span><span class="o">&lt;</span><span class="n">pluginlib</span><span class="p">::</span><span class="n">ClassLoader</span><span class="o">&lt;</span><span class="n">planning_interface</span><span class="p">::</span><span class="n">PlannerManager</span><span class="o">&gt;&gt;</span> <span class="n">planner_plugin_loader</span><span class="p">;</span>
+<span class="n">planning_interface</span><span class="p">::</span><span class="n">PlannerManagerPtr</span> <span class="n">planner_instance</span><span class="p">;</span>
+<span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="n">planner_plugin_name</span> <span class="o">=</span>  <span class="s2">&quot;lerp_interface/LERPPlanner&quot;</span><span class="p">;</span>
+<span class="n">node_handle</span><span class="o">.</span><span class="n">setParam</span><span class="p">(</span><span class="s2">&quot;planning_plugin&quot;</span><span class="p">,</span> <span class="n">planner_plugin_name</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>Having the planner loaded, it is time to set the start and goal state for the motion planning problem. The start state is the current state of the robot which is set to <code class="docutils literal"><span class="pre">req.start_state</span></code>. On the other hand, the goal constraint is set by creating a <code class="docutils literal"><span class="pre">moveit_msgs::Constraints</span></code> using the goal state and the joint model group. This constraint is fed to <code class="docutils literal"><span class="pre">req.goal_constraint</span></code>. The following code shows how to do these steps:</p>
-<div class="highlight-python"><div class="highlight"><pre>// Get the joint values of the start state and set them in request.start_state
-std::vector&lt;double&gt; start_joint_values;
-robot_state-&gt;copyJointGroupPositions(joint_model_group, start_joint_values);
-req.start_state.joint_state.position = start_joint_values;
+<p>Having the planner loaded, it is time to set the start and goal state for the motion planning problem. The start state is the current state of the robot which is set to <code class="docutils literal notranslate"><span class="pre">req.start_state</span></code>. On the other hand, the goal constraint is set by creating a <code class="docutils literal notranslate"><span class="pre">moveit_msgs::Constraints</span></code> using the goal state and the joint model group. This constraint is fed to <code class="docutils literal notranslate"><span class="pre">req.goal_constraint</span></code>. The following code shows how to do these steps:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">//</span> <span class="n">Get</span> <span class="n">the</span> <span class="n">joint</span> <span class="n">values</span> <span class="n">of</span> <span class="n">the</span> <span class="n">start</span> <span class="n">state</span> <span class="ow">and</span> <span class="nb">set</span> <span class="n">them</span> <span class="ow">in</span> <span class="n">request</span><span class="o">.</span><span class="n">start_state</span>
+<span class="n">std</span><span class="p">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">double</span><span class="o">&gt;</span> <span class="n">start_joint_values</span><span class="p">;</span>
+<span class="n">robot_state</span><span class="o">-&gt;</span><span class="n">copyJointGroupPositions</span><span class="p">(</span><span class="n">joint_model_group</span><span class="p">,</span> <span class="n">start_joint_values</span><span class="p">);</span>
+<span class="n">req</span><span class="o">.</span><span class="n">start_state</span><span class="o">.</span><span class="n">joint_state</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="n">start_joint_values</span><span class="p">;</span>
 
-// Goal constraint
-moveit::core::RobotState goal_state(robot_model);
-std::vector&lt;double&gt; joint_values = { 0.8, 0.7, 1, 1.3, 1.9, 2.2, 3 };
-goal_state.setJointGroupPositions(joint_model_group, joint_values);
-moveit_msgs::Constraints joint_goal = kinematic_constraints::constructGoalConstraints(goal_state, joint_model_group);
-req.goal_constraints.clear();
-req.goal_constraints.push_back(joint_goal);
+<span class="o">//</span> <span class="n">Goal</span> <span class="n">constraint</span>
+<span class="n">moveit</span><span class="p">::</span><span class="n">core</span><span class="p">::</span><span class="n">RobotState</span> <span class="n">goal_state</span><span class="p">(</span><span class="n">robot_model</span><span class="p">);</span>
+<span class="n">std</span><span class="p">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">double</span><span class="o">&gt;</span> <span class="n">joint_values</span> <span class="o">=</span> <span class="p">{</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mf">1.9</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">};</span>
+<span class="n">goal_state</span><span class="o">.</span><span class="n">setJointGroupPositions</span><span class="p">(</span><span class="n">joint_model_group</span><span class="p">,</span> <span class="n">joint_values</span><span class="p">);</span>
+<span class="n">moveit_msgs</span><span class="p">::</span><span class="n">Constraints</span> <span class="n">joint_goal</span> <span class="o">=</span> <span class="n">kinematic_constraints</span><span class="p">::</span><span class="n">constructGoalConstraints</span><span class="p">(</span><span class="n">goal_state</span><span class="p">,</span> <span class="n">joint_model_group</span><span class="p">);</span>
+<span class="n">req</span><span class="o">.</span><span class="n">goal_constraints</span><span class="o">.</span><span class="n">clear</span><span class="p">();</span>
+<span class="n">req</span><span class="o">.</span><span class="n">goal_constraints</span><span class="o">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">joint_goal</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>So far, we have loaded the planner and created the start and goal state for the motion planning problem but we have not solved the problem yet. Solving the motion planning problem in the joint state by the given information about the start and goal state is done by creating a <code class="docutils literal"><span class="pre">PlanningContext</span></code> instance and call its solve function. Remember that the response passed to this solve function should be of type <code class="docutils literal"><span class="pre">planning_interface::MotionPlanResponse</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre>planning_interface::PlanningContextPtr context = planner_instance-&gt;getPlanningContext(planning_scene, req, res.error_code_);
+<p>So far, we have loaded the planner and created the start and goal state for the motion planning problem but we have not solved the problem yet. Solving the motion planning problem in the joint state by the given information about the start and goal state is done by creating a <code class="docutils literal notranslate"><span class="pre">PlanningContext</span></code> instance and call its solve function. Remember that the response passed to this solve function should be of type <code class="docutils literal notranslate"><span class="pre">planning_interface::MotionPlanResponse</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">planning_interface</span><span class="p">::</span><span class="n">PlanningContextPtr</span> <span class="n">context</span> <span class="o">=</span> <span class="n">planner_instance</span><span class="o">-&gt;</span><span class="n">getPlanningContext</span><span class="p">(</span><span class="n">planning_scene</span><span class="p">,</span> <span class="n">req</span><span class="p">,</span> <span class="n">res</span><span class="o">.</span><span class="n">error_code_</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>Finally, to run this node, we need to roslaunch lerp_example.launch in launch folder. This launch file launches the <code class="docutils literal"><span class="pre">demo.launch</span></code> of package <code class="docutils literal"><span class="pre">panda_moveit_config</span></code> by passing <code class="docutils literal"><span class="pre">lerp</span></code> as the name of the planner. Then, <code class="docutils literal"><span class="pre">lerp_example</span></code> gets launched and <code class="docutils literal"><span class="pre">lerp_planning.yaml</span></code> is loaded to set the lerp-specific parameters to ROS Parameter Server.</p>
+<p>Finally, to run this node, we need to roslaunch lerp_example.launch in launch folder. This launch file launches the <code class="docutils literal notranslate"><span class="pre">demo.launch</span></code> of package <code class="docutils literal notranslate"><span class="pre">panda_moveit_config</span></code> by passing <code class="docutils literal notranslate"><span class="pre">lerp</span></code> as the name of the planner. Then, <code class="docutils literal notranslate"><span class="pre">lerp_example</span></code> gets launched and <code class="docutils literal notranslate"><span class="pre">lerp_planning.yaml</span></code> is loaded to set the lerp-specific parameters to ROS Parameter Server.</p>
 </div>
 </div>
 <div class="section" id="example-controller-manager-plugin">
@@ -889,10 +941,10 @@ req.goal_constraints.push_back(joint_goal);
 <div class="section" id="example-constraint-sampler-plugin">
 <h2>Example Constraint Sampler Plugin<a class="headerlink" href="#example-constraint-sampler-plugin" title="Permalink to this headline">¶</a></h2>
 <ul>
-<li><p class="first">Create a <code class="docutils literal"><span class="pre">ROBOT_moveit_plugins</span></code> package and within that a sub-folder for your <code class="docutils literal"><span class="pre">ROBOT_constraint_sampler</span></code> plugin. Modify the template provided by <code class="docutils literal"><span class="pre">ROBOT_moveit_plugins/ROBOT_moveit_constraint_sampler_plugin</span></code></p>
+<li><p class="first">Create a <code class="docutils literal notranslate"><span class="pre">ROBOT_moveit_plugins</span></code> package and within that a sub-folder for your <code class="docutils literal notranslate"><span class="pre">ROBOT_constraint_sampler</span></code> plugin. Modify the template provided by <code class="docutils literal notranslate"><span class="pre">ROBOT_moveit_plugins/ROBOT_moveit_constraint_sampler_plugin</span></code></p>
 </li>
-<li><p class="first">In your <code class="docutils literal"><span class="pre">ROBOT_moveit_config/launch/move_group.launch</span></code> file, within the <code class="docutils literal"><span class="pre">&lt;node</span> <span class="pre">name=&quot;move_group&quot;&gt;</span></code>, add the parameter:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;param name=&quot;constraint_samplers&quot; value=&quot;ROBOT_moveit_constraint_sampler/ROBOTConstraintSamplerAllocator&quot;/&gt;
+<li><p class="first">In your <code class="docutils literal notranslate"><span class="pre">ROBOT_moveit_config/launch/move_group.launch</span></code> file, within the <code class="docutils literal notranslate"><span class="pre">&lt;node</span> <span class="pre">name=&quot;move_group&quot;&gt;</span></code>, add the parameter:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">param</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;constraint_samplers&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;ROBOT_moveit_constraint_sampler/ROBOTConstraintSamplerAllocator&quot;</span><span class="o">/&gt;</span>
 </pre></div>
 </div>
 </li>
@@ -937,7 +989,7 @@ req.goal_constraints.push_back(joint_goal);
 
     </section>
   </div>
-  
+
   
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
@@ -951,6 +1003,7 @@ req.goal_constraints.push_back(joint_goal);
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/language_data.js"></script>
 
   
 

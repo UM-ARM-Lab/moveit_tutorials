@@ -34,6 +34,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="moveit_tutorials Noetic documentation" href="../../index.html"/>
         <link rel="next" title="Pick and Place" href="../pick_place/pick_place_tutorial.html"/>
         <link rel="prev" title="Time Parameterization" href="../time_parameterization/time_parameterization_tutorial.html"/> 
@@ -65,18 +68,18 @@
         <a href="http://moveit.ros.org">
           <img src="../../_static/logo.png"/>
         </a>
-        
+
         <div class="version">
-          <div class="version-dropdown">
-            <lable for="version-list">Version:</lable>
-          <select class="version-list" id="version-list" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-              <option value=''>Noetic</option>
-              <option value="http://docs.ros.org/en/melodic/api/moveit_tutorials/html/index.html">Melodic</option>
-              <option value="http://docs.ros.org/en/kinetic/api/moveit_tutorials/html/index.html">Kinetic</option>
-              <option value="http://docs.ros.org/en/indigo/api/moveit_tutorials/html/index.html">Indigo (EOL)</option>
-          </select>
-          </div>
-        </div><br>
+    <div class="version-dropdown">
+        <lable for="version-list">Version:</lable>
+    <select class="version-list" id="version-list" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+        <option value="http://moveit2_tutorials.picknik.ai">Moveit 2 - Foxy</option>
+        <option value='' selected>MoveIt 1 - Noetic</option>
+        <option value="http://docs.ros.org/en/melodic/api/moveit_tutorials/html/index.html">MoveIt 1 - Melodic</option>
+        <option value="http://docs.ros.org/en/kinetic/api/moveit_tutorials/html/index.html">MoveIt 1 - Kinetic</option>
+    </select>
+    </div>
+</div><br>
         
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -113,6 +116,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#step-4-use-motion-planning-with-the-panda">Step 4: Use Motion Planning with the Panda</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#choosing-specific-start-goal-states">Choosing Specific Start/Goal States</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#introspecting-trajectory-waypoints">Introspecting Trajectory Waypoints</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#plan-cartesian-motions">Plan Cartesian motions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#executing-trajectories-adjusting-speed">Executing Trajectories, Adjusting Speed</a></li>
@@ -320,7 +324,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../time_parameterization/time_parameterization_tutorial.html#time-parameterization-algorithms">Time Parameterization Algorithms</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Planning with Approximated Constraint Manifolds</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Planning with Approximated Constraint Manifolds</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#creating-the-constraint-database">Creating the Constraint Database</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#defining-constraints">Defining constraints</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#jointconstraint">JointConstraint</a></li>
@@ -346,7 +350,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../pick_place/pick_place_tutorial.html">Pick and Place</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#running-the-demo">Running The Demo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#understanding-moveit-msgs-grasp">Understanding <code class="docutils literal"><span class="pre">moveit_msgs::Grasp</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#understanding-moveit-msgs-grasp">Understanding <code class="docutils literal notranslate"><span class="pre">moveit_msgs::Grasp</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#the-entire-code">The Entire Code</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#creating-environment">Creating Environment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#pick-pipeline">Pick Pipeline</a><ul>
@@ -461,6 +465,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../bullet_collision_checker/bullet_collision_checker.html#launch-file">Launch file</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html">Mesh Filter with UR5 and Kinect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#running-the-demo">Running the Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#how-to-add-sensor-to-arm-in-simulation">How to add sensor to arm in simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#references">References</a></li>
+</ul>
+</li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html">MoveIt Setup Assistant</a><ul>
@@ -478,7 +489,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-10-ros-control">Step 10: ROS Control</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-11-add-author-information">Step 11: Add Author Information</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-12-generate-configuration-files">Step 12: Generate Configuration Files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#what-s-next">What&#8217;s Next</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#what-s-next">What’s Next</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#additional-reading">Additional Reading</a></li>
 </ul>
 </li>
@@ -591,6 +602,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../trac_ik/trac_ik_tutorial.html#usage">Usage</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html">OPW Kinematics Solver for Industrial Manipulators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#intro">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#sharing-opw-descriptions">Sharing OPW descriptions</a></li>
+</ul>
+</li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html">Kinematics Configuration</a><ul>
@@ -598,6 +617,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#parameters">Parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-kdl-kinematics-plugin">The KDL Kinematics Plugin</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-lma-kinematics-plugin">The LMA Kinematics Plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-cached-ik-plugin">The Cached IK Plugin</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#position-only-ik">Position Only IK</a></li>
@@ -607,6 +627,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#creating-a-constraint-sampler">Creating a constraint sampler</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../planning_constraints/planning_constraints.html">Representation and Evaluation of Constraints</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../planning_constraints/planning_constraints.html#see-also">See Also</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../ompl_interface/ompl_interface_tutorial.html">OMPL Planner</a><ul>
@@ -668,18 +692,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#cartesian-limits">Cartesian Limits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-interface">Planning Interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-ptp-motion-command">The PTP motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#input-parameters-in-moveit-msgs-motionplanrequest">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-results-in-moveit-msg-motionplanresponse">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#input-parameters-in-moveit-msgs-motionplanrequest">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-results-in-moveit-msg-motionplanresponse">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-lin-motion-command">The LIN motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id1">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id2">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id1">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id2">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-circ-motion-command">The CIRC motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id3">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id4">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id3">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id4">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#example">Example</a></li>
@@ -688,7 +712,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#sequence-of-multiple-segments">Sequence of multiple segments</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#user-interface-sequence-capability">User interface sequence capability</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#restrictions-for-motionsequencerequest">Restrictions for <code class="docutils literal"><span class="pre">MotionSequenceRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#restrictions-for-motionsequencerequest">Restrictions for <code class="docutils literal notranslate"><span class="pre">MotionSequenceRequest</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#action-interface">Action interface</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#service-interface">Service interface</a></li>
 </ul>
@@ -711,6 +735,20 @@
 </li>
 </ul>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html">Gazebo Simulation Integration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#after-moveit-setup-assistant">After MoveIt Setup Assistant</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#fix-the-robot-to-the-world-coordinate-system">1. Fix the robot to the world coordinate system</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-damping-to-the-joint-specifications">2. Add damping to the joint specifications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-inertia-matrices-and-masses-to-the-links">3. Add inertia matrices and masses to the links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-friction-and-colorize-the-links">4. Add friction and colorize the links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#configure-gazebo-ros-control-transmissions-and-actuators">5. Configure gazebo_ros_control, transmissions and actuators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#adjust-auto-generated-ros-controllers-yaml">6. Adjust auto-generated ros_controllers.yaml</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#adjust-auto-generated-ros-controllers-launch-in-the-panda-moveit-config-package">7. Adjust auto-generated <code class="code docutils literal notranslate"><span class="pre">ros_controllers.launch</span></code> in the <code class="code docutils literal notranslate"><span class="pre">panda_moveit_config</span></code> package.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#change-the-way-robot-description-is-loaded-to-parameter-server">8. Change the way <code class="code docutils literal notranslate"><span class="pre">robot_description</span></code> is loaded to Parameter Server.</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html">Joystick Control Teleoperation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html#running-the-code">Running the Code</a></li>
@@ -753,6 +791,19 @@
 <li class="toctree-l2"><a class="reference internal" href="../tests/tests_tutorial.html#code-coverage">Code Coverage</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html">Debugging Tests</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#ci-failures">CI Failures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#launch-docker-environment">Launch Docker Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#setup-environment">Setup Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#checkout-code">Checkout Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#install-dependencies">Install Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#configure-and-build">Configure and Build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#build-the-tests">Build the Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#run-the-tests">Run the Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#run-one-test">Run One Test</a></li>
+</ul>
+</li>
 </ul>
 
           
@@ -789,7 +840,8 @@
   <br />
 <div class="admonition note">
 <p class="first admonition-title">Tutorials Version: Noetic</p>
-<p class="last">This is the latest version, which is actively developed and best for beginners. If you are still running a Melodic release, please use the <a class="reference external" href="http://docs.ros.org/melodic/api/moveit_tutorials/html/index.html">Melodic tutorials</a>.</p>
+<p class="last">This is the latest (and last) version of MoveIt 1 for ROS Noetic, which is still actively developed. See also <a class="reference external" href="http://moveit2_tutorials.picknik.ai/">MoveIt 2 tutorials</a> and other available versions in drop down box on left.
+</p>
 </div>
   <hr/>
 </div>
@@ -804,121 +856,120 @@
 <h1>Planning with Approximated Constraint Manifolds<a class="headerlink" href="#planning-with-approximated-constraint-manifolds" title="Permalink to this headline">¶</a></h1>
 <p>OMPL supports custom constraints to enable planning trajectories that follow a desired behavior.
 Constraints can be defined in joint space and Cartesian space where the latter is either orientation or position based.
-While planning a trajectory each joint state needs to follow all of the set constraints, which is performed by rejection sampling by default.
-This however might lead to very long planning times, especially when the constraints are very restrictive and the rejection rate is correspondingly high.</p>
-<p><a class="reference external" href="http://ioan.sucan.ro/files/pubs/constraints_iros2012.pdf">Sucan et al</a> present an approach where they compute an approximation of the constraint manifold beforehand and perform trajectory planning in that.
+While planning a trajectory, each joint state needs to follow all of the set constraints, which is performed by rejection sampling by default. For more information see <a class="reference external" href="../planning_constraints/planning_constraints.html">Representation and Evaluation of Constraints</a>.</p>
+<p>Rejection sampling for each joint state might lead to very long planning times, especially when the constraints are very restrictive and the rejection rate is correspondingly high. <a class="reference external" href="http://ioan.sucan.ro/files/pubs/constraints_iros2012.pdf">Sucan et al</a> present an approach where they compute an approximation of the constraint manifold beforehand and perform trajectory planning in that.
 The OMPL plugin contains the functionality to do that for a given set of constraints and save it in a database.
 In later instances the database can be loaded to use for constrained planning with any OMPL planner which strongly reduces planning time.</p>
 <p>This tutorial includes the steps on how to construct the constraint approximation database and on how to use it for constrained trajectory planning.
 For more information on how to plan with path constraints in general, take a look at <a class="reference external" href="../move_group_interface/move_group_interface_tutorial.html#planning-with-path-constraints">here</a>.</p>
 <div class="section" id="creating-the-constraint-database">
 <h2>Creating the Constraint Database<a class="headerlink" href="#creating-the-constraint-database" title="Permalink to this headline">¶</a></h2>
-<p>Constructing a Constraints database is done with the <code class="docutils literal"><span class="pre">generate_state_database</span></code> executable.
+<p>Constructing a Constraints database is done with the <code class="docutils literal notranslate"><span class="pre">generate_state_database</span></code> executable.
 This loads the constraint definition (in a format explained below) from the ROS parameter server and outputs the state database to a given directory.</p>
 <div class="section" id="defining-constraints">
 <h3>Defining constraints<a class="headerlink" href="#defining-constraints" title="Permalink to this headline">¶</a></h3>
-<p>The <code class="docutils literal"><span class="pre">generate_state_database</span></code> executable reads constraints from ROS parameters on <code class="docutils literal"><span class="pre">/constraints</span></code>, in a more compact format that a complete ROS message.
-You can define these in <code class="docutils literal"><span class="pre">rosparam</span></code> to be loaded together in a file, eg. <code class="docutils literal"><span class="pre">X_moveit_config/config/constraints.yaml</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre>path_constraint:
-  name: some_constraints
-  constraints:
-  - type: orientation
-    frame_id: world
-    # etc, as described below
+<p>The <code class="docutils literal notranslate"><span class="pre">generate_state_database</span></code> executable reads constraints from ROS parameters on <code class="docutils literal notranslate"><span class="pre">/constraints</span></code>, in a more compact format that a complete ROS message.</p>
+<p>You can define these in <code class="docutils literal notranslate"><span class="pre">rosparam</span></code> to be loaded together in a file, eg. <code class="docutils literal notranslate"><span class="pre">X_moveit_config/config/constraints.yaml</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">path_constraint</span><span class="p">:</span>
+  <span class="n">name</span><span class="p">:</span> <span class="n">some_constraints</span>
+  <span class="n">constraints</span><span class="p">:</span>
+  <span class="o">-</span> <span class="nb">type</span><span class="p">:</span> <span class="n">orientation</span>
+    <span class="n">frame_id</span><span class="p">:</span> <span class="n">world</span>
+    <span class="c1"># etc, as described below</span>
 </pre></div>
 </div>
 <div class="section" id="jointconstraint">
 <h4>JointConstraint<a class="headerlink" href="#jointconstraint" title="Permalink to this headline">¶</a></h4>
-<p>A <code class="docutils literal"><span class="pre">JointConstraint</span></code> limits the positions a joint can take. There are three ways to compactly specify this.</p>
+<p>A <code class="docutils literal notranslate"><span class="pre">JointConstraint</span></code> limits the positions a joint can take. There are three ways to compactly specify this.</p>
 <ol class="arabic simple">
 <li>position + a single tolerance</li>
 <li>position + lower an upper tolerance</li>
 <li>upper and lower bound</li>
 </ol>
 <p>For example:</p>
-<div class="highlight-python"><div class="highlight"><pre>- type: joint
-  joint_name: first_joint
-  position: 0.1
-  tolerance: 0.2
-  weight: 1.0
-- type: joint
-  joint_name: second_joint
-  position: 0.1
-  tolerances: [0.1, 0.2]
-  weight: 1.0
-- type: joint
-  joint_name: third_joint
-  bounds: [-0.5, 1.0]
-  weight: 1.0
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="nb">type</span><span class="p">:</span> <span class="n">joint</span>
+  <span class="n">joint_name</span><span class="p">:</span> <span class="n">first_joint</span>
+  <span class="n">position</span><span class="p">:</span> <span class="mf">0.1</span>
+  <span class="n">tolerance</span><span class="p">:</span> <span class="mf">0.2</span>
+  <span class="n">weight</span><span class="p">:</span> <span class="mf">1.0</span>
+<span class="o">-</span> <span class="nb">type</span><span class="p">:</span> <span class="n">joint</span>
+  <span class="n">joint_name</span><span class="p">:</span> <span class="n">second_joint</span>
+  <span class="n">position</span><span class="p">:</span> <span class="mf">0.1</span>
+  <span class="n">tolerances</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">]</span>
+  <span class="n">weight</span><span class="p">:</span> <span class="mf">1.0</span>
+<span class="o">-</span> <span class="nb">type</span><span class="p">:</span> <span class="n">joint</span>
+  <span class="n">joint_name</span><span class="p">:</span> <span class="n">third_joint</span>
+  <span class="n">bounds</span><span class="p">:</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]</span>
+  <span class="n">weight</span><span class="p">:</span> <span class="mf">1.0</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="positionconstraint">
 <h4>PositionConstraint<a class="headerlink" href="#positionconstraint" title="Permalink to this headline">¶</a></h4>
-<p>A <code class="docutils literal"><span class="pre">PositionConstraint</span></code> constraints the Cartesian positions allowed for a (position relative to a) link.
-<code class="docutils literal"><span class="pre">target_offset</span></code> is that relative position w.r.t. a link, e.g., the tip of the end-effector relative to its mounting point or other origin definition.
+<p>A <code class="docutils literal notranslate"><span class="pre">PositionConstraint</span></code> constrains the Cartesian positions allowed for a (position relative to a) link.</p>
+<p><code class="docutils literal notranslate"><span class="pre">target_offset</span></code> is that relative position w.r.t. a link, e.g., the tip of the end-effector relative to its mounting point or other origin definition.
 This region (boxes only in this compact definition) is compactly defined by specifying the upper and lower bounds along each axis.</p>
-<p>For example:</p>
-<div class="highlight-python"><div class="highlight"><pre>- type: position
-  frame_id: base_link
-  link_name: gripper_link
-  target_offset: [0.01, 0.01, 0.01]
-  region:
-    x: [0, 1.0] # [start, end]
-    y: [0, 1.0] # [start, end]
-    z: [0, 1.0] # [start, end]
-  weight: 1.0
+<p>For example (in YAML format):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="nb">type</span><span class="p">:</span> <span class="n">position</span>
+  <span class="n">frame_id</span><span class="p">:</span> <span class="n">base_link</span>
+  <span class="n">link_name</span><span class="p">:</span> <span class="n">gripper_link</span>
+  <span class="n">target_offset</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">]</span>
+  <span class="n">region</span><span class="p">:</span>
+    <span class="n">x</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]</span> <span class="c1"># [start, end]</span>
+    <span class="n">y</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]</span> <span class="c1"># [start, end]</span>
+    <span class="n">z</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]</span> <span class="c1"># [start, end]</span>
+  <span class="n">weight</span><span class="p">:</span> <span class="mf">1.0</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="orientationconstraint">
 <h4>OrientationConstraint<a class="headerlink" href="#orientationconstraint" title="Permalink to this headline">¶</a></h4>
-<p>An <code class="docutils literal"><span class="pre">OrientationConstraint</span></code> can be used to keep eg. something upright (or mostly upright with respect to some tolerance).</p>
+<p>An <code class="docutils literal notranslate"><span class="pre">OrientationConstraint</span></code> can be used to keep eg. something upright (or mostly upright with respect to some tolerance).</p>
 <p>It is compactly represented with a list of roll, pitch, yaw and a list of tolerances for each axis, for example:</p>
-<div class="highlight-python"><div class="highlight"><pre>- type: orientation
-  frame_id: base_link
-  link_name: gripper_link
-  orientation: [-3.1415269, -1.57079632, 0] #RPY
-  tolerances: [6.28318531, 0.2, 6.28318531]
-  weight: 1.0
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="nb">type</span><span class="p">:</span> <span class="n">orientation</span>
+  <span class="n">frame_id</span><span class="p">:</span> <span class="n">base_link</span>
+  <span class="n">link_name</span><span class="p">:</span> <span class="n">gripper_link</span>
+  <span class="n">orientation</span><span class="p">:</span> <span class="p">[</span><span class="o">-</span><span class="mf">3.1415269</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.57079632</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="c1">#RPY</span>
+  <span class="n">tolerances</span><span class="p">:</span> <span class="p">[</span><span class="mf">6.28318531</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">6.28318531</span><span class="p">]</span>
+  <span class="n">weight</span><span class="p">:</span> <span class="mf">1.0</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="visibilityconstraint">
 <h4>VisibilityConstraint<a class="headerlink" href="#visibilityconstraint" title="Permalink to this headline">¶</a></h4>
-<p>A <code class="docutils literal"><span class="pre">VisibilityConstraint</span></code> allows to eg. specify a camera should always be able to see the gripper.</p>
-<p>How this is achieved is best explained by the <a class="reference external" href="https://docs.ros.org/noetic/api/moveit_core/html/classkinematic__constraints_1_1VisibilityConstraint.html#details">VisibilityConstraint</a> class documentation.</p>
+<p>A <code class="docutils literal notranslate"><span class="pre">VisibilityConstraint</span></code> allows to eg. specify a camera should always be able to see the gripper.</p>
+<p>How this is achieved is best explained by the <a class="reference external" href="https://docs.ros.org/noetic/api/moveit_core/html/cpp/classkinematic__constraints_1_1VisibilityConstraint.html#details">VisibilityConstraint</a> class documentation.</p>
 <p>Such a constraint is compactly defined like this:</p>
-<div class="highlight-python"><div class="highlight"><pre>- type: visibility
-  target_radius: 0.5
-  target_pose:
-    frame_id: &#39;base_link&#39;
-    position: [1.2, 3.4, 5.6]
-    orientation: [-3.1415269, -1.57079632, 0] #RPY
-  cone_sides: 4
-  sensor_pose:
-    frame_id: &#39;gripper_cam_link&#39;
-    position: [1.2, 3.4, 5.6]
-    orientation: [-3.1415269, -1.57079632, 0] #RPY
-  max_view_angle: 1.1
-  max_range_angle: 0.55
-  weight: 1.0
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="nb">type</span><span class="p">:</span> <span class="n">visibility</span>
+  <span class="n">target_radius</span><span class="p">:</span> <span class="mf">0.5</span>
+  <span class="n">target_pose</span><span class="p">:</span>
+    <span class="n">frame_id</span><span class="p">:</span> <span class="s1">&#39;base_link&#39;</span>
+    <span class="n">position</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.2</span><span class="p">,</span> <span class="mf">3.4</span><span class="p">,</span> <span class="mf">5.6</span><span class="p">]</span>
+    <span class="n">orientation</span><span class="p">:</span> <span class="p">[</span><span class="o">-</span><span class="mf">3.1415269</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.57079632</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="c1">#RPY</span>
+  <span class="n">cone_sides</span><span class="p">:</span> <span class="mi">4</span>
+  <span class="n">sensor_pose</span><span class="p">:</span>
+    <span class="n">frame_id</span><span class="p">:</span> <span class="s1">&#39;gripper_cam_link&#39;</span>
+    <span class="n">position</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.2</span><span class="p">,</span> <span class="mf">3.4</span><span class="p">,</span> <span class="mf">5.6</span><span class="p">]</span>
+    <span class="n">orientation</span><span class="p">:</span> <span class="p">[</span><span class="o">-</span><span class="mf">3.1415269</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.57079632</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="c1">#RPY</span>
+  <span class="n">max_view_angle</span><span class="p">:</span> <span class="mf">1.1</span>
+  <span class="n">max_range_angle</span><span class="p">:</span> <span class="mf">0.55</span>
+  <span class="n">weight</span><span class="p">:</span> <span class="mf">1.0</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="section" id="running-the-database-generator">
 <h3>Running the database generator<a class="headerlink" href="#running-the-database-generator" title="Permalink to this headline">¶</a></h3>
-<p>Assuming MoveIt itself is already launched (via eg. <code class="docutils literal"><span class="pre">roslaunch</span> <span class="pre">X_moveit_config</span> <span class="pre">demo.launch</span></code>), you can use a launch file similar to <a class="reference external" href="https://github.com/ros-planning/moveit/blob/master/moveit_planners/ompl/ompl_interface/launch/generate_state_database.launch">generate_state_database.launch</a></p>
+<p>Assuming MoveIt itself is already launched (via eg. <code class="docutils literal notranslate"><span class="pre">roslaunch</span> <span class="pre">X_moveit_config</span> <span class="pre">demo.launch</span></code>), you can use a launch file similar to <a class="reference external" href="https://github.com/ros-planning/moveit/blob/master/moveit_planners/ompl/ompl_interface/launch/generate_state_database.launch">generate_state_database.launch</a></p>
 <p>The file with the constraint definitions can be passed to the launch file:</p>
-<div class="highlight-python"><div class="highlight"><pre>roslaunch ompl_interface generate_state_database.launch constraints_file:=$(rospack find X_moveit_config)/config/constraints.yaml planning_group:=arm
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>roslaunch ompl_interface generate_state_database.launch constraints_file:=$(rospack find X_moveit_config)/config/constraints.yaml planning_group:=arm
 </pre></div>
 </div>
 </div>
 <div class="section" id="internals">
 <h3>Internals<a class="headerlink" href="#internals" title="Permalink to this headline">¶</a></h3>
 <p>The main functionality is implemented in the <a class="reference external" href="http://docs.ros.org/noetic/api/moveit_planners_ompl/html/classompl__interface_1_1ConstraintsLibrary.html">ConstraintsLibrary</a> class.</p>
-<p>Constraints are added by calling <code class="docutils literal"><span class="pre">addConstraintApproximation()</span></code> which can be called subsequently to include multiple constraints in the approximation.
+<p>Constraints are added by calling <code class="docutils literal notranslate"><span class="pre">addConstraintApproximation()</span></code> which can be called subsequently to include multiple constraints in the approximation.
 The function requires four parameters:</p>
 <ul class="simple">
 <li>constraints message (moveit_msgs::Constraints)</li>
@@ -932,12 +983,12 @@ The function requires four parameters:</p>
 <div class="section" id="constraints-message">
 <h3>Constraints message<a class="headerlink" href="#constraints-message" title="Permalink to this headline">¶</a></h3>
 <p>The constraints message object can be initialized as usual with any type and required tolerances.
-The critical point is that the <code class="docutils literal"><span class="pre">name</span></code> of the message should be descriptive and unique to the constraint.
-That <code class="docutils literal"><span class="pre">name</span></code> is used later on to reference the correct constraint when planning with the approximation database.</p>
+The critical point is that the <code class="docutils literal notranslate"><span class="pre">name</span></code> of the message should be descriptive and unique to the constraint.
+That <code class="docutils literal notranslate"><span class="pre">name</span></code> is used later on to reference the correct constraint when planning with the approximation database.</p>
 </div>
 <div class="section" id="construction-options">
 <h3>Construction Options<a class="headerlink" href="#construction-options" title="Permalink to this headline">¶</a></h3>
-<p>The <code class="docutils literal"><span class="pre">ompl_interface::ConstraintApproximationConstructionOptions</span></code> object specifies various features of the approximation manifold, as for instance size, density, space parameterization type and others.
+<p>The <code class="docutils literal notranslate"><span class="pre">ompl_interface::ConstraintApproximationConstructionOptions</span></code> object specifies various features of the approximation manifold, as for instance size, density, space parameterization type and others.
 Below is an overview over each of the options:</p>
 <ul class="simple">
 <li><strong>unsigned int</strong> samples - size of the approximation graph</li>
@@ -970,13 +1021,13 @@ That requires analysis of the size of the approximation space in terms of densit
 </div>
 <div class="section" id="database-construction">
 <h3>Database Construction<a class="headerlink" href="#database-construction" title="Permalink to this headline">¶</a></h3>
-<p>After adding the constraints to the ConstraintsLibrary object the database can be constructed by calling <code class="docutils literal"><span class="pre">saveApproximationConstraints()</span></code> which only takes the relative directory in which the database should be saved.</p>
+<p>After adding the constraints to the ConstraintsLibrary object the database can be constructed by calling <code class="docutils literal notranslate"><span class="pre">saveApproximationConstraints()</span></code> which only takes the relative directory in which the database should be saved.</p>
 </div>
 </div>
 <div class="section" id="database-loading-and-usage">
 <h2>Database Loading and Usage<a class="headerlink" href="#database-loading-and-usage" title="Permalink to this headline">¶</a></h2>
 <p>The constraints database must be loaded at launch of the move group node by setting the ros parameter:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;param name=&quot;move_group/constraint_approximations_path&quot; value=&quot;&lt;path_to_database&gt;&quot;/&gt;
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">param</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;move_group/constraint_approximations_path&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;&lt;path_to_database&gt;&quot;</span><span class="o">/&gt;</span>
 </pre></div>
 </div>
 <p>To verify if the database was found an successfully loaded check if the named constraint is shown in the log.</p>
@@ -1021,7 +1072,7 @@ A correctly named constraint message without initialized constraints would use t
 
     </section>
   </div>
-  
+
   
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
@@ -1035,6 +1086,7 @@ A correctly named constraint message without initialized constraints would use t
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/language_data.js"></script>
 
   
 

@@ -34,6 +34,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="moveit_tutorials Noetic documentation" href="../../index.html"/>
         <link rel="next" title="Move Group Python Interface" href="../move_group_python_interface/move_group_python_interface_tutorial.html"/>
         <link rel="prev" title="MoveIt Quickstart in RViz" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html"/> 
@@ -65,18 +68,18 @@
         <a href="http://moveit.ros.org">
           <img src="../../_static/logo.png"/>
         </a>
-        
+
         <div class="version">
-          <div class="version-dropdown">
-            <lable for="version-list">Version:</lable>
-          <select class="version-list" id="version-list" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-              <option value=''>Noetic</option>
-              <option value="http://docs.ros.org/en/melodic/api/moveit_tutorials/html/index.html">Melodic</option>
-              <option value="http://docs.ros.org/en/kinetic/api/moveit_tutorials/html/index.html">Kinetic</option>
-              <option value="http://docs.ros.org/en/indigo/api/moveit_tutorials/html/index.html">Indigo (EOL)</option>
-          </select>
-          </div>
-        </div><br>
+    <div class="version-dropdown">
+        <lable for="version-list">Version:</lable>
+    <select class="version-list" id="version-list" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+        <option value="http://moveit2_tutorials.picknik.ai">Moveit 2 - Foxy</option>
+        <option value='' selected>MoveIt 1 - Noetic</option>
+        <option value="http://docs.ros.org/en/melodic/api/moveit_tutorials/html/index.html">MoveIt 1 - Melodic</option>
+        <option value="http://docs.ros.org/en/kinetic/api/moveit_tutorials/html/index.html">MoveIt 1 - Kinetic</option>
+    </select>
+    </div>
+</div><br>
         
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -113,6 +116,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#step-4-use-motion-planning-with-the-panda">Step 4: Use Motion Planning with the Panda</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#choosing-specific-start-goal-states">Choosing Specific Start/Goal States</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#introspecting-trajectory-waypoints">Introspecting Trajectory Waypoints</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#plan-cartesian-motions">Plan Cartesian motions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#executing-trajectories-adjusting-speed">Executing Trajectories, Adjusting Speed</a></li>
@@ -128,7 +132,7 @@
 </li>
 </ul>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="">Move Group C++ Interface</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Move Group C++ Interface</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#running-the-code">Running the Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#expected-output">Expected Output</a></li>
@@ -346,7 +350,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../pick_place/pick_place_tutorial.html">Pick and Place</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#running-the-demo">Running The Demo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#understanding-moveit-msgs-grasp">Understanding <code class="docutils literal"><span class="pre">moveit_msgs::Grasp</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#understanding-moveit-msgs-grasp">Understanding <code class="docutils literal notranslate"><span class="pre">moveit_msgs::Grasp</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#the-entire-code">The Entire Code</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#creating-environment">Creating Environment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#pick-pipeline">Pick Pipeline</a><ul>
@@ -461,6 +465,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../bullet_collision_checker/bullet_collision_checker.html#launch-file">Launch file</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html">Mesh Filter with UR5 and Kinect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#running-the-demo">Running the Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#how-to-add-sensor-to-arm-in-simulation">How to add sensor to arm in simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#references">References</a></li>
+</ul>
+</li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html">MoveIt Setup Assistant</a><ul>
@@ -478,7 +489,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-10-ros-control">Step 10: ROS Control</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-11-add-author-information">Step 11: Add Author Information</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-12-generate-configuration-files">Step 12: Generate Configuration Files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#what-s-next">What&#8217;s Next</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#what-s-next">What’s Next</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#additional-reading">Additional Reading</a></li>
 </ul>
 </li>
@@ -591,6 +602,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../trac_ik/trac_ik_tutorial.html#usage">Usage</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html">OPW Kinematics Solver for Industrial Manipulators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#intro">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#sharing-opw-descriptions">Sharing OPW descriptions</a></li>
+</ul>
+</li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html">Kinematics Configuration</a><ul>
@@ -598,6 +617,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#parameters">Parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-kdl-kinematics-plugin">The KDL Kinematics Plugin</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-lma-kinematics-plugin">The LMA Kinematics Plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-cached-ik-plugin">The Cached IK Plugin</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#position-only-ik">Position Only IK</a></li>
@@ -607,6 +627,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#creating-a-constraint-sampler">Creating a constraint sampler</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../planning_constraints/planning_constraints.html">Representation and Evaluation of Constraints</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../planning_constraints/planning_constraints.html#see-also">See Also</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../ompl_interface/ompl_interface_tutorial.html">OMPL Planner</a><ul>
@@ -668,18 +692,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#cartesian-limits">Cartesian Limits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-interface">Planning Interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-ptp-motion-command">The PTP motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#input-parameters-in-moveit-msgs-motionplanrequest">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-results-in-moveit-msg-motionplanresponse">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#input-parameters-in-moveit-msgs-motionplanrequest">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-results-in-moveit-msg-motionplanresponse">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-lin-motion-command">The LIN motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id1">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id2">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id1">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id2">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-circ-motion-command">The CIRC motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id3">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id4">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id3">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id4">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#example">Example</a></li>
@@ -688,7 +712,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#sequence-of-multiple-segments">Sequence of multiple segments</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#user-interface-sequence-capability">User interface sequence capability</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#restrictions-for-motionsequencerequest">Restrictions for <code class="docutils literal"><span class="pre">MotionSequenceRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#restrictions-for-motionsequencerequest">Restrictions for <code class="docutils literal notranslate"><span class="pre">MotionSequenceRequest</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#action-interface">Action interface</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#service-interface">Service interface</a></li>
 </ul>
@@ -711,6 +735,20 @@
 </li>
 </ul>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html">Gazebo Simulation Integration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#after-moveit-setup-assistant">After MoveIt Setup Assistant</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#fix-the-robot-to-the-world-coordinate-system">1. Fix the robot to the world coordinate system</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-damping-to-the-joint-specifications">2. Add damping to the joint specifications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-inertia-matrices-and-masses-to-the-links">3. Add inertia matrices and masses to the links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-friction-and-colorize-the-links">4. Add friction and colorize the links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#configure-gazebo-ros-control-transmissions-and-actuators">5. Configure gazebo_ros_control, transmissions and actuators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#adjust-auto-generated-ros-controllers-yaml">6. Adjust auto-generated ros_controllers.yaml</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#adjust-auto-generated-ros-controllers-launch-in-the-panda-moveit-config-package">7. Adjust auto-generated <code class="code docutils literal notranslate"><span class="pre">ros_controllers.launch</span></code> in the <code class="code docutils literal notranslate"><span class="pre">panda_moveit_config</span></code> package.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#change-the-way-robot-description-is-loaded-to-parameter-server">8. Change the way <code class="code docutils literal notranslate"><span class="pre">robot_description</span></code> is loaded to Parameter Server.</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html">Joystick Control Teleoperation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html#running-the-code">Running the Code</a></li>
@@ -753,6 +791,19 @@
 <li class="toctree-l2"><a class="reference internal" href="../tests/tests_tutorial.html#code-coverage">Code Coverage</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html">Debugging Tests</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#ci-failures">CI Failures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#launch-docker-environment">Launch Docker Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#setup-environment">Setup Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#checkout-code">Checkout Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#install-dependencies">Install Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#configure-and-build">Configure and Build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#build-the-tests">Build the Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#run-the-tests">Run the Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#run-one-test">Run One Test</a></li>
+</ul>
+</li>
 </ul>
 
           
@@ -789,7 +840,8 @@
   <br />
 <div class="admonition note">
 <p class="first admonition-title">Tutorials Version: Noetic</p>
-<p class="last">This is the latest version, which is actively developed and best for beginners. If you are still running a Melodic release, please use the <a class="reference external" href="http://docs.ros.org/melodic/api/moveit_tutorials/html/index.html">Melodic tutorials</a>.</p>
+<p class="last">This is the latest (and last) version of MoveIt 1 for ROS Noetic, which is still actively developed. See also <a class="reference external" href="http://moveit2_tutorials.picknik.ai/">MoveIt 2 tutorials</a> and other available versions in drop down box on left.
+</p>
 </div>
   <hr/>
 </div>
@@ -807,16 +859,16 @@
 <p>Watch this quick <a class="reference external" href="https://youtu.be/_5siHkFQPBQ">YouTube video demo</a> to see the power of the move group interface!</p>
 <div class="section" id="getting-started">
 <h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
-<p>If you haven&#8217;t already done so, make sure you&#8217;ve completed the steps in <a class="reference external" href="../getting_started/getting_started.html">Getting Started</a>.</p>
+<p>If you haven’t already done so, make sure you’ve completed the steps in <a class="reference external" href="../getting_started/getting_started.html">Getting Started</a>.</p>
 </div>
 <div class="section" id="running-the-code">
 <h2>Running the Code<a class="headerlink" href="#running-the-code" title="Permalink to this headline">¶</a></h2>
 <p>Open two shells. In the first shell start RViz and wait for everything to finish loading:</p>
-<div class="highlight-python"><div class="highlight"><pre>roslaunch panda_moveit_config demo.launch
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">roslaunch</span> <span class="n">panda_moveit_config</span> <span class="n">demo</span><span class="o">.</span><span class="n">launch</span>
 </pre></div>
 </div>
 <p>In the second shell, run the launch file:</p>
-<div class="highlight-python"><div class="highlight"><pre>roslaunch moveit_tutorials move_group_interface_tutorial.launch
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">roslaunch</span> <span class="n">moveit_tutorials</span> <span class="n">move_group_interface_tutorial</span><span class="o">.</span><span class="n">launch</span>
 </pre></div>
 </div>
 <p><strong>Note:</strong> This tutorial uses the <strong>RvizVisualToolsGui</strong> panel to step through the demo. To add this panel to RViz, follow the instructions in the <a class="reference external" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#rviz-visual-tools">Visualization Tutorial</a>.</p>
@@ -846,25 +898,25 @@
 <p>The entire code can be seen <a class="reference external" href="https://github.com/ros-planning/moveit_tutorials/blob/master/doc/move_group_interface/src/move_group_interface_tutorial.cpp">here in the MoveIt GitHub project</a>. Next we step through the code piece by piece to explain its functionality.</p>
 <div class="section" id="setup">
 <h3>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h3>
-<p>MoveIt operates on sets of joints called &#8220;planning groups&#8221; and stores them in an object called
-the <cite>JointModelGroup</cite>. Throughout MoveIt the terms &#8220;planning group&#8221; and &#8220;joint model group&#8221;
+<p>MoveIt operates on sets of joints called “planning groups” and stores them in an object called
+the <cite>JointModelGroup</cite>. Throughout MoveIt the terms “planning group” and “joint model group”
 are used interchangably.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="k">static</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">PLANNING_GROUP</span> <span class="o">=</span> <span class="s">&quot;panda_arm&quot;</span><span class="p">;</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">static</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">PLANNING_GROUP</span> <span class="o">=</span> <span class="s">&quot;panda_arm&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
 <p>The <a class="reference external" href="http://docs.ros.org/noetic/api/moveit_ros_planning_interface/html/classmoveit_1_1planning__interface_1_1MoveGroupInterface.html">MoveGroupInterface</a> class can be easily
 setup using just the name of the planning group you would like to control and plan for.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">moveit</span><span class="o">::</span><span class="n">planning_interface</span><span class="o">::</span><span class="n">MoveGroupInterface</span> <span class="n">move_group</span><span class="p">(</span><span class="n">PLANNING_GROUP</span><span class="p">);</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">moveit</span><span class="o">::</span><span class="n">planning_interface</span><span class="o">::</span><span class="n">MoveGroupInterface</span> <span class="n">move_group_interface</span><span class="p">(</span><span class="n">PLANNING_GROUP</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>We will use the <a class="reference external" href="http://docs.ros.org/noetic/api/moveit_ros_planning_interface/html/classmoveit_1_1planning__interface_1_1PlanningSceneInterface.html">PlanningSceneInterface</a>
-class to add and remove collision objects in our &#8220;virtual world&#8221; scene</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">moveit</span><span class="o">::</span><span class="n">planning_interface</span><span class="o">::</span><span class="n">PlanningSceneInterface</span> <span class="n">planning_scene_interface</span><span class="p">;</span>
+class to add and remove collision objects in our “virtual world” scene</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">moveit</span><span class="o">::</span><span class="n">planning_interface</span><span class="o">::</span><span class="n">PlanningSceneInterface</span> <span class="n">planning_scene_interface</span><span class="p">;</span>
 </pre></div>
 </div>
 <p>Raw pointers are frequently used to refer to the planning group for improved performance.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="k">const</span> <span class="n">moveit</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">JointModelGroup</span><span class="o">*</span> <span class="n">joint_model_group</span> <span class="o">=</span>
-    <span class="n">move_group</span><span class="p">.</span><span class="n">getCurrentState</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">getJointModelGroup</span><span class="p">(</span><span class="n">PLANNING_GROUP</span><span class="p">);</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">const</span> <span class="n">moveit</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">JointModelGroup</span><span class="o">*</span> <span class="n">joint_model_group</span> <span class="o">=</span>
+    <span class="n">move_group_interface</span><span class="p">.</span><span class="n">getCurrentState</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">getJointModelGroup</span><span class="p">(</span><span class="n">PLANNING_GROUP</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
@@ -872,47 +924,47 @@ class to add and remove collision objects in our &#8220;virtual world&#8221; sce
 <h3>Visualization<a class="headerlink" href="#visualization" title="Permalink to this headline">¶</a></h3>
 <p>The package MoveItVisualTools provides many capabilities for visualizing objects, robots,
 and trajectories in RViz as well as debugging tools such as step-by-step introspection of a script.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="k">namespace</span> <span class="n">rvt</span> <span class="o">=</span> <span class="n">rviz_visual_tools</span><span class="p">;</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">namespace</span> <span class="n">rvt</span> <span class="o">=</span> <span class="n">rviz_visual_tools</span><span class="p">;</span>
 <span class="n">moveit_visual_tools</span><span class="o">::</span><span class="n">MoveItVisualTools</span> <span class="n">visual_tools</span><span class="p">(</span><span class="s">&quot;panda_link0&quot;</span><span class="p">);</span>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">deleteAllMarkers</span><span class="p">();</span>
 </pre></div>
 </div>
 <p>Remote control is an introspection tool that allows users to step through a high level script
 via buttons and keyboard shortcuts in RViz</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">visual_tools</span><span class="p">.</span><span class="n">loadRemoteControl</span><span class="p">();</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">visual_tools</span><span class="p">.</span><span class="n">loadRemoteControl</span><span class="p">();</span>
 </pre></div>
 </div>
 <p>RViz provides many types of markers, in this demo we will use text, cylinders, and spheres</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">Eigen</span><span class="o">::</span><span class="n">Isometry3d</span> <span class="n">text_pose</span> <span class="o">=</span> <span class="n">Eigen</span><span class="o">::</span><span class="n">Isometry3d</span><span class="o">::</span><span class="n">Identity</span><span class="p">();</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">Eigen</span><span class="o">::</span><span class="n">Isometry3d</span> <span class="n">text_pose</span> <span class="o">=</span> <span class="n">Eigen</span><span class="o">::</span><span class="n">Isometry3d</span><span class="o">::</span><span class="n">Identity</span><span class="p">();</span>
 <span class="n">text_pose</span><span class="p">.</span><span class="n">translation</span><span class="p">().</span><span class="n">z</span><span class="p">()</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">;</span>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">publishText</span><span class="p">(</span><span class="n">text_pose</span><span class="p">,</span> <span class="s">&quot;MoveGroupInterface Demo&quot;</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">WHITE</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">XLARGE</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Batch publishing is used to reduce the number of messages being sent to RViz for large visualizations</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">visual_tools</span><span class="p">.</span><span class="n">trigger</span><span class="p">();</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">visual_tools</span><span class="p">.</span><span class="n">trigger</span><span class="p">();</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="getting-basic-information">
 <h3>Getting Basic Information<a class="headerlink" href="#getting-basic-information" title="Permalink to this headline">¶</a></h3>
 <p>We can print the name of the reference frame for this robot.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">ROS_INFO_NAMED</span><span class="p">(</span><span class="s">&quot;tutorial&quot;</span><span class="p">,</span> <span class="s">&quot;Planning frame: %s&quot;</span><span class="p">,</span> <span class="n">move_group</span><span class="p">.</span><span class="n">getPlanningFrame</span><span class="p">().</span><span class="n">c_str</span><span class="p">());</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">ROS_INFO_NAMED</span><span class="p">(</span><span class="s">&quot;tutorial&quot;</span><span class="p">,</span> <span class="s">&quot;Planning frame: %s&quot;</span><span class="p">,</span> <span class="n">move_group_interface</span><span class="p">.</span><span class="n">getPlanningFrame</span><span class="p">().</span><span class="n">c_str</span><span class="p">());</span>
 </pre></div>
 </div>
 <p>We can also print the name of the end-effector link for this group.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">ROS_INFO_NAMED</span><span class="p">(</span><span class="s">&quot;tutorial&quot;</span><span class="p">,</span> <span class="s">&quot;End effector link: %s&quot;</span><span class="p">,</span> <span class="n">move_group</span><span class="p">.</span><span class="n">getEndEffectorLink</span><span class="p">().</span><span class="n">c_str</span><span class="p">());</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">ROS_INFO_NAMED</span><span class="p">(</span><span class="s">&quot;tutorial&quot;</span><span class="p">,</span> <span class="s">&quot;End effector link: %s&quot;</span><span class="p">,</span> <span class="n">move_group_interface</span><span class="p">.</span><span class="n">getEndEffectorLink</span><span class="p">().</span><span class="n">c_str</span><span class="p">());</span>
 </pre></div>
 </div>
 <p>We can get a list of all the groups in the robot:</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">ROS_INFO_NAMED</span><span class="p">(</span><span class="s">&quot;tutorial&quot;</span><span class="p">,</span> <span class="s">&quot;Available Planning Groups:&quot;</span><span class="p">);</span>
-<span class="n">std</span><span class="o">::</span><span class="n">copy</span><span class="p">(</span><span class="n">move_group</span><span class="p">.</span><span class="n">getJointModelGroupNames</span><span class="p">().</span><span class="n">begin</span><span class="p">(),</span> <span class="n">move_group</span><span class="p">.</span><span class="n">getJointModelGroupNames</span><span class="p">().</span><span class="n">end</span><span class="p">(),</span>
-          <span class="n">std</span><span class="o">::</span><span class="n">ostream_iterator</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="p">,</span> <span class="s">&quot;, &quot;</span><span class="p">));</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">ROS_INFO_NAMED</span><span class="p">(</span><span class="s">&quot;tutorial&quot;</span><span class="p">,</span> <span class="s">&quot;Available Planning Groups:&quot;</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">copy</span><span class="p">(</span><span class="n">move_group_interface</span><span class="p">.</span><span class="n">getJointModelGroupNames</span><span class="p">().</span><span class="n">begin</span><span class="p">(),</span>
+          <span class="n">move_group_interface</span><span class="p">.</span><span class="n">getJointModelGroupNames</span><span class="p">().</span><span class="n">end</span><span class="p">(),</span> <span class="n">std</span><span class="o">::</span><span class="n">ostream_iterator</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="p">,</span> <span class="s">&quot;, &quot;</span><span class="p">));</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="start-the-demo">
 <h3>Start the demo<a class="headerlink" href="#start-the-demo" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">visual_tools</span><span class="p">.</span><span class="n">prompt</span><span class="p">(</span><span class="s">&quot;Press &#39;next&#39; in the RvizVisualToolsGui window to start the demo&quot;</span><span class="p">);</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">visual_tools</span><span class="p">.</span><span class="n">prompt</span><span class="p">(</span><span class="s">&quot;Press &#39;next&#39; in the RvizVisualToolsGui window to start the demo&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
@@ -920,20 +972,20 @@ via buttons and keyboard shortcuts in RViz</p>
 <span id="move-group-interface-planning-to-pose-goal"></span><h3>Planning to a Pose goal<a class="headerlink" href="#planning-to-a-pose-goal" title="Permalink to this headline">¶</a></h3>
 <p>We can plan a motion for this group to a desired pose for the
 end-effector.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Pose</span> <span class="n">target_pose1</span><span class="p">;</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Pose</span> <span class="n">target_pose1</span><span class="p">;</span>
 <span class="n">target_pose1</span><span class="p">.</span><span class="n">orientation</span><span class="p">.</span><span class="n">w</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">;</span>
 <span class="n">target_pose1</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">0.28</span><span class="p">;</span>
 <span class="n">target_pose1</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.2</span><span class="p">;</span>
 <span class="n">target_pose1</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">;</span>
-<span class="n">move_group</span><span class="p">.</span><span class="n">setPoseTarget</span><span class="p">(</span><span class="n">target_pose1</span><span class="p">);</span>
+<span class="n">move_group_interface</span><span class="p">.</span><span class="n">setPoseTarget</span><span class="p">(</span><span class="n">target_pose1</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Now, we call the planner to compute the plan and visualize it.
-Note that we are just planning, not asking move_group
+Note that we are just planning, not asking move_group_interface
 to actually move the robot.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">moveit</span><span class="o">::</span><span class="n">planning_interface</span><span class="o">::</span><span class="n">MoveGroupInterface</span><span class="o">::</span><span class="n">Plan</span> <span class="n">my_plan</span><span class="p">;</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">moveit</span><span class="o">::</span><span class="n">planning_interface</span><span class="o">::</span><span class="n">MoveGroupInterface</span><span class="o">::</span><span class="n">Plan</span> <span class="n">my_plan</span><span class="p">;</span>
 
-<span class="kt">bool</span> <span class="n">success</span> <span class="o">=</span> <span class="p">(</span><span class="n">move_group</span><span class="p">.</span><span class="n">plan</span><span class="p">(</span><span class="n">my_plan</span><span class="p">)</span> <span class="o">==</span> <span class="n">moveit</span><span class="o">::</span><span class="n">planning_interface</span><span class="o">::</span><span class="n">MoveItErrorCode</span><span class="o">::</span><span class="n">SUCCESS</span><span class="p">);</span>
+<span class="kt">bool</span> <span class="n">success</span> <span class="o">=</span> <span class="p">(</span><span class="n">move_group_interface</span><span class="p">.</span><span class="n">plan</span><span class="p">(</span><span class="n">my_plan</span><span class="p">)</span> <span class="o">==</span> <span class="n">moveit</span><span class="o">::</span><span class="n">planning_interface</span><span class="o">::</span><span class="n">MoveItErrorCode</span><span class="o">::</span><span class="n">SUCCESS</span><span class="p">);</span>
 
 <span class="n">ROS_INFO_NAMED</span><span class="p">(</span><span class="s">&quot;tutorial&quot;</span><span class="p">,</span> <span class="s">&quot;Visualizing plan 1 (pose goal) %s&quot;</span><span class="p">,</span> <span class="n">success</span> <span class="o">?</span> <span class="s">&quot;&quot;</span> <span class="o">:</span> <span class="s">&quot;FAILED&quot;</span><span class="p">);</span>
 </pre></div>
@@ -942,7 +994,7 @@ to actually move the robot.</p>
 <div class="section" id="visualizing-plans">
 <h3>Visualizing plans<a class="headerlink" href="#visualizing-plans" title="Permalink to this headline">¶</a></h3>
 <p>We can also visualize the plan as a line with markers in RViz.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">ROS_INFO_NAMED</span><span class="p">(</span><span class="s">&quot;tutorial&quot;</span><span class="p">,</span> <span class="s">&quot;Visualizing plan 1 as trajectory line&quot;</span><span class="p">);</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">ROS_INFO_NAMED</span><span class="p">(</span><span class="s">&quot;tutorial&quot;</span><span class="p">,</span> <span class="s">&quot;Visualizing plan 1 as trajectory line&quot;</span><span class="p">);</span>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">publishAxisLabeled</span><span class="p">(</span><span class="n">target_pose1</span><span class="p">,</span> <span class="s">&quot;pose1&quot;</span><span class="p">);</span>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">publishText</span><span class="p">(</span><span class="n">text_pose</span><span class="p">,</span> <span class="s">&quot;Pose Goal&quot;</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">WHITE</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">XLARGE</span><span class="p">);</span>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">publishTrajectoryLine</span><span class="p">(</span><span class="n">my_plan</span><span class="p">.</span><span class="n">trajectory_</span><span class="p">,</span> <span class="n">joint_model_group</span><span class="p">);</span>
@@ -950,53 +1002,59 @@ to actually move the robot.</p>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">prompt</span><span class="p">(</span><span class="s">&quot;Press &#39;next&#39; in the RvizVisualToolsGui window to continue the demo&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
+<p>Finally, to execute the trajectory stored in my_plan, you could use the following method call:
+Note that this can lead to problems if the robot moved in the meanwhile.
+move_group_interface.execute(my_plan);</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="moving-to-a-pose-goal">
 <h3>Moving to a pose goal<a class="headerlink" href="#moving-to-a-pose-goal" title="Permalink to this headline">¶</a></h3>
-<p>Moving to a pose goal is similar to the step above
-except we now use the move() function. Note that
-the pose goal we had set earlier is still active
-and so the robot will try to move to that goal. We will
-not use that function in this tutorial since it is
-a blocking function and requires a controller to be active
-and report success on execution of a trajectory.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="cm">/* Uncomment below line when working with a real robot */</span>
-<span class="cm">/* move_group.move(); */</span>
+<p>If you do not want to inspect the planned trajectory,
+the following is a more robust combination of the two-step plan+execute pattern shown above
+and should be preferred. Note that the pose goal we had set earlier is still active,
+so the robot will try to move to that goal.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>move_group_interface.move();</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="planning-to-a-joint-space-goal">
 <h3>Planning to a joint-space goal<a class="headerlink" href="#planning-to-a-joint-space-goal" title="Permalink to this headline">¶</a></h3>
-<p>Let&#8217;s set a joint space goal and move towards it.  This will replace the
+<p>Let’s set a joint space goal and move towards it.  This will replace the
 pose target we set above.</p>
-<p>To start, we&#8217;ll create an pointer that references the current robot&#8217;s state.
+<p>To start, we’ll create an pointer that references the current robot’s state.
 RobotState is the object that contains all the current position/velocity/acceleration data.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">moveit</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">RobotStatePtr</span> <span class="n">current_state</span> <span class="o">=</span> <span class="n">move_group</span><span class="p">.</span><span class="n">getCurrentState</span><span class="p">();</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">moveit</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">RobotStatePtr</span> <span class="n">current_state</span> <span class="o">=</span> <span class="n">move_group_interface</span><span class="p">.</span><span class="n">getCurrentState</span><span class="p">();</span>
 </pre></div>
 </div>
 <p>Next get the current set of joint values for the group.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">joint_group_positions</span><span class="p">;</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">joint_group_positions</span><span class="p">;</span>
 <span class="n">current_state</span><span class="o">-&gt;</span><span class="n">copyJointGroupPositions</span><span class="p">(</span><span class="n">joint_model_group</span><span class="p">,</span> <span class="n">joint_group_positions</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>Now, let&#8217;s modify one of the joints, plan to the new joint space goal and visualize the plan.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">joint_group_positions</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.0</span><span class="p">;</span>  <span class="c1">// radians</span>
-<span class="n">move_group</span><span class="p">.</span><span class="n">setJointValueTarget</span><span class="p">(</span><span class="n">joint_group_positions</span><span class="p">);</span>
+<p>Now, let’s modify one of the joints, plan to the new joint space goal and visualize the plan.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">joint_group_positions</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="n">tau</span> <span class="o">/</span> <span class="mi">6</span><span class="p">;</span>  <span class="c1">// -1/6 turn in radians</span>
+<span class="n">move_group_interface</span><span class="p">.</span><span class="n">setJointValueTarget</span><span class="p">(</span><span class="n">joint_group_positions</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>We lower the allowed maximum velocity and acceleration to 5% of their maximum.
 The default values are 10% (0.1).
-Set your preferred defaults in the joint_limits.yaml file of your robot&#8217;s moveit_config
+Set your preferred defaults in the joint_limits.yaml file of your robot’s moveit_config
 or set explicit factors in your code if you need your robot to move faster.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">move_group</span><span class="p">.</span><span class="n">setMaxVelocityScalingFactor</span><span class="p">(</span><span class="mf">0.05</span><span class="p">);</span>
-<span class="n">move_group</span><span class="p">.</span><span class="n">setMaxAccelerationScalingFactor</span><span class="p">(</span><span class="mf">0.05</span><span class="p">);</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">move_group_interface</span><span class="p">.</span><span class="n">setMaxVelocityScalingFactor</span><span class="p">(</span><span class="mf">0.05</span><span class="p">);</span>
+<span class="n">move_group_interface</span><span class="p">.</span><span class="n">setMaxAccelerationScalingFactor</span><span class="p">(</span><span class="mf">0.05</span><span class="p">);</span>
 
-<span class="n">success</span> <span class="o">=</span> <span class="p">(</span><span class="n">move_group</span><span class="p">.</span><span class="n">plan</span><span class="p">(</span><span class="n">my_plan</span><span class="p">)</span> <span class="o">==</span> <span class="n">moveit</span><span class="o">::</span><span class="n">planning_interface</span><span class="o">::</span><span class="n">MoveItErrorCode</span><span class="o">::</span><span class="n">SUCCESS</span><span class="p">);</span>
+<span class="n">success</span> <span class="o">=</span> <span class="p">(</span><span class="n">move_group_interface</span><span class="p">.</span><span class="n">plan</span><span class="p">(</span><span class="n">my_plan</span><span class="p">)</span> <span class="o">==</span> <span class="n">moveit</span><span class="o">::</span><span class="n">planning_interface</span><span class="o">::</span><span class="n">MoveItErrorCode</span><span class="o">::</span><span class="n">SUCCESS</span><span class="p">);</span>
 <span class="n">ROS_INFO_NAMED</span><span class="p">(</span><span class="s">&quot;tutorial&quot;</span><span class="p">,</span> <span class="s">&quot;Visualizing plan 2 (joint space goal) %s&quot;</span><span class="p">,</span> <span class="n">success</span> <span class="o">?</span> <span class="s">&quot;&quot;</span> <span class="o">:</span> <span class="s">&quot;FAILED&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Visualize the plan in RViz</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">visual_tools</span><span class="p">.</span><span class="n">deleteAllMarkers</span><span class="p">();</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">visual_tools</span><span class="p">.</span><span class="n">deleteAllMarkers</span><span class="p">();</span>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">publishText</span><span class="p">(</span><span class="n">text_pose</span><span class="p">,</span> <span class="s">&quot;Joint Space Goal&quot;</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">WHITE</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">XLARGE</span><span class="p">);</span>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">publishTrajectoryLine</span><span class="p">(</span><span class="n">my_plan</span><span class="p">.</span><span class="n">trajectory_</span><span class="p">,</span> <span class="n">joint_model_group</span><span class="p">);</span>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">trigger</span><span class="p">();</span>
@@ -1007,9 +1065,9 @@ or set explicit factors in your code if you need your robot to move faster.</p>
 <div class="section" id="planning-with-path-constraints">
 <h3>Planning with Path Constraints<a class="headerlink" href="#planning-with-path-constraints" title="Permalink to this headline">¶</a></h3>
 <p>Path constraints can easily be specified for a link on the robot.
-Let&#8217;s specify a path constraint and a pose goal for our group.
+Let’s specify a path constraint and a pose goal for our group.
 First define the path constraint.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">moveit_msgs</span><span class="o">::</span><span class="n">OrientationConstraint</span> <span class="n">ocm</span><span class="p">;</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">moveit_msgs</span><span class="o">::</span><span class="n">OrientationConstraint</span> <span class="n">ocm</span><span class="p">;</span>
 <span class="n">ocm</span><span class="p">.</span><span class="n">link_name</span> <span class="o">=</span> <span class="s">&quot;panda_link7&quot;</span><span class="p">;</span>
 <span class="n">ocm</span><span class="p">.</span><span class="n">header</span><span class="p">.</span><span class="n">frame_id</span> <span class="o">=</span> <span class="s">&quot;panda_link0&quot;</span><span class="p">;</span>
 <span class="n">ocm</span><span class="p">.</span><span class="n">orientation</span><span class="p">.</span><span class="n">w</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">;</span>
@@ -1020,53 +1078,53 @@ First define the path constraint.</p>
 </pre></div>
 </div>
 <p>Now, set it as the path constraint for the group.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">moveit_msgs</span><span class="o">::</span><span class="n">Constraints</span> <span class="n">test_constraints</span><span class="p">;</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">moveit_msgs</span><span class="o">::</span><span class="n">Constraints</span> <span class="n">test_constraints</span><span class="p">;</span>
 <span class="n">test_constraints</span><span class="p">.</span><span class="n">orientation_constraints</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">ocm</span><span class="p">);</span>
-<span class="n">move_group</span><span class="p">.</span><span class="n">setPathConstraints</span><span class="p">(</span><span class="n">test_constraints</span><span class="p">);</span>
+<span class="n">move_group_interface</span><span class="p">.</span><span class="n">setPathConstraints</span><span class="p">(</span><span class="n">test_constraints</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="enforce-planning-in-joint-space">
 <h3>Enforce Planning in Joint Space<a class="headerlink" href="#enforce-planning-in-joint-space" title="Permalink to this headline">¶</a></h3>
 <p>Depending on the planning problem MoveIt chooses between
-<code class="docutils literal"><span class="pre">joint</span> <span class="pre">space</span></code> and <code class="docutils literal"><span class="pre">cartesian</span> <span class="pre">space</span></code> for problem representation.
-Setting the group parameter <code class="docutils literal"><span class="pre">enforce_joint_model_state_space:true</span></code> in
-the ompl_planning.yaml file enforces the use of <code class="docutils literal"><span class="pre">joint</span> <span class="pre">space</span></code> for all plans.</p>
+<code class="docutils literal notranslate"><span class="pre">joint</span> <span class="pre">space</span></code> and <code class="docutils literal notranslate"><span class="pre">cartesian</span> <span class="pre">space</span></code> for problem representation.
+Setting the group parameter <code class="docutils literal notranslate"><span class="pre">enforce_joint_model_state_space:true</span></code> in
+the ompl_planning.yaml file enforces the use of <code class="docutils literal notranslate"><span class="pre">joint</span> <span class="pre">space</span></code> for all plans.</p>
 <p>By default planning requests with orientation path constraints
-are sampled in <code class="docutils literal"><span class="pre">cartesian</span> <span class="pre">space</span></code> so that invoking IK serves as a
+are sampled in <code class="docutils literal notranslate"><span class="pre">cartesian</span> <span class="pre">space</span></code> so that invoking IK serves as a
 generative sampler.</p>
-<p>By enforcing <code class="docutils literal"><span class="pre">joint</span> <span class="pre">space</span></code> the planning process will use rejection
+<p>By enforcing <code class="docutils literal notranslate"><span class="pre">joint</span> <span class="pre">space</span></code> the planning process will use rejection
 sampling to find valid requests. Please note that this might
 increase planning time considerably.</p>
 <p>We will reuse the old goal that we had and plan to it.
 Note that this will only work if the current state already
 satisfies the path constraints. So we need to set the start
 state to a new pose.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">moveit</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">RobotState</span> <span class="n">start_state</span><span class="p">(</span><span class="o">*</span><span class="n">move_group</span><span class="p">.</span><span class="n">getCurrentState</span><span class="p">());</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">moveit</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">RobotState</span> <span class="n">start_state</span><span class="p">(</span><span class="o">*</span><span class="n">move_group_interface</span><span class="p">.</span><span class="n">getCurrentState</span><span class="p">());</span>
 <span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Pose</span> <span class="n">start_pose2</span><span class="p">;</span>
 <span class="n">start_pose2</span><span class="p">.</span><span class="n">orientation</span><span class="p">.</span><span class="n">w</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">;</span>
 <span class="n">start_pose2</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">0.55</span><span class="p">;</span>
 <span class="n">start_pose2</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.05</span><span class="p">;</span>
 <span class="n">start_pose2</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="mf">0.8</span><span class="p">;</span>
 <span class="n">start_state</span><span class="p">.</span><span class="n">setFromIK</span><span class="p">(</span><span class="n">joint_model_group</span><span class="p">,</span> <span class="n">start_pose2</span><span class="p">);</span>
-<span class="n">move_group</span><span class="p">.</span><span class="n">setStartState</span><span class="p">(</span><span class="n">start_state</span><span class="p">);</span>
+<span class="n">move_group_interface</span><span class="p">.</span><span class="n">setStartState</span><span class="p">(</span><span class="n">start_state</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Now we will plan to the earlier pose target from the new
 start state that we have just created.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">move_group</span><span class="p">.</span><span class="n">setPoseTarget</span><span class="p">(</span><span class="n">target_pose1</span><span class="p">);</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">move_group_interface</span><span class="p">.</span><span class="n">setPoseTarget</span><span class="p">(</span><span class="n">target_pose1</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Planning with constraints can be slow because every sample must call an inverse kinematics solver.
 Lets increase the planning time from the default 5 seconds to be sure the planner has enough time to succeed.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">move_group</span><span class="p">.</span><span class="n">setPlanningTime</span><span class="p">(</span><span class="mf">10.0</span><span class="p">);</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">move_group_interface</span><span class="p">.</span><span class="n">setPlanningTime</span><span class="p">(</span><span class="mf">10.0</span><span class="p">);</span>
 
-<span class="n">success</span> <span class="o">=</span> <span class="p">(</span><span class="n">move_group</span><span class="p">.</span><span class="n">plan</span><span class="p">(</span><span class="n">my_plan</span><span class="p">)</span> <span class="o">==</span> <span class="n">moveit</span><span class="o">::</span><span class="n">planning_interface</span><span class="o">::</span><span class="n">MoveItErrorCode</span><span class="o">::</span><span class="n">SUCCESS</span><span class="p">);</span>
+<span class="n">success</span> <span class="o">=</span> <span class="p">(</span><span class="n">move_group_interface</span><span class="p">.</span><span class="n">plan</span><span class="p">(</span><span class="n">my_plan</span><span class="p">)</span> <span class="o">==</span> <span class="n">moveit</span><span class="o">::</span><span class="n">planning_interface</span><span class="o">::</span><span class="n">MoveItErrorCode</span><span class="o">::</span><span class="n">SUCCESS</span><span class="p">);</span>
 <span class="n">ROS_INFO_NAMED</span><span class="p">(</span><span class="s">&quot;tutorial&quot;</span><span class="p">,</span> <span class="s">&quot;Visualizing plan 3 (constraints) %s&quot;</span><span class="p">,</span> <span class="n">success</span> <span class="o">?</span> <span class="s">&quot;&quot;</span> <span class="o">:</span> <span class="s">&quot;FAILED&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Visualize the plan in RViz</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">visual_tools</span><span class="p">.</span><span class="n">deleteAllMarkers</span><span class="p">();</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">visual_tools</span><span class="p">.</span><span class="n">deleteAllMarkers</span><span class="p">();</span>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">publishAxisLabeled</span><span class="p">(</span><span class="n">start_pose2</span><span class="p">,</span> <span class="s">&quot;start&quot;</span><span class="p">);</span>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">publishAxisLabeled</span><span class="p">(</span><span class="n">target_pose1</span><span class="p">,</span> <span class="s">&quot;goal&quot;</span><span class="p">);</span>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">publishText</span><span class="p">(</span><span class="n">text_pose</span><span class="p">,</span> <span class="s">&quot;Constrained Goal&quot;</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">WHITE</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">XLARGE</span><span class="p">);</span>
@@ -1076,7 +1134,7 @@ Lets increase the planning time from the default 5 seconds to be sure the planne
 </pre></div>
 </div>
 <p>When done with the path constraint be sure to clear it.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">move_group</span><span class="p">.</span><span class="n">clearPathConstraints</span><span class="p">();</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">move_group_interface</span><span class="p">.</span><span class="n">clearPathConstraints</span><span class="p">();</span>
 </pre></div>
 </div>
 </div>
@@ -1086,7 +1144,7 @@ Lets increase the planning time from the default 5 seconds to be sure the planne
 for the end-effector to go through. Note that we are starting
 from the new start state above.  The initial pose (start state) does not
 need to be added to the waypoint list but adding it can help with visualizations</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Pose</span><span class="o">&gt;</span> <span class="n">waypoints</span><span class="p">;</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Pose</span><span class="o">&gt;</span> <span class="n">waypoints</span><span class="p">;</span>
 <span class="n">waypoints</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">start_pose2</span><span class="p">);</span>
 
 <span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Pose</span> <span class="n">target_pose3</span> <span class="o">=</span> <span class="n">start_pose2</span><span class="p">;</span>
@@ -1108,15 +1166,15 @@ which is why we will specify 0.01 as the max step in Cartesian
 translation.  We will specify the jump threshold as 0.0, effectively disabling it.
 Warning - disabling the jump threshold while operating real hardware can cause
 large unpredictable motions of redundant joints and could be a safety issue</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">moveit_msgs</span><span class="o">::</span><span class="n">RobotTrajectory</span> <span class="n">trajectory</span><span class="p">;</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">moveit_msgs</span><span class="o">::</span><span class="n">RobotTrajectory</span> <span class="n">trajectory</span><span class="p">;</span>
 <span class="k">const</span> <span class="kt">double</span> <span class="n">jump_threshold</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
 <span class="k">const</span> <span class="kt">double</span> <span class="n">eef_step</span> <span class="o">=</span> <span class="mf">0.01</span><span class="p">;</span>
-<span class="kt">double</span> <span class="n">fraction</span> <span class="o">=</span> <span class="n">move_group</span><span class="p">.</span><span class="n">computeCartesianPath</span><span class="p">(</span><span class="n">waypoints</span><span class="p">,</span> <span class="n">eef_step</span><span class="p">,</span> <span class="n">jump_threshold</span><span class="p">,</span> <span class="n">trajectory</span><span class="p">);</span>
+<span class="kt">double</span> <span class="n">fraction</span> <span class="o">=</span> <span class="n">move_group_interface</span><span class="p">.</span><span class="n">computeCartesianPath</span><span class="p">(</span><span class="n">waypoints</span><span class="p">,</span> <span class="n">eef_step</span><span class="p">,</span> <span class="n">jump_threshold</span><span class="p">,</span> <span class="n">trajectory</span><span class="p">);</span>
 <span class="n">ROS_INFO_NAMED</span><span class="p">(</span><span class="s">&quot;tutorial&quot;</span><span class="p">,</span> <span class="s">&quot;Visualizing plan 4 (Cartesian path) (%.2f%% acheived)&quot;</span><span class="p">,</span> <span class="n">fraction</span> <span class="o">*</span> <span class="mf">100.0</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Visualize the plan in RViz</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">visual_tools</span><span class="p">.</span><span class="n">deleteAllMarkers</span><span class="p">();</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">visual_tools</span><span class="p">.</span><span class="n">deleteAllMarkers</span><span class="p">();</span>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">publishText</span><span class="p">(</span><span class="n">text_pose</span><span class="p">,</span> <span class="s">&quot;Cartesian Path&quot;</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">WHITE</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">XLARGE</span><span class="p">);</span>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">publishPath</span><span class="p">(</span><span class="n">waypoints</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">LIME_GREEN</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">SMALL</span><span class="p">);</span>
 <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">waypoints</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
@@ -1130,22 +1188,22 @@ plans cannot currently be set through the maxVelocityScalingFactor, but requires
 the trajectory manually, as described <a class="reference external" href="https://groups.google.com/forum/#!topic/moveit-users/MOoFxy2exT4">here</a>.
 Pull requests are welcome.</p>
 <p>You can execute a trajectory like this.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">move_group</span><span class="p">.</span><span class="n">execute</span><span class="p">(</span><span class="n">trajectory</span><span class="p">);</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">move_group_interface</span><span class="p">.</span><span class="n">execute</span><span class="p">(</span><span class="n">trajectory</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="adding-objects-to-the-environment">
 <h3>Adding objects to the environment<a class="headerlink" href="#adding-objects-to-the-environment" title="Permalink to this headline">¶</a></h3>
-<p>First let&#8217;s plan to another simple goal with no objects in the way.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">move_group</span><span class="p">.</span><span class="n">setStartState</span><span class="p">(</span><span class="o">*</span><span class="n">move_group</span><span class="p">.</span><span class="n">getCurrentState</span><span class="p">());</span>
+<p>First let’s plan to another simple goal with no objects in the way.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">move_group_interface</span><span class="p">.</span><span class="n">setStartState</span><span class="p">(</span><span class="o">*</span><span class="n">move_group_interface</span><span class="p">.</span><span class="n">getCurrentState</span><span class="p">());</span>
 <span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Pose</span> <span class="n">another_pose</span><span class="p">;</span>
 <span class="n">another_pose</span><span class="p">.</span><span class="n">orientation</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">;</span>
 <span class="n">another_pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">0.7</span><span class="p">;</span>
 <span class="n">another_pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
 <span class="n">another_pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="mf">0.59</span><span class="p">;</span>
-<span class="n">move_group</span><span class="p">.</span><span class="n">setPoseTarget</span><span class="p">(</span><span class="n">another_pose</span><span class="p">);</span>
+<span class="n">move_group_interface</span><span class="p">.</span><span class="n">setPoseTarget</span><span class="p">(</span><span class="n">another_pose</span><span class="p">);</span>
 
-<span class="n">success</span> <span class="o">=</span> <span class="p">(</span><span class="n">move_group</span><span class="p">.</span><span class="n">plan</span><span class="p">(</span><span class="n">my_plan</span><span class="p">)</span> <span class="o">==</span> <span class="n">moveit</span><span class="o">::</span><span class="n">planning_interface</span><span class="o">::</span><span class="n">MoveItErrorCode</span><span class="o">::</span><span class="n">SUCCESS</span><span class="p">);</span>
+<span class="n">success</span> <span class="o">=</span> <span class="p">(</span><span class="n">move_group_interface</span><span class="p">.</span><span class="n">plan</span><span class="p">(</span><span class="n">my_plan</span><span class="p">)</span> <span class="o">==</span> <span class="n">moveit</span><span class="o">::</span><span class="n">planning_interface</span><span class="o">::</span><span class="n">MoveItErrorCode</span><span class="o">::</span><span class="n">SUCCESS</span><span class="p">);</span>
 <span class="n">ROS_INFO_NAMED</span><span class="p">(</span><span class="s">&quot;tutorial&quot;</span><span class="p">,</span> <span class="s">&quot;Visualizing plan 5 (with no obstacles) %s&quot;</span><span class="p">,</span> <span class="n">success</span> <span class="o">?</span> <span class="s">&quot;&quot;</span> <span class="o">:</span> <span class="s">&quot;FAILED&quot;</span><span class="p">);</span>
 
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">deleteAllMarkers</span><span class="p">();</span>
@@ -1157,17 +1215,17 @@ Pull requests are welcome.</p>
 </div>
 <p>The result may look like this:</p>
 <img alt="animation showing the arm moving relatively straight toward the goal" src="../../_images/move_group_interface_tutorial_clear_path.gif" />
-<p>Now let&#8217;s define a collision object ROS message for the robot to avoid.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">moveit_msgs</span><span class="o">::</span><span class="n">CollisionObject</span> <span class="n">collision_object</span><span class="p">;</span>
-<span class="n">collision_object</span><span class="p">.</span><span class="n">header</span><span class="p">.</span><span class="n">frame_id</span> <span class="o">=</span> <span class="n">move_group</span><span class="p">.</span><span class="n">getPlanningFrame</span><span class="p">();</span>
+<p>Now let’s define a collision object ROS message for the robot to avoid.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">moveit_msgs</span><span class="o">::</span><span class="n">CollisionObject</span> <span class="n">collision_object</span><span class="p">;</span>
+<span class="n">collision_object</span><span class="p">.</span><span class="n">header</span><span class="p">.</span><span class="n">frame_id</span> <span class="o">=</span> <span class="n">move_group_interface</span><span class="p">.</span><span class="n">getPlanningFrame</span><span class="p">();</span>
 </pre></div>
 </div>
 <p>The id of the object is used to identify it.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">collision_object</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="s">&quot;box1&quot;</span><span class="p">;</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">collision_object</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="s">&quot;box1&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
 <p>Define a box to add to the world.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">shape_msgs</span><span class="o">::</span><span class="n">SolidPrimitive</span> <span class="n">primitive</span><span class="p">;</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">shape_msgs</span><span class="o">::</span><span class="n">SolidPrimitive</span> <span class="n">primitive</span><span class="p">;</span>
 <span class="n">primitive</span><span class="p">.</span><span class="n">type</span> <span class="o">=</span> <span class="n">primitive</span><span class="p">.</span><span class="n">BOX</span><span class="p">;</span>
 <span class="n">primitive</span><span class="p">.</span><span class="n">dimensions</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
 <span class="n">primitive</span><span class="p">.</span><span class="n">dimensions</span><span class="p">[</span><span class="n">primitive</span><span class="p">.</span><span class="n">BOX_X</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">;</span>
@@ -1176,7 +1234,7 @@ Pull requests are welcome.</p>
 </pre></div>
 </div>
 <p>Define a pose for the box (specified relative to frame_id)</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Pose</span> <span class="n">box_pose</span><span class="p">;</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Pose</span> <span class="n">box_pose</span><span class="p">;</span>
 <span class="n">box_pose</span><span class="p">.</span><span class="n">orientation</span><span class="p">.</span><span class="n">w</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">;</span>
 <span class="n">box_pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">;</span>
 <span class="n">box_pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
@@ -1190,20 +1248,20 @@ Pull requests are welcome.</p>
 <span class="n">collision_objects</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">collision_object</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>Now, let&#8217;s add the collision object into the world
+<p>Now, let’s add the collision object into the world
 (using a vector that could contain additional objects)</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">ROS_INFO_NAMED</span><span class="p">(</span><span class="s">&quot;tutorial&quot;</span><span class="p">,</span> <span class="s">&quot;Add an object into the world&quot;</span><span class="p">);</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">ROS_INFO_NAMED</span><span class="p">(</span><span class="s">&quot;tutorial&quot;</span><span class="p">,</span> <span class="s">&quot;Add an object into the world&quot;</span><span class="p">);</span>
 <span class="n">planning_scene_interface</span><span class="p">.</span><span class="n">addCollisionObjects</span><span class="p">(</span><span class="n">collision_objects</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Show text in RViz of status and wait for MoveGroup to receive and process the collision object message</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">visual_tools</span><span class="p">.</span><span class="n">publishText</span><span class="p">(</span><span class="n">text_pose</span><span class="p">,</span> <span class="s">&quot;Add object&quot;</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">WHITE</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">XLARGE</span><span class="p">);</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">visual_tools</span><span class="p">.</span><span class="n">publishText</span><span class="p">(</span><span class="n">text_pose</span><span class="p">,</span> <span class="s">&quot;Add object&quot;</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">WHITE</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">XLARGE</span><span class="p">);</span>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">trigger</span><span class="p">();</span>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">prompt</span><span class="p">(</span><span class="s">&quot;Press &#39;next&#39; in the RvizVisualToolsGui window to once the collision object appears in RViz&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Now when we plan a trajectory it will avoid the obstacle</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">success</span> <span class="o">=</span> <span class="p">(</span><span class="n">move_group</span><span class="p">.</span><span class="n">plan</span><span class="p">(</span><span class="n">my_plan</span><span class="p">)</span> <span class="o">==</span> <span class="n">moveit</span><span class="o">::</span><span class="n">planning_interface</span><span class="o">::</span><span class="n">MoveItErrorCode</span><span class="o">::</span><span class="n">SUCCESS</span><span class="p">);</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">success</span> <span class="o">=</span> <span class="p">(</span><span class="n">move_group_interface</span><span class="p">.</span><span class="n">plan</span><span class="p">(</span><span class="n">my_plan</span><span class="p">)</span> <span class="o">==</span> <span class="n">moveit</span><span class="o">::</span><span class="n">planning_interface</span><span class="o">::</span><span class="n">MoveItErrorCode</span><span class="o">::</span><span class="n">SUCCESS</span><span class="p">);</span>
 <span class="n">ROS_INFO_NAMED</span><span class="p">(</span><span class="s">&quot;tutorial&quot;</span><span class="p">,</span> <span class="s">&quot;Visualizing plan 6 (pose goal move around cuboid) %s&quot;</span><span class="p">,</span> <span class="n">success</span> <span class="o">?</span> <span class="s">&quot;&quot;</span> <span class="o">:</span> <span class="s">&quot;FAILED&quot;</span><span class="p">);</span>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">publishText</span><span class="p">(</span><span class="n">text_pose</span><span class="p">,</span> <span class="s">&quot;Obstacle Goal&quot;</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">WHITE</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">XLARGE</span><span class="p">);</span>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">publishTrajectoryLine</span><span class="p">(</span><span class="n">my_plan</span><span class="p">.</span><span class="n">trajectory_</span><span class="p">,</span> <span class="n">joint_model_group</span><span class="p">);</span>
@@ -1219,7 +1277,7 @@ Pull requests are welcome.</p>
 <p>You can attach objects to the robot, so that it moves with the robot geometry.
 This simulates picking up the object for the purpose of manipulating it.
 The motion planning should avoid collisions between the two objects as well.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">moveit_msgs</span><span class="o">::</span><span class="n">CollisionObject</span> <span class="n">object_to_attach</span><span class="p">;</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">moveit_msgs</span><span class="o">::</span><span class="n">CollisionObject</span> <span class="n">object_to_attach</span><span class="p">;</span>
 <span class="n">object_to_attach</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="s">&quot;cylinder1&quot;</span><span class="p">;</span>
 
 <span class="n">shape_msgs</span><span class="o">::</span><span class="n">SolidPrimitive</span> <span class="n">cylinder_primitive</span><span class="p">;</span>
@@ -1230,23 +1288,23 @@ The motion planning should avoid collisions between the two objects as well.</p>
 </pre></div>
 </div>
 <p>We define the frame/pose for this cylinder so that it appears in the gripper</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">object_to_attach</span><span class="p">.</span><span class="n">header</span><span class="p">.</span><span class="n">frame_id</span> <span class="o">=</span> <span class="n">move_group</span><span class="p">.</span><span class="n">getEndEffectorLink</span><span class="p">();</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">object_to_attach</span><span class="p">.</span><span class="n">header</span><span class="p">.</span><span class="n">frame_id</span> <span class="o">=</span> <span class="n">move_group_interface</span><span class="p">.</span><span class="n">getEndEffectorLink</span><span class="p">();</span>
 <span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Pose</span> <span class="n">grab_pose</span><span class="p">;</span>
 <span class="n">grab_pose</span><span class="p">.</span><span class="n">orientation</span><span class="p">.</span><span class="n">w</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">;</span>
 <span class="n">grab_pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">;</span>
 </pre></div>
 </div>
 <p>First, we add the object to the world (without using a vector)</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">object_to_attach</span><span class="p">.</span><span class="n">primitives</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">cylinder_primitive</span><span class="p">);</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">object_to_attach</span><span class="p">.</span><span class="n">primitives</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">cylinder_primitive</span><span class="p">);</span>
 <span class="n">object_to_attach</span><span class="p">.</span><span class="n">primitive_poses</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">grab_pose</span><span class="p">);</span>
 <span class="n">object_to_attach</span><span class="p">.</span><span class="n">operation</span> <span class="o">=</span> <span class="n">object_to_attach</span><span class="p">.</span><span class="n">ADD</span><span class="p">;</span>
 <span class="n">planning_scene_interface</span><span class="p">.</span><span class="n">applyCollisionObject</span><span class="p">(</span><span class="n">object_to_attach</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>Then, we &#8220;attach&#8221; the object to the robot. It uses the frame_id to determine which robot link it is attached to.
+<p>Then, we “attach” the object to the robot. It uses the frame_id to determine which robot link it is attached to.
 You could also use applyAttachedCollisionObject to attach an object to the robot directly.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">ROS_INFO_NAMED</span><span class="p">(</span><span class="s">&quot;tutorial&quot;</span><span class="p">,</span> <span class="s">&quot;Attach the object to the robot&quot;</span><span class="p">);</span>
-<span class="n">move_group</span><span class="p">.</span><span class="n">attachObject</span><span class="p">(</span><span class="n">object_to_attach</span><span class="p">.</span><span class="n">id</span><span class="p">,</span> <span class="s">&quot;panda_hand&quot;</span><span class="p">);</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">ROS_INFO_NAMED</span><span class="p">(</span><span class="s">&quot;tutorial&quot;</span><span class="p">,</span> <span class="s">&quot;Attach the object to the robot&quot;</span><span class="p">);</span>
+<span class="n">move_group_interface</span><span class="p">.</span><span class="n">attachObject</span><span class="p">(</span><span class="n">object_to_attach</span><span class="p">.</span><span class="n">id</span><span class="p">,</span> <span class="s">&quot;panda_hand&quot;</span><span class="p">);</span>
 
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">publishText</span><span class="p">(</span><span class="n">text_pose</span><span class="p">,</span> <span class="s">&quot;Object attached to robot&quot;</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">WHITE</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">XLARGE</span><span class="p">);</span>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">trigger</span><span class="p">();</span>
@@ -1256,8 +1314,8 @@ You could also use applyAttachedCollisionObject to attach an object to the robot
 </pre></div>
 </div>
 <p>Replan, but now with the object in hand.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">move_group</span><span class="p">.</span><span class="n">setStartStateToCurrentState</span><span class="p">();</span>
-<span class="n">success</span> <span class="o">=</span> <span class="p">(</span><span class="n">move_group</span><span class="p">.</span><span class="n">plan</span><span class="p">(</span><span class="n">my_plan</span><span class="p">)</span> <span class="o">==</span> <span class="n">moveit</span><span class="o">::</span><span class="n">planning_interface</span><span class="o">::</span><span class="n">MoveItErrorCode</span><span class="o">::</span><span class="n">SUCCESS</span><span class="p">);</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">move_group_interface</span><span class="p">.</span><span class="n">setStartStateToCurrentState</span><span class="p">();</span>
+<span class="n">success</span> <span class="o">=</span> <span class="p">(</span><span class="n">move_group_interface</span><span class="p">.</span><span class="n">plan</span><span class="p">(</span><span class="n">my_plan</span><span class="p">)</span> <span class="o">==</span> <span class="n">moveit</span><span class="o">::</span><span class="n">planning_interface</span><span class="o">::</span><span class="n">MoveItErrorCode</span><span class="o">::</span><span class="n">SUCCESS</span><span class="p">);</span>
 <span class="n">ROS_INFO_NAMED</span><span class="p">(</span><span class="s">&quot;tutorial&quot;</span><span class="p">,</span> <span class="s">&quot;Visualizing plan 7 (move around cuboid with cylinder) %s&quot;</span><span class="p">,</span> <span class="n">success</span> <span class="o">?</span> <span class="s">&quot;&quot;</span> <span class="o">:</span> <span class="s">&quot;FAILED&quot;</span><span class="p">);</span>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">publishTrajectoryLine</span><span class="p">(</span><span class="n">my_plan</span><span class="p">.</span><span class="n">trajectory_</span><span class="p">,</span> <span class="n">joint_model_group</span><span class="p">);</span>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">trigger</span><span class="p">();</span>
@@ -1269,13 +1327,13 @@ You could also use applyAttachedCollisionObject to attach an object to the robot
 </div>
 <div class="section" id="detaching-and-removing-objects">
 <h3>Detaching and Removing Objects<a class="headerlink" href="#detaching-and-removing-objects" title="Permalink to this headline">¶</a></h3>
-<p>Now, let&#8217;s detach the cylinder from the robot&#8217;s gripper.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">ROS_INFO_NAMED</span><span class="p">(</span><span class="s">&quot;tutorial&quot;</span><span class="p">,</span> <span class="s">&quot;Detach the object from the robot&quot;</span><span class="p">);</span>
-<span class="n">move_group</span><span class="p">.</span><span class="n">detachObject</span><span class="p">(</span><span class="n">object_to_attach</span><span class="p">.</span><span class="n">id</span><span class="p">);</span>
+<p>Now, let’s detach the cylinder from the robot’s gripper.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">ROS_INFO_NAMED</span><span class="p">(</span><span class="s">&quot;tutorial&quot;</span><span class="p">,</span> <span class="s">&quot;Detach the object from the robot&quot;</span><span class="p">);</span>
+<span class="n">move_group_interface</span><span class="p">.</span><span class="n">detachObject</span><span class="p">(</span><span class="n">object_to_attach</span><span class="p">.</span><span class="n">id</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Show text in RViz of status</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">visual_tools</span><span class="p">.</span><span class="n">deleteAllMarkers</span><span class="p">();</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">visual_tools</span><span class="p">.</span><span class="n">deleteAllMarkers</span><span class="p">();</span>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">publishText</span><span class="p">(</span><span class="n">text_pose</span><span class="p">,</span> <span class="s">&quot;Object detached from robot&quot;</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">WHITE</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">XLARGE</span><span class="p">);</span>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">trigger</span><span class="p">();</span>
 
@@ -1283,8 +1341,8 @@ You could also use applyAttachedCollisionObject to attach an object to the robot
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">prompt</span><span class="p">(</span><span class="s">&quot;Press &#39;next&#39; in the RvizVisualToolsGui window once the new object is detached from the robot&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>Now, let&#8217;s remove the objects from the world.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">ROS_INFO_NAMED</span><span class="p">(</span><span class="s">&quot;tutorial&quot;</span><span class="p">,</span> <span class="s">&quot;Remove the objects from the world&quot;</span><span class="p">);</span>
+<p>Now, let’s remove the objects from the world.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">ROS_INFO_NAMED</span><span class="p">(</span><span class="s">&quot;tutorial&quot;</span><span class="p">,</span> <span class="s">&quot;Remove the objects from the world&quot;</span><span class="p">);</span>
 <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">object_ids</span><span class="p">;</span>
 <span class="n">object_ids</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">collision_object</span><span class="p">.</span><span class="n">id</span><span class="p">);</span>
 <span class="n">object_ids</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">object_to_attach</span><span class="p">.</span><span class="n">id</span><span class="p">);</span>
@@ -1292,7 +1350,7 @@ You could also use applyAttachedCollisionObject to attach an object to the robot
 </pre></div>
 </div>
 <p>Show text in RViz of status</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">visual_tools</span><span class="p">.</span><span class="n">publishText</span><span class="p">(</span><span class="n">text_pose</span><span class="p">,</span> <span class="s">&quot;Objects removed&quot;</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">WHITE</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">XLARGE</span><span class="p">);</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">visual_tools</span><span class="p">.</span><span class="n">publishText</span><span class="p">(</span><span class="n">text_pose</span><span class="p">,</span> <span class="s">&quot;Objects removed&quot;</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">WHITE</span><span class="p">,</span> <span class="n">rvt</span><span class="o">::</span><span class="n">XLARGE</span><span class="p">);</span>
 <span class="n">visual_tools</span><span class="p">.</span><span class="n">trigger</span><span class="p">();</span>
 
 <span class="cm">/* Wait for MoveGroup to receive and process the attached collision object message */</span>
@@ -1307,7 +1365,7 @@ You could also use applyAttachedCollisionObject to attach an object to the robot
 </div>
 <div class="section" id="a-note-on-setting-tolerances">
 <h2>A Note on Setting Tolerances<a class="headerlink" href="#a-note-on-setting-tolerances" title="Permalink to this headline">¶</a></h2>
-<p>Note that the <a class="reference external" href="http://docs.ros.org/noetic/api/moveit_ros_planning_interface/html/classmoveit_1_1planning__interface_1_1MoveGroupInterface.html">MoveGroupInterface&#8217;s</a> <cite>setGoalTolerance()</cite> and related methods sets the tolerance for <strong>planning</strong>, not execution.</p>
+<p>Note that the <a class="reference external" href="http://docs.ros.org/noetic/api/moveit_ros_planning_interface/html/classmoveit_1_1planning__interface_1_1MoveGroupInterface.html">MoveGroupInterface’s</a> <cite>setGoalTolerance()</cite> and related methods sets the tolerance for <strong>planning</strong>, not execution.</p>
 <p>If you want to configure the execution tolerances, you will have to edit the <cite>controller.yaml</cite> file if using a FollowJointTrajectory controller, or manually add it into the generated trajectory message from the planner.</p>
 </div>
 </div>
@@ -1347,7 +1405,7 @@ You could also use applyAttachedCollisionObject to attach an object to the robot
 
     </section>
   </div>
-  
+
   
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
@@ -1361,6 +1419,7 @@ You could also use applyAttachedCollisionObject to attach an object to the robot
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/language_data.js"></script>
 
   
 

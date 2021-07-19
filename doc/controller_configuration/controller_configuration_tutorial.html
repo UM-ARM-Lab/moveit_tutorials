@@ -34,6 +34,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="moveit_tutorials Noetic documentation" href="../../index.html"/>
         <link rel="next" title="Perception Pipeline Tutorial" href="../perception_pipeline/perception_pipeline_tutorial.html"/>
         <link rel="prev" title="URDF and SRDF" href="../urdf_srdf/urdf_srdf_tutorial.html"/> 
@@ -65,18 +68,18 @@
         <a href="http://moveit.ros.org">
           <img src="../../_static/logo.png"/>
         </a>
-        
+
         <div class="version">
-          <div class="version-dropdown">
-            <lable for="version-list">Version:</lable>
-          <select class="version-list" id="version-list" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-              <option value=''>Noetic</option>
-              <option value="http://docs.ros.org/en/melodic/api/moveit_tutorials/html/index.html">Melodic</option>
-              <option value="http://docs.ros.org/en/kinetic/api/moveit_tutorials/html/index.html">Kinetic</option>
-              <option value="http://docs.ros.org/en/indigo/api/moveit_tutorials/html/index.html">Indigo (EOL)</option>
-          </select>
-          </div>
-        </div><br>
+    <div class="version-dropdown">
+        <lable for="version-list">Version:</lable>
+    <select class="version-list" id="version-list" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+        <option value="http://moveit2_tutorials.picknik.ai">Moveit 2 - Foxy</option>
+        <option value='' selected>MoveIt 1 - Noetic</option>
+        <option value="http://docs.ros.org/en/melodic/api/moveit_tutorials/html/index.html">MoveIt 1 - Melodic</option>
+        <option value="http://docs.ros.org/en/kinetic/api/moveit_tutorials/html/index.html">MoveIt 1 - Kinetic</option>
+    </select>
+    </div>
+</div><br>
         
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -113,6 +116,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#step-4-use-motion-planning-with-the-panda">Step 4: Use Motion Planning with the Panda</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#choosing-specific-start-goal-states">Choosing Specific Start/Goal States</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#introspecting-trajectory-waypoints">Introspecting Trajectory Waypoints</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#plan-cartesian-motions">Plan Cartesian motions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#executing-trajectories-adjusting-speed">Executing Trajectories, Adjusting Speed</a></li>
@@ -346,7 +350,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../pick_place/pick_place_tutorial.html">Pick and Place</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#running-the-demo">Running The Demo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#understanding-moveit-msgs-grasp">Understanding <code class="docutils literal"><span class="pre">moveit_msgs::Grasp</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#understanding-moveit-msgs-grasp">Understanding <code class="docutils literal notranslate"><span class="pre">moveit_msgs::Grasp</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#the-entire-code">The Entire Code</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#creating-environment">Creating Environment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#pick-pipeline">Pick Pipeline</a><ul>
@@ -461,6 +465,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../bullet_collision_checker/bullet_collision_checker.html#launch-file">Launch file</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html">Mesh Filter with UR5 and Kinect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#running-the-demo">Running the Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#how-to-add-sensor-to-arm-in-simulation">How to add sensor to arm in simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#references">References</a></li>
+</ul>
+</li>
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html">MoveIt Setup Assistant</a><ul>
@@ -478,7 +489,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-10-ros-control">Step 10: ROS Control</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-11-add-author-information">Step 11: Add Author Information</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-12-generate-configuration-files">Step 12: Generate Configuration Files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#what-s-next">What&#8217;s Next</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#what-s-next">What’s Next</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#additional-reading">Additional Reading</a></li>
 </ul>
 </li>
@@ -513,7 +524,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Low Level Controllers</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Low Level Controllers</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#yaml-configuration">YAML Configuration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#followjointtrajectory-controller-interface">FollowJointTrajectory Controller Interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#grippercommand-controller-interface">GripperCommand Controller Interface</a></li>
@@ -591,6 +602,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../trac_ik/trac_ik_tutorial.html#usage">Usage</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html">OPW Kinematics Solver for Industrial Manipulators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#intro">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#sharing-opw-descriptions">Sharing OPW descriptions</a></li>
+</ul>
+</li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html">Kinematics Configuration</a><ul>
@@ -598,6 +617,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#parameters">Parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-kdl-kinematics-plugin">The KDL Kinematics Plugin</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-lma-kinematics-plugin">The LMA Kinematics Plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-cached-ik-plugin">The Cached IK Plugin</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#position-only-ik">Position Only IK</a></li>
@@ -607,6 +627,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#creating-a-constraint-sampler">Creating a constraint sampler</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../planning_constraints/planning_constraints.html">Representation and Evaluation of Constraints</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../planning_constraints/planning_constraints.html#see-also">See Also</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../ompl_interface/ompl_interface_tutorial.html">OMPL Planner</a><ul>
@@ -668,18 +692,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#cartesian-limits">Cartesian Limits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-interface">Planning Interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-ptp-motion-command">The PTP motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#input-parameters-in-moveit-msgs-motionplanrequest">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-results-in-moveit-msg-motionplanresponse">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#input-parameters-in-moveit-msgs-motionplanrequest">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-results-in-moveit-msg-motionplanresponse">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-lin-motion-command">The LIN motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id1">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id2">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id1">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id2">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-circ-motion-command">The CIRC motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id3">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id4">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id3">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id4">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#example">Example</a></li>
@@ -688,7 +712,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#sequence-of-multiple-segments">Sequence of multiple segments</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#user-interface-sequence-capability">User interface sequence capability</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#restrictions-for-motionsequencerequest">Restrictions for <code class="docutils literal"><span class="pre">MotionSequenceRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#restrictions-for-motionsequencerequest">Restrictions for <code class="docutils literal notranslate"><span class="pre">MotionSequenceRequest</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#action-interface">Action interface</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#service-interface">Service interface</a></li>
 </ul>
@@ -711,6 +735,20 @@
 </li>
 </ul>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html">Gazebo Simulation Integration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#after-moveit-setup-assistant">After MoveIt Setup Assistant</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#fix-the-robot-to-the-world-coordinate-system">1. Fix the robot to the world coordinate system</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-damping-to-the-joint-specifications">2. Add damping to the joint specifications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-inertia-matrices-and-masses-to-the-links">3. Add inertia matrices and masses to the links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-friction-and-colorize-the-links">4. Add friction and colorize the links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#configure-gazebo-ros-control-transmissions-and-actuators">5. Configure gazebo_ros_control, transmissions and actuators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#adjust-auto-generated-ros-controllers-yaml">6. Adjust auto-generated ros_controllers.yaml</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#adjust-auto-generated-ros-controllers-launch-in-the-panda-moveit-config-package">7. Adjust auto-generated <code class="code docutils literal notranslate"><span class="pre">ros_controllers.launch</span></code> in the <code class="code docutils literal notranslate"><span class="pre">panda_moveit_config</span></code> package.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#change-the-way-robot-description-is-loaded-to-parameter-server">8. Change the way <code class="code docutils literal notranslate"><span class="pre">robot_description</span></code> is loaded to Parameter Server.</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html">Joystick Control Teleoperation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html#running-the-code">Running the Code</a></li>
@@ -753,6 +791,19 @@
 <li class="toctree-l2"><a class="reference internal" href="../tests/tests_tutorial.html#code-coverage">Code Coverage</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html">Debugging Tests</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#ci-failures">CI Failures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#launch-docker-environment">Launch Docker Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#setup-environment">Setup Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#checkout-code">Checkout Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#install-dependencies">Install Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#configure-and-build">Configure and Build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#build-the-tests">Build the Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#run-the-tests">Run the Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#run-one-test">Run One Test</a></li>
+</ul>
+</li>
 </ul>
 
           
@@ -789,7 +840,8 @@
   <br />
 <div class="admonition note">
 <p class="first admonition-title">Tutorials Version: Noetic</p>
-<p class="last">This is the latest version, which is actively developed and best for beginners. If you are still running a Melodic release, please use the <a class="reference external" href="http://docs.ros.org/melodic/api/moveit_tutorials/html/index.html">Melodic tutorials</a>.</p>
+<p class="last">This is the latest (and last) version of MoveIt 1 for ROS Noetic, which is still actively developed. See also <a class="reference external" href="http://moveit2_tutorials.picknik.ai/">MoveIt 2 tutorials</a> and other available versions in drop down box on left.
+</p>
 </div>
   <hr/>
 </div>
@@ -803,31 +855,31 @@
   <div class="section" id="low-level-controllers">
 <h1>Low Level Controllers<a class="headerlink" href="#low-level-controllers" title="Permalink to this headline">¶</a></h1>
 <p>MoveIt has access to many different controllers through a plugin interface inside the <a class="reference external" href="https://github.com/ros-planning/moveit/tree/master/moveit_plugins/moveit_ros_control_interface">MoveItControllerHandler</a> class. The MoveItControllerManager class is one of the options that is used to interact with a single ros_control node. MoveItControllerManager reads what controller(s) to use from a controllers.yaml file.</p>
-<p>Here we will walk through configuring MoveIt with the controllers on your robot. We will assume that your robot offers a <code class="docutils literal"><span class="pre">FollowJointTrajectory</span></code> action service for the arms on your robot and (optionally) a <code class="docutils literal"><span class="pre">GripperCommand</span></code> service for your gripper. If your robot does not offer this we recommend the <a class="reference external" href="http://wiki.ros.org/ros_control">ROS control</a> framework for easily adding this functionality around your hardware communication layer.</p>
+<p>Here we will walk through configuring MoveIt with the controllers on your robot. We will assume that your robot offers a <code class="docutils literal notranslate"><span class="pre">FollowJointTrajectory</span></code> action service for the arms on your robot and (optionally) a <code class="docutils literal notranslate"><span class="pre">GripperCommand</span></code> service for your gripper. If your robot does not offer this we recommend the <a class="reference external" href="http://wiki.ros.org/ros_control">ROS control</a> framework for easily adding this functionality around your hardware communication layer.</p>
 <div class="section" id="yaml-configuration">
 <h2>YAML Configuration<a class="headerlink" href="#yaml-configuration" title="Permalink to this headline">¶</a></h2>
-<p>The <code class="docutils literal"><span class="pre">controllers.yaml</span></code> configuration file is located in the <code class="docutils literal"><span class="pre">robot_moveit_config/config</span></code> directory of your MoveIt robot config package. This specifies the controller configuration for your robot. Here&#8217;s an example file for configuring a <code class="docutils literal"><span class="pre">FollowJointTrajectory</span></code> action controller for the <code class="docutils literal"><span class="pre">panda_arm</span></code> and a <code class="docutils literal"><span class="pre">GripperCommand</span></code> gripper controller for its <code class="docutils literal"><span class="pre">hand</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre>controller_list:
- - name: panda_arm_controller
-   action_ns: follow_joint_trajectory
-   type: FollowJointTrajectory
-   default: true
-   joints:
-     - panda_joint1
-     - panda_joint2
-     - panda_joint3
-     - panda_joint4
-     - panda_joint5
-     - panda_joint6
-     - panda_joint7
- - name: hand_controller
-   action_ns: gripper_action
-   type: GripperCommand
-   default: true
-   parallel: true
-   joints:
-     - panda_finger_joint1
-     - panda_finger_joint2
+<p>The <code class="docutils literal notranslate"><span class="pre">controllers.yaml</span></code> configuration file is located in the <code class="docutils literal notranslate"><span class="pre">robot_moveit_config/config</span></code> directory of your MoveIt robot config package. This specifies the controller configuration for your robot. Here’s an example file for configuring a <code class="docutils literal notranslate"><span class="pre">FollowJointTrajectory</span></code> action controller for the <code class="docutils literal notranslate"><span class="pre">panda_arm</span></code> and a <code class="docutils literal notranslate"><span class="pre">GripperCommand</span></code> gripper controller for its <code class="docutils literal notranslate"><span class="pre">hand</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">controller_list</span><span class="p">:</span>
+ <span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">panda_arm_controller</span>
+   <span class="n">action_ns</span><span class="p">:</span> <span class="n">follow_joint_trajectory</span>
+   <span class="nb">type</span><span class="p">:</span> <span class="n">FollowJointTrajectory</span>
+   <span class="n">default</span><span class="p">:</span> <span class="n">true</span>
+   <span class="n">joints</span><span class="p">:</span>
+     <span class="o">-</span> <span class="n">panda_joint1</span>
+     <span class="o">-</span> <span class="n">panda_joint2</span>
+     <span class="o">-</span> <span class="n">panda_joint3</span>
+     <span class="o">-</span> <span class="n">panda_joint4</span>
+     <span class="o">-</span> <span class="n">panda_joint5</span>
+     <span class="o">-</span> <span class="n">panda_joint6</span>
+     <span class="o">-</span> <span class="n">panda_joint7</span>
+ <span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">hand_controller</span>
+   <span class="n">action_ns</span><span class="p">:</span> <span class="n">gripper_action</span>
+   <span class="nb">type</span><span class="p">:</span> <span class="n">GripperCommand</span>
+   <span class="n">default</span><span class="p">:</span> <span class="n">true</span>
+   <span class="n">parallel</span><span class="p">:</span> <span class="n">true</span>
+   <span class="n">joints</span><span class="p">:</span>
+     <span class="o">-</span> <span class="n">panda_finger_joint1</span>
+     <span class="o">-</span> <span class="n">panda_finger_joint2</span>
 </pre></div>
 </div>
 <p>There are many different parameters that can be used for different types of controllers.</p>
@@ -865,20 +917,20 @@
 <div class="section" id="optional-allowed-trajectory-execution-duration-parameters">
 <h2>Optional Allowed Trajectory Execution Duration Parameters<a class="headerlink" href="#optional-allowed-trajectory-execution-duration-parameters" title="Permalink to this headline">¶</a></h2>
 <p>For each controller it is optionally possible to set the <em>allowed_execution_duration_scaling</em> and <em>allowed_goal_duration_margin</em> parameters. These are controller-specific overrides of the global values <em>trajectory_execution/allowed_execution_duration_scaling</em> and <em>trajectory_execution/allowed_goal_duration_margin</em>. As opposed to the global values, the contoller-specific ones cannot be dynamically reconfigured at runtime. The parameters are used to compute the allowed trajectory execution duration by scaling the expected execution duration and adding the margin afterwards. If this duration is exceeded the trajectory will be cancelled. The controller-specific parameters can be set as follows</p>
-<div class="highlight-python"><div class="highlight"><pre>controller_list:
- - name: arm_controller
-   action_ns: follow_joint_trajectory
-   type: FollowJointTrajectory
-   allowed_execution_duration_scaling: 1.2
-   allowed_goal_duration_margin: 0.5
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">controller_list</span><span class="p">:</span>
+ <span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">arm_controller</span>
+   <span class="n">action_ns</span><span class="p">:</span> <span class="n">follow_joint_trajectory</span>
+   <span class="nb">type</span><span class="p">:</span> <span class="n">FollowJointTrajectory</span>
+   <span class="n">allowed_execution_duration_scaling</span><span class="p">:</span> <span class="mf">1.2</span>
+   <span class="n">allowed_goal_duration_margin</span><span class="p">:</span> <span class="mf">0.5</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="create-the-controller-launch-file">
 <h2>Create the Controller launch file<a class="headerlink" href="#create-the-controller-launch-file" title="Permalink to this headline">¶</a></h2>
-<p>Now, create the controller launch file (call it <code class="docutils literal"><span class="pre">robot_moveit_controller_manager.launch.xml</span></code> where <code class="docutils literal"><span class="pre">robot</span></code> is the name of your robot as specified when you created your MoveIt robot config package).</p>
+<p>Now, create the controller launch file (call it <code class="docutils literal notranslate"><span class="pre">robot_moveit_controller_manager.launch.xml</span></code> where <code class="docutils literal notranslate"><span class="pre">robot</span></code> is the name of your robot as specified when you created your MoveIt robot config package).</p>
 <p>Add the following lines to this file:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;launch&gt;
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;launch&gt;
  &lt;!-- Set the param that trajectory_execution_manager needs to find the controller plugin --&gt;
  &lt;arg name=&quot;moveit_controller_manager&quot; default=&quot;moveit_simple_controller_manager/MoveItSimpleControllerManager&quot; /&gt;
  &lt;param name=&quot;moveit_controller_manager&quot; value=&quot;$(arg moveit_controller_manager)&quot;/&gt;
@@ -887,12 +939,12 @@
 &lt;/launch&gt;
 </pre></div>
 </div>
-<p>MAKE SURE to replace <code class="docutils literal"><span class="pre">robot_moveit_config</span></code> with the correct name of your MoveIt robot config package.</p>
+<p>MAKE SURE to replace <code class="docutils literal notranslate"><span class="pre">robot_moveit_config</span></code> with the correct name of your MoveIt robot config package.</p>
 <p>Now, you should be ready to have MoveIt talk to your robot.</p>
 </div>
 <div class="section" id="debugging-information">
 <h2>Debugging Information<a class="headerlink" href="#debugging-information" title="Permalink to this headline">¶</a></h2>
-<p>The <code class="docutils literal"><span class="pre">FollowJointTrajectory</span></code> or <code class="docutils literal"><span class="pre">GripperCommand</span></code> interfaces on your robot must be communicating in the namespace: <code class="docutils literal"><span class="pre">/name/action_ns</span></code>. In the above example, you should be able to see the following topics (using <em>rostopic list</em>) on your robot:</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">FollowJointTrajectory</span></code> or <code class="docutils literal notranslate"><span class="pre">GripperCommand</span></code> interfaces on your robot must be communicating in the namespace: <code class="docutils literal notranslate"><span class="pre">/name/action_ns</span></code>. In the above example, you should be able to see the following topics (using <em>rostopic list</em>) on your robot:</p>
 <blockquote>
 <div><ul class="simple">
 <li>/panda_arm_controller/follow_joint_trajectory/goal</li>
@@ -903,26 +955,26 @@
 <li>/hand_controller/gripper_action/result</li>
 </ul>
 </div></blockquote>
-<p>You should also be able to see (using <code class="docutils literal"><span class="pre">rostopic</span> <span class="pre">info</span> <span class="pre">topic_name</span></code>) that the topics are published/subscribed to by the controllers on your robot and also by the <strong>move_group</strong> node.</p>
+<p>You should also be able to see (using <code class="docutils literal notranslate"><span class="pre">rostopic</span> <span class="pre">info</span> <span class="pre">topic_name</span></code>) that the topics are published/subscribed to by the controllers on your robot and also by the <strong>move_group</strong> node.</p>
 </div>
 <div class="section" id="remapping-joint-states-topic">
 <h2>Remapping /joint_states topic<a class="headerlink" href="#remapping-joint-states-topic" title="Permalink to this headline">¶</a></h2>
-<p>When you run a <a class="reference external" href="../move_group_interface/move_group_interface_tutorial.html">move group node</a>, you may need to remap the topic /joint_states to /robot/joint_states, otherwise MoveIt won&#8217;t have feedback from the joints. To do this remapping you could make a simple launch file for your node as follows:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;node pkg=&quot;moveit_ros_move_group&quot; type=&quot;move_group&quot; name=&quot;any_name&quot; output=&quot;screen&quot;&gt;
-  &lt;remap from=&quot;joint_states&quot; to=&quot;robot/joint_states&quot;/&gt;
-&lt;/node&gt;
+<p>When you run a <a class="reference external" href="../move_group_interface/move_group_interface_tutorial.html">move group node</a>, you may need to remap the topic /joint_states to /robot/joint_states, otherwise MoveIt won’t have feedback from the joints. To do this remapping you could make a simple launch file for your node as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">node</span> <span class="n">pkg</span><span class="o">=</span><span class="s2">&quot;moveit_ros_move_group&quot;</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;move_group&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;any_name&quot;</span> <span class="n">output</span><span class="o">=</span><span class="s2">&quot;screen&quot;</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">remap</span> <span class="n">from</span><span class="o">=</span><span class="s2">&quot;joint_states&quot;</span> <span class="n">to</span><span class="o">=</span><span class="s2">&quot;robot/joint_states&quot;</span><span class="o">/&gt;</span>
+<span class="o">&lt;/</span><span class="n">node</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Or you can make a subscriber with the correct topic name and then ensure that the starting robot state for your move group corresponds to a correct joints angle by using the call back of this subscriber.</p>
 </div>
 <div class="section" id="trajectory-execution-manager-options">
 <h2>Trajectory Execution Manager Options<a class="headerlink" href="#trajectory-execution-manager-options" title="Permalink to this headline">¶</a></h2>
-<p>There are several options for tuning the behavior and safety checks of the execution pipeline in MoveIt. In your <code class="docutils literal"><span class="pre">moveit_config</span></code> package edit the <code class="docutils literal"><span class="pre">trajectory_execution.launch.xml</span></code> file to change the following parameters:</p>
+<p>There are several options for tuning the behavior and safety checks of the execution pipeline in MoveIt. In your <code class="docutils literal notranslate"><span class="pre">moveit_config</span></code> package edit the <code class="docutils literal notranslate"><span class="pre">trajectory_execution.launch.xml</span></code> file to change the following parameters:</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">execution_duration_monitoring</span></code>: when false, will not throw error is trajectory takes longer than expected to complete at the low-level controller side</li>
-<li><code class="docutils literal"><span class="pre">allowed_goal_duration_margin</span></code>: Allow more than the expected execution time before triggering a trajectory cancel (applied after scaling)</li>
-<li><code class="docutils literal"><span class="pre">allowed_start_tolerance</span></code>: Allowed joint-value tolerance for validation that trajectory&#8217;s first point matches current robot state. If set to zero will skip waiting for robot to stop after execution</li>
+<li><code class="docutils literal notranslate"><span class="pre">execution_duration_monitoring</span></code>: when false, will not throw error is trajectory takes longer than expected to complete at the low-level controller side</li>
+<li><code class="docutils literal notranslate"><span class="pre">allowed_goal_duration_margin</span></code>: Allow more than the expected execution time before triggering a trajectory cancel (applied after scaling)</li>
+<li><code class="docutils literal notranslate"><span class="pre">allowed_start_tolerance</span></code>: Allowed joint-value tolerance for validation that trajectory’s first point matches current robot state. If set to zero will skip waiting for robot to stop after execution</li>
 </ul>
 </div></blockquote>
 </div>
@@ -934,8 +986,8 @@
 <div class="section" id="fake-controller-manager">
 <h2>Fake Controller Manager<a class="headerlink" href="#fake-controller-manager" title="Permalink to this headline">¶</a></h2>
 <p>MoveIt comes with a series of fake trajectory controllers that can be used for simulations.
-For example, the <code class="docutils literal"><span class="pre">demo.launch</span></code> generated by MoveIt&#8217;s setup assistant, employs fake controllers for nice visualization in RViz.
-For configuration, edit the file <code class="docutils literal"><span class="pre">config/fake_controllers.yaml</span></code>, and adjust the desired controller type.
+For example, the <code class="docutils literal notranslate"><span class="pre">demo.launch</span></code> generated by MoveIt’s setup assistant, employs fake controllers for nice visualization in RViz.
+For configuration, edit the file <code class="docutils literal notranslate"><span class="pre">config/fake_controllers.yaml</span></code>, and adjust the desired controller type.
 The following controllers are available:</p>
 <ul class="simple">
 <li><strong>interpolate</strong>: perform smooth interpolation between via points - the default for visualization</li>
@@ -945,37 +997,37 @@ The following controllers are available:</p>
 </div>
 <div class="section" id="fake-controller-yaml-file">
 <h2>Fake Controller Yaml File<a class="headerlink" href="#fake-controller-yaml-file" title="Permalink to this headline">¶</a></h2>
-<div class="code yaml highlight-python"><div class="highlight"><pre>rate: 10 (Hz, used for interpolation controller)
-controller_list:
-  - name: fake_arm_controller
-    type: interpolate | via points | last point
-    joints:
-      - joint_1
-      - joint_2
-      - joint_3
-      - joint_4
-      - joint_5
-      - joint_6
-  - name: fake_gripper_controller
-    joints:
-      []
+<div class="code yaml highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rate</span><span class="p">:</span> <span class="mi">10</span> <span class="p">(</span><span class="n">Hz</span><span class="p">,</span> <span class="n">used</span> <span class="k">for</span> <span class="n">interpolation</span> <span class="n">controller</span><span class="p">)</span>
+<span class="n">controller_list</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">fake_arm_controller</span>
+    <span class="nb">type</span><span class="p">:</span> <span class="n">interpolate</span> <span class="o">|</span> <span class="n">via</span> <span class="n">points</span> <span class="o">|</span> <span class="n">last</span> <span class="n">point</span>
+    <span class="n">joints</span><span class="p">:</span>
+      <span class="o">-</span> <span class="n">joint_1</span>
+      <span class="o">-</span> <span class="n">joint_2</span>
+      <span class="o">-</span> <span class="n">joint_3</span>
+      <span class="o">-</span> <span class="n">joint_4</span>
+      <span class="o">-</span> <span class="n">joint_5</span>
+      <span class="o">-</span> <span class="n">joint_6</span>
+  <span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">fake_gripper_controller</span>
+    <span class="n">joints</span><span class="p">:</span>
+      <span class="p">[]</span>
 </pre></div>
 </div>
 <p>In order to load an initial pose, one can have a list of (group, pose) pairs as follows:</p>
-<div class="code yaml highlight-python"><div class="highlight"><pre>initial:
-  - group: arm
-    pose:  ready
+<div class="code yaml highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">initial</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">group</span><span class="p">:</span> <span class="n">arm</span>
+    <span class="n">pose</span><span class="p">:</span>  <span class="n">ready</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="controller-switching-and-namespaces">
 <h2>Controller Switching and Namespaces<a class="headerlink" href="#controller-switching-and-namespaces" title="Permalink to this headline">¶</a></h2>
-<p>All controller names get prefixed by the namespace of their ros_control node. For this reason controller names should not contain slashes, and can&#8217;t be named <code class="docutils literal"><span class="pre">/</span></code>. For a particular node MoveIt can decide which controllers to have started or stopped. Since only controller names with registered allocator plugins are handled over MoveIt, MoveIt takes care of stopping controllers based on their claimed resources if a to-be-started controller needs any of those resources.</p>
+<p>All controller names get prefixed by the namespace of their ros_control node. For this reason controller names should not contain slashes, and can’t be named <code class="docutils literal notranslate"><span class="pre">/</span></code>. For a particular node MoveIt can decide which controllers to have started or stopped. Since only controller names with registered allocator plugins are handled over MoveIt, MoveIt takes care of stopping controllers based on their claimed resources if a to-be-started controller needs any of those resources.</p>
 </div>
 <div class="section" id="controllers-for-multiple-nodes">
 <h2>Controllers for Multiple Nodes<a class="headerlink" href="#controllers-for-multiple-nodes" title="Permalink to this headline">¶</a></h2>
 <p>MoveItMultiControllerManager can be used for more than one ros_control nodes. It works by creating several MoveItControllerManagers, one for each node. It instantiates them with their respecitve namespace and takes care of proper delegation. To use it must be added to the launch file.</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;param name=&quot;moveit_controller_manager&quot; value=&quot;moveit_ros_control_interface::MoveItMultiControllerManager&quot; /&gt;
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">param</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;moveit_controller_manager&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;moveit_ros_control_interface::MoveItMultiControllerManager&quot;</span> <span class="o">/&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -1016,7 +1068,7 @@ controller_list:
 
     </section>
   </div>
-  
+
   
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
@@ -1030,6 +1082,7 @@ controller_list:
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/language_data.js"></script>
 
   
 

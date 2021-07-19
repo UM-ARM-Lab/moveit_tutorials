@@ -34,6 +34,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="moveit_tutorials Noetic documentation" href="../../index.html"/>
         <link rel="next" title="TRAC-IK Kinematics Solver" href="../trac_ik/trac_ik_tutorial.html"/>
         <link rel="prev" title="Hand-Eye Calibration" href="../hand_eye_calibration/hand_eye_calibration_tutorial.html"/> 
@@ -65,18 +68,18 @@
         <a href="http://moveit.ros.org">
           <img src="../../_static/logo.png"/>
         </a>
-        
+
         <div class="version">
-          <div class="version-dropdown">
-            <lable for="version-list">Version:</lable>
-          <select class="version-list" id="version-list" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-              <option value=''>Noetic</option>
-              <option value="http://docs.ros.org/en/melodic/api/moveit_tutorials/html/index.html">Melodic</option>
-              <option value="http://docs.ros.org/en/kinetic/api/moveit_tutorials/html/index.html">Kinetic</option>
-              <option value="http://docs.ros.org/en/indigo/api/moveit_tutorials/html/index.html">Indigo (EOL)</option>
-          </select>
-          </div>
-        </div><br>
+    <div class="version-dropdown">
+        <lable for="version-list">Version:</lable>
+    <select class="version-list" id="version-list" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+        <option value="http://moveit2_tutorials.picknik.ai">Moveit 2 - Foxy</option>
+        <option value='' selected>MoveIt 1 - Noetic</option>
+        <option value="http://docs.ros.org/en/melodic/api/moveit_tutorials/html/index.html">MoveIt 1 - Melodic</option>
+        <option value="http://docs.ros.org/en/kinetic/api/moveit_tutorials/html/index.html">MoveIt 1 - Kinetic</option>
+    </select>
+    </div>
+</div><br>
         
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -113,6 +116,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#step-4-use-motion-planning-with-the-panda">Step 4: Use Motion Planning with the Panda</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#choosing-specific-start-goal-states">Choosing Specific Start/Goal States</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#introspecting-trajectory-waypoints">Introspecting Trajectory Waypoints</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#plan-cartesian-motions">Plan Cartesian motions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#executing-trajectories-adjusting-speed">Executing Trajectories, Adjusting Speed</a></li>
@@ -346,7 +350,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../pick_place/pick_place_tutorial.html">Pick and Place</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#running-the-demo">Running The Demo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#understanding-moveit-msgs-grasp">Understanding <code class="docutils literal"><span class="pre">moveit_msgs::Grasp</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#understanding-moveit-msgs-grasp">Understanding <code class="docutils literal notranslate"><span class="pre">moveit_msgs::Grasp</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#the-entire-code">The Entire Code</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#creating-environment">Creating Environment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#pick-pipeline">Pick Pipeline</a><ul>
@@ -461,6 +465,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../bullet_collision_checker/bullet_collision_checker.html#launch-file">Launch file</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html">Mesh Filter with UR5 and Kinect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#running-the-demo">Running the Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#how-to-add-sensor-to-arm-in-simulation">How to add sensor to arm in simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#references">References</a></li>
+</ul>
+</li>
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html">MoveIt Setup Assistant</a><ul>
@@ -478,7 +489,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-10-ros-control">Step 10: ROS Control</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-11-add-author-information">Step 11: Add Author Information</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-12-generate-configuration-files">Step 12: Generate Configuration Files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#what-s-next">What&#8217;s Next</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#what-s-next">What’s Next</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#additional-reading">Additional Reading</a></li>
 </ul>
 </li>
@@ -568,7 +579,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../hand_eye_calibration/hand_eye_calibration_tutorial.html#calculate-a-calibration">Calculate a Calibration</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">IKFast Kinematics Solver</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">IKFast Kinematics Solver</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#what-is-ikfast">What is IKFast?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#moveit-ikfast">MoveIt IKFast</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting Started</a></li>
@@ -591,6 +602,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../trac_ik/trac_ik_tutorial.html#usage">Usage</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html">OPW Kinematics Solver for Industrial Manipulators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#intro">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#sharing-opw-descriptions">Sharing OPW descriptions</a></li>
+</ul>
+</li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html">Kinematics Configuration</a><ul>
@@ -598,6 +617,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#parameters">Parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-kdl-kinematics-plugin">The KDL Kinematics Plugin</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-lma-kinematics-plugin">The LMA Kinematics Plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-cached-ik-plugin">The Cached IK Plugin</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#position-only-ik">Position Only IK</a></li>
@@ -607,6 +627,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#creating-a-constraint-sampler">Creating a constraint sampler</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../planning_constraints/planning_constraints.html">Representation and Evaluation of Constraints</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../planning_constraints/planning_constraints.html#see-also">See Also</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../ompl_interface/ompl_interface_tutorial.html">OMPL Planner</a><ul>
@@ -668,18 +692,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#cartesian-limits">Cartesian Limits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-interface">Planning Interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-ptp-motion-command">The PTP motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#input-parameters-in-moveit-msgs-motionplanrequest">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-results-in-moveit-msg-motionplanresponse">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#input-parameters-in-moveit-msgs-motionplanrequest">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-results-in-moveit-msg-motionplanresponse">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-lin-motion-command">The LIN motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id1">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id2">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id1">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id2">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-circ-motion-command">The CIRC motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id3">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id4">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id3">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id4">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#example">Example</a></li>
@@ -688,7 +712,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#sequence-of-multiple-segments">Sequence of multiple segments</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#user-interface-sequence-capability">User interface sequence capability</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#restrictions-for-motionsequencerequest">Restrictions for <code class="docutils literal"><span class="pre">MotionSequenceRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#restrictions-for-motionsequencerequest">Restrictions for <code class="docutils literal notranslate"><span class="pre">MotionSequenceRequest</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#action-interface">Action interface</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#service-interface">Service interface</a></li>
 </ul>
@@ -711,6 +735,20 @@
 </li>
 </ul>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html">Gazebo Simulation Integration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#after-moveit-setup-assistant">After MoveIt Setup Assistant</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#fix-the-robot-to-the-world-coordinate-system">1. Fix the robot to the world coordinate system</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-damping-to-the-joint-specifications">2. Add damping to the joint specifications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-inertia-matrices-and-masses-to-the-links">3. Add inertia matrices and masses to the links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-friction-and-colorize-the-links">4. Add friction and colorize the links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#configure-gazebo-ros-control-transmissions-and-actuators">5. Configure gazebo_ros_control, transmissions and actuators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#adjust-auto-generated-ros-controllers-yaml">6. Adjust auto-generated ros_controllers.yaml</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#adjust-auto-generated-ros-controllers-launch-in-the-panda-moveit-config-package">7. Adjust auto-generated <code class="code docutils literal notranslate"><span class="pre">ros_controllers.launch</span></code> in the <code class="code docutils literal notranslate"><span class="pre">panda_moveit_config</span></code> package.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#change-the-way-robot-description-is-loaded-to-parameter-server">8. Change the way <code class="code docutils literal notranslate"><span class="pre">robot_description</span></code> is loaded to Parameter Server.</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html">Joystick Control Teleoperation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html#running-the-code">Running the Code</a></li>
@@ -753,6 +791,19 @@
 <li class="toctree-l2"><a class="reference internal" href="../tests/tests_tutorial.html#code-coverage">Code Coverage</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html">Debugging Tests</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#ci-failures">CI Failures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#launch-docker-environment">Launch Docker Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#setup-environment">Setup Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#checkout-code">Checkout Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#install-dependencies">Install Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#configure-and-build">Configure and Build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#build-the-tests">Build the Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#run-the-tests">Run the Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#run-one-test">Run One Test</a></li>
+</ul>
+</li>
 </ul>
 
           
@@ -789,7 +840,8 @@
   <br />
 <div class="admonition note">
 <p class="first admonition-title">Tutorials Version: Noetic</p>
-<p class="last">This is the latest version, which is actively developed and best for beginners. If you are still running a Melodic release, please use the <a class="reference external" href="http://docs.ros.org/melodic/api/moveit_tutorials/html/index.html">Melodic tutorials</a>.</p>
+<p class="last">This is the latest (and last) version of MoveIt 1 for ROS Noetic, which is still actively developed. See also <a class="reference external" href="http://moveit2_tutorials.picknik.ai/">MoveIt 2 tutorials</a> and other available versions in drop down box on left.
+</p>
 </div>
   <hr/>
 </div>
@@ -806,7 +858,7 @@
 <p>In this section, we will walk through configuring an IKFast plugin for MoveIt.</p>
 <div class="section" id="what-is-ikfast">
 <h2>What is IKFast?<a class="headerlink" href="#what-is-ikfast" title="Permalink to this headline">¶</a></h2>
-<p>IKFast, the Robot Kinematics Compiler, is a powerful inverse kinematics solver provided within Rosen Diankov&#8217;s <a class="reference external" href="http://openrave.org">OpenRAVE</a> motion planning software. IKFast automatically analyses any complex kinematic chain for common patterns that allow for an analytic solution and generates C++ code to find them.
+<p>IKFast, the Robot Kinematics Compiler, is a powerful inverse kinematics solver provided within Rosen Diankov’s <a class="reference external" href="http://openrave.org">OpenRAVE</a> motion planning software. IKFast automatically analyses any complex kinematic chain for common patterns that allow for an analytic solution and generates C++ code to find them.
 As a consequence, IKFast provides extremely stable solutions that can be found in a few microseconds on recent processors.</p>
 </div>
 <div class="section" id="moveit-ikfast">
@@ -814,34 +866,36 @@ As a consequence, IKFast provides extremely stable solutions that can be found i
 <p>MoveIt provides tools to generate an IKFast kinematics plugin for MoveIt using the OpenRAVE generated cpp files.
 This tutorial will step you through setting up your robot to utilize the power of IKFast.
 MoveIt IKFast is tested on ROS Melodic with a 6DOF and 7DOF robot arm manipulator.
-While it works in theory, MoveIt IKFast doesn&#8217;t currently support &gt;7 degree of freedom arms.</p>
+While it works in theory, MoveIt IKFast doesn’t currently support &gt;7 degree of freedom arms.</p>
 </div>
 <div class="section" id="getting-started">
 <h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
-<p>If you haven&#8217;t already done so, make sure you&#8217;ve completed the steps in <a class="reference external" href="../getting_started/getting_started.html">Getting Started</a>.</p>
+<p>If you haven’t already done so, make sure you’ve completed the steps in <a class="reference external" href="../getting_started/getting_started.html">Getting Started</a>.</p>
 <p>You should have a MoveIt configuration package for your robot that was created by using the <a class="reference external" href="../setup_assistant/setup_assistant_tutorial.html">Setup Assistant</a>.</p>
-<p>OpenRAVE is a planning framework as complex as MoveIt itself and installing it is tricky &#8211; particularly because its public documentation is not maintained anymore.
+<p>OpenRAVE is a planning framework as complex as MoveIt itself and installing it is tricky – particularly because its public documentation is not maintained anymore.
 Fortunately, personalrobotics provide a <a class="reference external" href="https://hub.docker.com/r/personalrobotics/ros-openrave">docker image</a> based on Ubuntu 14.04 with OpenRAVE 0.9.0 and ROS Indigo installed, which can be used to generate the solver code once.</p>
 <p>So the easiest way to run the IKFast code generator is through this docker image.
 For manual building instructions (tailored towards Ubuntu 16.04), please see the <a class="reference external" href="http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/ikfast/ikfast_tutorial.html">Kinetic version of this tutorial</a>.
 To follow the recommended, docker-based approach, ensure you have docker installed and started:</p>
-<div class="highlight-python"><div class="highlight"><pre>sudo apt-get install docker.io
-sudo service docker start
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">docker</span><span class="o">.</span><span class="n">io</span>
+<span class="n">sudo</span> <span class="n">service</span> <span class="n">docker</span> <span class="n">start</span>
 </pre></div>
 </div>
 <p>The following command will ensure that you can run docker with your user account (adding $USER to the docker group):</p>
-<div class="highlight-python"><div class="highlight"><pre>sudo usermod -a -G docker $USER
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>sudo usermod -a -G docker $USER
 </pre></div>
 </div>
 <p>You need to log off/log on in order to actually activate this permission change.</p>
+<blockquote>
+<div>Note: To run docker from <a class="reference external" href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">WSL2</a>, you need to install the <a class="reference external" href="https://docs.docker.com/docker-for-windows/wsl">Docker Desktop WSL 2 backend</a>.</div></blockquote>
 <p>Install the MoveIt IKFast package either from Debian packages or from source.</p>
 <p><strong>Binary Install</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>sudo apt-get install ros-${ROS_DISTRO}-moveit-kinematics
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>sudo apt-get install ros-${ROS_DISTRO}-moveit-kinematics
 </pre></div>
 </div>
 <p><strong>Source</strong></p>
-<p>Inside your catkin workspace&#8217;s <code class="docutils literal"><span class="pre">./src</span></code> directory:</p>
-<div class="highlight-python"><div class="highlight"><pre>git clone https://github.com/ros-planning/moveit.git
+<p>Inside your catkin workspace’s <code class="docutils literal notranslate"><span class="pre">./src</span></code> directory:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/ros-planning/moveit.git
 rosdep install -y --from-paths . --ignore-src --rosdistro ${ROS_DISTRO}
 catkin build
 </pre></div>
@@ -850,12 +904,12 @@ catkin build
 <div class="section" id="creating-the-ikfast-moveit-plugin">
 <h2>Creating the IKFast MoveIt plugin<a class="headerlink" href="#creating-the-ikfast-moveit-plugin" title="Permalink to this headline">¶</a></h2>
 <p>To facilitate copy-and-paste, we suggest to define the robot name as an environment variable:</p>
-<div class="highlight-python"><div class="highlight"><pre>export MYROBOT_NAME=&quot;panda_arm&quot;
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">MYROBOT_NAME</span><span class="o">=</span><span class="s2">&quot;panda&quot;</span>
 </pre></div>
 </div>
-<p>OpenRAVE uses Collada instead of URDF to describe the robot. In order to automatically convert your robot&#8217;s URDF to Collada, you need to provide the .urdf file.
+<p>OpenRAVE uses Collada instead of URDF to describe the robot. In order to automatically convert your robot’s URDF to Collada, you need to provide the .urdf file.
 If your .urdf file is generated from <a class="reference external" href="http://wiki.ros.org/xacro/">xacro</a> files, you can generate the URDF using the following command:</p>
-<div class="highlight-python"><div class="highlight"><pre>rosrun xacro xacro -o $MYROBOT_NAME.urdf $MYROBOT_NAME.urdf.xacro
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>rosrun xacro xacro -o $MYROBOT_NAME.urdf $MYROBOT_NAME.urdf.xacro
 </pre></div>
 </div>
 <div class="section" id="select-ik-type">
@@ -865,37 +919,41 @@ The most common IK type is <em>transform6d</em>.</p>
 </div>
 <div class="section" id="choose-planning-group">
 <h3>Choose Planning Group<a class="headerlink" href="#choose-planning-group" title="Permalink to this headline">¶</a></h3>
-<p>If your robot has more than one arm or &#8220;planning group&#8221; that you want to generate an IKFast solver for, you need to repeat the following process for each group.
-The following instructions will assume you have chosen one <code class="docutils literal"><span class="pre">&lt;planning_group_name&gt;</span></code>. Furthermore, you need to know the names of the base link and the endeffector link of the chain to solve for.</p>
+<p>If your robot has more than one arm or “planning group” that you want to generate an IKFast solver for, you need to repeat the following process for each group.
+The following instructions will assume you have chosen one <code class="docutils literal notranslate"><span class="pre">&lt;planning_group_name&gt;</span></code>. Furthermore, you need to know the names of the base link and the endeffector link of the chain to solve for.</p>
 </div>
 <div class="section" id="generate-ikfast-moveit-plugin">
 <h3>Generate IKFast MoveIt plugin<a class="headerlink" href="#generate-ikfast-moveit-plugin" title="Permalink to this headline">¶</a></h3>
 <p>To generate the IKFast MoveIt plugin, issue the following command:</p>
-<div class="highlight-python"><div class="highlight"><pre>rosrun moveit_kinematics auto_create_ikfast_moveit_plugin.sh --iktype Transform6D $MYROBOT_NAME.urdf &lt;planning_group_name&gt; &lt;base_link&gt; &lt;eef_link&gt;
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>rosrun moveit_kinematics auto_create_ikfast_moveit_plugin.sh --iktype Transform6D $MYROBOT_NAME.urdf &lt;planning_group_name&gt; &lt;base_link&gt; &lt;eef_link&gt;
 </pre></div>
 </div>
-<p>The speed and success of this process will depend on the complexity of your robot. A typical 6 DOF manipulator with 3 intersecting axes at the base or wrist will take only a few minutes to generate the solver code. For a detailed explanation of the creation procedure and additional tweaks of the process, see <a class="reference internal" href="#tweaking-the-creation-process">Tweaking the creation process</a>.</p>
-<p>The command above creates a new ROS package named <code class="docutils literal"><span class="pre">$MYROBOT_NAME_&lt;planning_group_name&gt;_ikfast_plugin</span></code> within the current folder.
+<p>Replace the last three positional parameters with the correct <code class="docutils literal notranslate"><span class="pre">planning_group_name</span></code> as well as the names of the base link and the end-effector link of your robot.
+The speed and success of this process will depend on the complexity of your robot. A typical 6 DOF manipulator with 3 intersecting axes at the base or wrist will take only a few minutes to generate the solver code. For a detailed explanation of the creation procedure and additional tweaks of the process, see <a class="reference internal" href="#tweaking-the-creation-process">Tweaking the creation process</a>.</p>
+<p>The command above creates a new ROS package named <code class="docutils literal notranslate"><span class="pre">$MYROBOT_NAME_&lt;planning_group_name&gt;_ikfast_plugin</span></code> within the current folder.
 Thus, you need to rebuild your workspace so the new package is detected:</p>
-<div class="highlight-python"><div class="highlight"><pre>catkin build
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">catkin</span> <span class="n">build</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
-<p>The IKFast plugin can be used as a drop-in replacement for the default KDL IK Solver, but with greatly increased performance. The MoveIt configuration file should be automatically edited by the generator script but in some cases this might fail. In this situation you can switch between the KDL and IKFast solvers using the <em>kinematics_solver</em> parameter in the robot&#8217;s kinematics.yaml file:</p>
-<div class="highlight-python"><div class="highlight"><pre>rosed &quot;$MYROBOT_NAME&quot;_moveit_config kinematics.yaml
+<p>The IKFast plugin can be used as a drop-in replacement for the default KDL IK Solver, but with greatly increased performance. The MoveIt configuration file should be automatically edited by the generator script but in some cases this might fail. In this situation you can switch between the KDL and IKFast solvers using the <em>kinematics_solver</em> parameter in the robot’s kinematics.yaml file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rosed</span> <span class="s2">&quot;$MYROBOT_NAME&quot;</span><span class="n">_moveit_config</span> <span class="n">kinematics</span><span class="o">.</span><span class="n">yaml</span>
 </pre></div>
 </div>
 <p>Edit these parts:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;planning_group&gt;:
-  kinematics_solver: &lt;myrobot_name&gt;_&lt;planning_group&gt;_ikfast_plugin/IKFastKinematicsPlugin
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">planning_group</span><span class="o">&gt;</span><span class="p">:</span>
+  <span class="n">kinematics_solver</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">myrobot_name</span><span class="o">&gt;</span><span class="n">_</span><span class="o">&lt;</span><span class="n">planning_group</span><span class="o">&gt;/</span><span class="n">IKFastKinematicsPlugin</span>
 </pre></div>
 </div>
 <div class="section" id="test-the-plugin">
 <h3>Test the Plugin<a class="headerlink" href="#test-the-plugin" title="Permalink to this headline">¶</a></h3>
-<p>Use the MoveIt RViz Motion Planning Plugin and use the interactive markers to see if correct IK Solutions are found.</p>
+<p>Use the MoveIt RViz Motion Planning Plugin and use the interactive markers to see if correct IK Solutions are found:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">roslaunch</span> <span class="s2">&quot;$MYROBOT_NAME&quot;</span><span class="n">_moveit_config</span> <span class="n">demo</span><span class="o">.</span><span class="n">launch</span>
+</pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="updating-the-plugin">
@@ -909,13 +967,13 @@ Thus, you need to rebuild your workspace so the new package is detected:</p>
 <li><p class="first">Downloading the docker image provided by <a class="reference external" href="https://hub.docker.com/r/personalrobotics/ros-openrave">personalrobotics</a></p>
 </li>
 <li><p class="first">Converting the ROS URDF file to Collada required for OpenRAVE:</p>
-<div class="highlight-python"><div class="highlight"><pre>rosrun collada_urdf urdf_to_collada $MYROBOT_NAME.urdf $MYROBOT_NAME.dae
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>rosrun collada_urdf urdf_to_collada $MYROBOT_NAME.urdf $MYROBOT_NAME.dae
 </pre></div>
 </div>
 <p>Sometimes floating point issues arise in converting a URDF file to Collada, which prevents OpenRAVE to find IK solutions.
 Using a utility script, one can easily round all numbers down to n decimal places in your .dae file.
 From experience we recommend 5 decimal places, but if the OpenRave ikfast generator takes too long to find a solution (say more than an hour), lowering the accuracy should help. For example:</p>
-<div class="highlight-python"><div class="highlight"><pre>rosrun moveit_kinematics round_collada_numbers.py $MYROBOT_NAME.dae $MYROBOT_NAME.rounded.dae 5
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>rosrun moveit_kinematics round_collada_numbers.py $MYROBOT_NAME.dae $MYROBOT_NAME.rounded.dae 5
 </pre></div>
 </div>
 </li>
@@ -924,7 +982,7 @@ From experience we recommend 5 decimal places, but if the OpenRave ikfast genera
 <li><p class="first">Creating the MoveIt IKFast plugin package wrapping the generated solver</p>
 </li>
 </ol>
-<p>The <code class="docutils literal"><span class="pre">auto_create_ikfast_moveit_plugin.sh</span></code> script evaluates the file extension of the input file to determine which steps to run. To re-run the script from any intermediate step (e.g. after having tweaked the accuracy of the <code class="docutils literal"><span class="pre">.dae</span></code> file), simply provide the corresponding output from the previous step as input (<code class="docutils literal"><span class="pre">.dae</span></code> or <code class="docutils literal"><span class="pre">.cpp</span></code>) instead of the initial <code class="docutils literal"><span class="pre">.urdf</span></code> file.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">auto_create_ikfast_moveit_plugin.sh</span></code> script evaluates the file extension of the input file to determine which steps to run. To re-run the script from any intermediate step (e.g. after having tweaked the accuracy of the <code class="docutils literal notranslate"><span class="pre">.dae</span></code> file), simply provide the corresponding output from the previous step as input (<code class="docutils literal notranslate"><span class="pre">.dae</span></code> or <code class="docutils literal notranslate"><span class="pre">.cpp</span></code>) instead of the initial <code class="docutils literal notranslate"><span class="pre">.urdf</span></code> file.</p>
 </div>
 </div>
 
@@ -963,7 +1021,7 @@ From experience we recommend 5 decimal places, but if the OpenRave ikfast genera
 
     </section>
   </div>
-  
+
   
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
@@ -977,6 +1035,7 @@ From experience we recommend 5 decimal places, but if the OpenRave ikfast genera
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/language_data.js"></script>
 
   
 

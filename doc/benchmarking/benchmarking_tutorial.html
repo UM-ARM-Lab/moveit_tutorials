@@ -34,6 +34,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="moveit_tutorials Noetic documentation" href="../../index.html"/>
         <link rel="next" title="Integration/Unit Tests" href="../tests/tests_tutorial.html"/>
         <link rel="prev" title="Realtime Arm Servoing" href="../realtime_servo/realtime_servo_tutorial.html"/> 
@@ -65,18 +68,18 @@
         <a href="http://moveit.ros.org">
           <img src="../../_static/logo.png"/>
         </a>
-        
+
         <div class="version">
-          <div class="version-dropdown">
-            <lable for="version-list">Version:</lable>
-          <select class="version-list" id="version-list" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-              <option value=''>Noetic</option>
-              <option value="http://docs.ros.org/en/melodic/api/moveit_tutorials/html/index.html">Melodic</option>
-              <option value="http://docs.ros.org/en/kinetic/api/moveit_tutorials/html/index.html">Kinetic</option>
-              <option value="http://docs.ros.org/en/indigo/api/moveit_tutorials/html/index.html">Indigo (EOL)</option>
-          </select>
-          </div>
-        </div><br>
+    <div class="version-dropdown">
+        <lable for="version-list">Version:</lable>
+    <select class="version-list" id="version-list" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+        <option value="http://moveit2_tutorials.picknik.ai">Moveit 2 - Foxy</option>
+        <option value='' selected>MoveIt 1 - Noetic</option>
+        <option value="http://docs.ros.org/en/melodic/api/moveit_tutorials/html/index.html">MoveIt 1 - Melodic</option>
+        <option value="http://docs.ros.org/en/kinetic/api/moveit_tutorials/html/index.html">MoveIt 1 - Kinetic</option>
+    </select>
+    </div>
+</div><br>
         
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -113,6 +116,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#step-4-use-motion-planning-with-the-panda">Step 4: Use Motion Planning with the Panda</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#choosing-specific-start-goal-states">Choosing Specific Start/Goal States</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#introspecting-trajectory-waypoints">Introspecting Trajectory Waypoints</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#plan-cartesian-motions">Plan Cartesian motions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#executing-trajectories-adjusting-speed">Executing Trajectories, Adjusting Speed</a></li>
@@ -346,7 +350,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../pick_place/pick_place_tutorial.html">Pick and Place</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#running-the-demo">Running The Demo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#understanding-moveit-msgs-grasp">Understanding <code class="docutils literal"><span class="pre">moveit_msgs::Grasp</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#understanding-moveit-msgs-grasp">Understanding <code class="docutils literal notranslate"><span class="pre">moveit_msgs::Grasp</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#the-entire-code">The Entire Code</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#creating-environment">Creating Environment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#pick-pipeline">Pick Pipeline</a><ul>
@@ -461,6 +465,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../bullet_collision_checker/bullet_collision_checker.html#launch-file">Launch file</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html">Mesh Filter with UR5 and Kinect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#running-the-demo">Running the Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#how-to-add-sensor-to-arm-in-simulation">How to add sensor to arm in simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#references">References</a></li>
+</ul>
+</li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html">MoveIt Setup Assistant</a><ul>
@@ -478,7 +489,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-10-ros-control">Step 10: ROS Control</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-11-add-author-information">Step 11: Add Author Information</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-12-generate-configuration-files">Step 12: Generate Configuration Files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#what-s-next">What&#8217;s Next</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#what-s-next">What’s Next</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#additional-reading">Additional Reading</a></li>
 </ul>
 </li>
@@ -591,6 +602,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../trac_ik/trac_ik_tutorial.html#usage">Usage</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html">OPW Kinematics Solver for Industrial Manipulators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#intro">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#sharing-opw-descriptions">Sharing OPW descriptions</a></li>
+</ul>
+</li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html">Kinematics Configuration</a><ul>
@@ -598,6 +617,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#parameters">Parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-kdl-kinematics-plugin">The KDL Kinematics Plugin</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-lma-kinematics-plugin">The LMA Kinematics Plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-cached-ik-plugin">The Cached IK Plugin</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#position-only-ik">Position Only IK</a></li>
@@ -607,6 +627,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#creating-a-constraint-sampler">Creating a constraint sampler</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../planning_constraints/planning_constraints.html">Representation and Evaluation of Constraints</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../planning_constraints/planning_constraints.html#see-also">See Also</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../ompl_interface/ompl_interface_tutorial.html">OMPL Planner</a><ul>
@@ -668,18 +692,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#cartesian-limits">Cartesian Limits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-interface">Planning Interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-ptp-motion-command">The PTP motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#input-parameters-in-moveit-msgs-motionplanrequest">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-results-in-moveit-msg-motionplanresponse">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#input-parameters-in-moveit-msgs-motionplanrequest">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-results-in-moveit-msg-motionplanresponse">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-lin-motion-command">The LIN motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id1">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id2">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id1">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id2">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-circ-motion-command">The CIRC motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id3">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id4">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id3">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id4">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#example">Example</a></li>
@@ -688,7 +712,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#sequence-of-multiple-segments">Sequence of multiple segments</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#user-interface-sequence-capability">User interface sequence capability</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#restrictions-for-motionsequencerequest">Restrictions for <code class="docutils literal"><span class="pre">MotionSequenceRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#restrictions-for-motionsequencerequest">Restrictions for <code class="docutils literal notranslate"><span class="pre">MotionSequenceRequest</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#action-interface">Action interface</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#service-interface">Service interface</a></li>
 </ul>
@@ -711,6 +735,20 @@
 </li>
 </ul>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html">Gazebo Simulation Integration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#after-moveit-setup-assistant">After MoveIt Setup Assistant</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#fix-the-robot-to-the-world-coordinate-system">1. Fix the robot to the world coordinate system</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-damping-to-the-joint-specifications">2. Add damping to the joint specifications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-inertia-matrices-and-masses-to-the-links">3. Add inertia matrices and masses to the links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-friction-and-colorize-the-links">4. Add friction and colorize the links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#configure-gazebo-ros-control-transmissions-and-actuators">5. Configure gazebo_ros_control, transmissions and actuators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#adjust-auto-generated-ros-controllers-yaml">6. Adjust auto-generated ros_controllers.yaml</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#adjust-auto-generated-ros-controllers-launch-in-the-panda-moveit-config-package">7. Adjust auto-generated <code class="code docutils literal notranslate"><span class="pre">ros_controllers.launch</span></code> in the <code class="code docutils literal notranslate"><span class="pre">panda_moveit_config</span></code> package.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#change-the-way-robot-description-is-loaded-to-parameter-server">8. Change the way <code class="code docutils literal notranslate"><span class="pre">robot_description</span></code> is loaded to Parameter Server.</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html">Joystick Control Teleoperation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html#running-the-code">Running the Code</a></li>
@@ -728,7 +766,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../realtime_servo/realtime_servo_tutorial.html#integration-testing">Integration Testing</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Benchmarking</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Benchmarking</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#example">Example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#viewing-results">Viewing Results</a></li>
@@ -751,6 +789,19 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../tests/tests_tutorial.html#code-coverage">Code Coverage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html">Debugging Tests</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#ci-failures">CI Failures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#launch-docker-environment">Launch Docker Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#setup-environment">Setup Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#checkout-code">Checkout Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#install-dependencies">Install Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#configure-and-build">Configure and Build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#build-the-tests">Build the Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#run-the-tests">Run the Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#run-one-test">Run One Test</a></li>
 </ul>
 </li>
 </ul>
@@ -789,7 +840,8 @@
   <br />
 <div class="admonition note">
 <p class="first admonition-title">Tutorials Version: Noetic</p>
-<p class="last">This is the latest version, which is actively developed and best for beginners. If you are still running a Melodic release, please use the <a class="reference external" href="http://docs.ros.org/melodic/api/moveit_tutorials/html/index.html">Melodic tutorials</a>.</p>
+<p class="last">This is the latest (and last) version of MoveIt 1 for ROS Noetic, which is still actively developed. See also <a class="reference external" href="http://moveit2_tutorials.picknik.ai/">MoveIt 2 tutorials</a> and other available versions in drop down box on left.
+</p>
 </div>
   <hr/>
 </div>
@@ -804,42 +856,42 @@
 <h1>Benchmarking<a class="headerlink" href="#benchmarking" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="getting-started">
 <h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
-<p>If you haven&#8217;t already done so, make sure you&#8217;ve completed the steps in <a class="reference external" href="../getting_started/getting_started.html">Getting Started</a>.</p>
+<p>If you haven’t already done so, make sure you’ve completed the steps in <a class="reference external" href="../getting_started/getting_started.html">Getting Started</a>.</p>
 <p>The <a class="reference external" href="https://github.com/ros-planning/moveit/blob/master/moveit_ros/benchmarks">benchmarking package</a> provides methods to benchmark motion planning algorithms and aggregate/plot statistics using the OMPL Planner Arena.
 The example below demonstrates how the benchmarking can be run for a Panda robot arm.</p>
 </div>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
-<p>An example is provided in the <code class="docutils literal"><span class="pre">examples</span></code> folder. The launch file requires a MoveIt configuration package
+<p>An example is provided in the <code class="docutils literal notranslate"><span class="pre">examples</span></code> folder. The launch file requires a MoveIt configuration package
 for the Panda robot arm available from <a class="reference external" href="https://github.com/ros-planning/panda_moveit_config">here</a>.</p>
 <p>To run:</p>
 <ol class="arabic">
-<li><p class="first">Launch the panda_moveit_config <code class="docutils literal"><span class="pre">demo.launch</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre>roslaunch panda_moveit_config demo.launch db:=true
+<li><p class="first">Launch the panda_moveit_config <code class="docutils literal notranslate"><span class="pre">demo.launch</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">roslaunch</span> <span class="n">panda_moveit_config</span> <span class="n">demo</span><span class="o">.</span><span class="n">launch</span> <span class="n">db</span><span class="p">:</span><span class="o">=</span><span class="n">true</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">Within the <em>Motion Planning</em> RViz plugin, connect to the database by pressing the <em>Connect</em> button in the <em>Context</em> tab.</p>
 </li>
-<li><p class="first">Save a scene on the <em>Stored Scenes</em> tab and name it <code class="docutils literal"><span class="pre">Kitchen1</span></code> by double clicking the scene in the list.</p>
+<li><p class="first">Save a scene on the <em>Stored Scenes</em> tab and name it <code class="docutils literal notranslate"><span class="pre">Kitchen1</span></code> by double clicking the scene in the list.</p>
 </li>
 <li><p class="first">Move the start and goal states of the Panda arm by using the interactive markers.</p>
 </li>
-<li><p class="first">Save an associated query for the <code class="docutils literal"><span class="pre">Kitchen1</span></code> scene and name the query <code class="docutils literal"><span class="pre">Pick1</span></code>.</p>
+<li><p class="first">Save an associated query for the <code class="docutils literal notranslate"><span class="pre">Kitchen1</span></code> scene and name the query <code class="docutils literal notranslate"><span class="pre">Pick1</span></code>.</p>
 </li>
-<li><p class="first">Also save a start state for the robot on the <em>Stored States</em> tab and name it <code class="docutils literal"><span class="pre">Start1</span></code>.</p>
+<li><p class="first">Also save a start state for the robot on the <em>Stored States</em> tab and name it <code class="docutils literal notranslate"><span class="pre">Start1</span></code>.</p>
 </li>
-<li><p class="first">The config file <code class="docutils literal"><span class="pre">moveit_ros/benchmarks/examples/demo1.yaml</span></code> refers to the scenes, queries and start states used for benchmarking. Modify them appropriately.</p>
+<li><p class="first">The config file <code class="docutils literal notranslate"><span class="pre">moveit_ros/benchmarks/examples/demo1.yaml</span></code> refers to the scenes, queries and start states used for benchmarking. Modify them appropriately.</p>
 </li>
-<li><p class="first">Bring down your previous launch file (<code class="docutils literal"><span class="pre">ctrl+c</span></code>).</p>
+<li><p class="first">Bring down your previous launch file (<code class="docutils literal notranslate"><span class="pre">ctrl+c</span></code>).</p>
 </li>
-<li><p class="first">Change the location <code class="docutils literal"><span class="pre">output_directory</span></code> to export the benchmarked files:</p>
-<div class="highlight-python"><div class="highlight"><pre>rosed moveit_ros_benchmarks demo1.yaml
+<li><p class="first">Change the location <code class="docutils literal notranslate"><span class="pre">output_directory</span></code> to export the benchmarked files:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rosed</span> <span class="n">moveit_ros_benchmarks</span> <span class="n">demo1</span><span class="o">.</span><span class="n">yaml</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">Run the benchmarks:</p>
-<div class="highlight-python"><div class="highlight"><pre>roslaunch moveit_ros_benchmarks demo_panda.launch
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">roslaunch</span> <span class="n">moveit_ros_benchmarks</span> <span class="n">demo_panda</span><span class="o">.</span><span class="n">launch</span>
 </pre></div>
 </div>
 </li>
@@ -847,130 +899,130 @@ for the Panda robot arm available from <a class="reference external" href="https
 </div>
 <div class="section" id="viewing-results">
 <h2>Viewing Results<a class="headerlink" href="#viewing-results" title="Permalink to this headline">¶</a></h2>
-<p>The benchmarks are executed and many interesting parameters are aggregated and written to a log file.  A script (<code class="docutils literal"><span class="pre">moveit_benchmark_statistics.py</span></code>) is supplied to parse this data and plot the statistics.</p>
+<p>The benchmarks are executed and many interesting parameters are aggregated and written to a log file.  A script (<code class="docutils literal notranslate"><span class="pre">moveit_benchmark_statistics.py</span></code>) is supplied to parse this data and plot the statistics.</p>
 <p>Run:</p>
-<div class="highlight-python"><div class="highlight"><pre>rosrun moveit_ros_benchmarks moveit_benchmark_statistics.py &lt;path_of_logfile&gt;
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rosrun</span> <span class="n">moveit_ros_benchmarks</span> <span class="n">moveit_benchmark_statistics</span><span class="o">.</span><span class="n">py</span> <span class="o">&lt;</span><span class="n">path_of_logfile</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>To generate a PDF of plots:</p>
-<div class="highlight-python"><div class="highlight"><pre>python moveit_benchmark_statistics.py -p &lt;plot_filename&gt; &lt;path_of_logfile&gt;
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">moveit_benchmark_statistics</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">p</span> <span class="o">&lt;</span><span class="n">plot_filename</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">path_of_logfile</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>Alternatively, upload the database file generated by <code class="docutils literal"><span class="pre">moveit_benchmark_statistics.py</span></code> to <a class="reference external" href="http://plannerarena.org">plannerarena.org</a> and interactively visualize the results.</p>
+<p>Alternatively, upload the database file generated by <code class="docutils literal notranslate"><span class="pre">moveit_benchmark_statistics.py</span></code> to <a class="reference external" href="http://plannerarena.org">plannerarena.org</a> and interactively visualize the results.</p>
 </div>
 <div class="section" id="parameters-of-the-benchmarkoptions-class">
 <h2>Parameters of the BenchmarkOptions Class<a class="headerlink" href="#parameters-of-the-benchmarkoptions-class" title="Permalink to this headline">¶</a></h2>
 <p>This class reads in parameters and options for the benchmarks to run from the ROS parameter server.  The format of the parameters is assumed to be in the following form:</p>
-<div class="highlight-python"><div class="highlight"><pre>benchmark_config:
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">benchmark_config</span><span class="p">:</span>
 
-  warehouse:
-      host: [hostname/IP address of ROS Warehouse node]                            # Default localhost
-      port: [port number of ROS Warehouse node]                                    # Default 33829
-      scene_name: [Name of the planning scene to use for benchmarks]               # REQUIRED
+  <span class="n">warehouse</span><span class="p">:</span>
+      <span class="n">host</span><span class="p">:</span> <span class="p">[</span><span class="n">hostname</span><span class="o">/</span><span class="n">IP</span> <span class="n">address</span> <span class="n">of</span> <span class="n">ROS</span> <span class="n">Warehouse</span> <span class="n">node</span><span class="p">]</span>                            <span class="c1"># Default localhost</span>
+      <span class="n">port</span><span class="p">:</span> <span class="p">[</span><span class="n">port</span> <span class="n">number</span> <span class="n">of</span> <span class="n">ROS</span> <span class="n">Warehouse</span> <span class="n">node</span><span class="p">]</span>                                    <span class="c1"># Default 33829</span>
+      <span class="n">scene_name</span><span class="p">:</span> <span class="p">[</span><span class="n">Name</span> <span class="n">of</span> <span class="n">the</span> <span class="n">planning</span> <span class="n">scene</span> <span class="n">to</span> <span class="n">use</span> <span class="k">for</span> <span class="n">benchmarks</span><span class="p">]</span>               <span class="c1"># REQUIRED</span>
 
-  parameters:
-      runs: [Number of runs for each planning algorithm on each request]           # Default 10
-      group: [The name of the group to plan]                                       # REQUIRED
-      timeout: [The maximum time for a single run; seconds]                        # Default 10.0
-      output_directory: [The directory to write the output to]                     # Default is current working directory
+  <span class="n">parameters</span><span class="p">:</span>
+      <span class="n">runs</span><span class="p">:</span> <span class="p">[</span><span class="n">Number</span> <span class="n">of</span> <span class="n">runs</span> <span class="k">for</span> <span class="n">each</span> <span class="n">planning</span> <span class="n">algorithm</span> <span class="n">on</span> <span class="n">each</span> <span class="n">request</span><span class="p">]</span>           <span class="c1"># Default 10</span>
+      <span class="n">group</span><span class="p">:</span> <span class="p">[</span><span class="n">The</span> <span class="n">name</span> <span class="n">of</span> <span class="n">the</span> <span class="n">group</span> <span class="n">to</span> <span class="n">plan</span><span class="p">]</span>                                       <span class="c1"># REQUIRED</span>
+      <span class="n">timeout</span><span class="p">:</span> <span class="p">[</span><span class="n">The</span> <span class="n">maximum</span> <span class="n">time</span> <span class="k">for</span> <span class="n">a</span> <span class="n">single</span> <span class="n">run</span><span class="p">;</span> <span class="n">seconds</span><span class="p">]</span>                        <span class="c1"># Default 10.0</span>
+      <span class="n">output_directory</span><span class="p">:</span> <span class="p">[</span><span class="n">The</span> <span class="n">directory</span> <span class="n">to</span> <span class="n">write</span> <span class="n">the</span> <span class="n">output</span> <span class="n">to</span><span class="p">]</span>                     <span class="c1"># Default is current working directory</span>
 
-      start_states: [Regex for the stored start states in the warehouse to try]    # Default &quot;&quot;
-      path_constraints: [Regex for the path constraints to benchmark]              # Default &quot;&quot;
-      queries: [Regex for the motion plan queries in the warehouse to try]         # Default .*
-      goal_constraints: [Regex for the goal constraints to benchmark]              # Default &quot;&quot;
-      trajectory_constraints: [Regex for the trajectory constraints to benchmark]  # Default &quot;&quot;
+      <span class="n">start_states</span><span class="p">:</span> <span class="p">[</span><span class="n">Regex</span> <span class="k">for</span> <span class="n">the</span> <span class="n">stored</span> <span class="n">start</span> <span class="n">states</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">warehouse</span> <span class="n">to</span> <span class="k">try</span><span class="p">]</span>    <span class="c1"># Default &quot;&quot;</span>
+      <span class="n">path_constraints</span><span class="p">:</span> <span class="p">[</span><span class="n">Regex</span> <span class="k">for</span> <span class="n">the</span> <span class="n">path</span> <span class="n">constraints</span> <span class="n">to</span> <span class="n">benchmark</span><span class="p">]</span>              <span class="c1"># Default &quot;&quot;</span>
+      <span class="n">queries</span><span class="p">:</span> <span class="p">[</span><span class="n">Regex</span> <span class="k">for</span> <span class="n">the</span> <span class="n">motion</span> <span class="n">plan</span> <span class="n">queries</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">warehouse</span> <span class="n">to</span> <span class="k">try</span><span class="p">]</span>         <span class="c1"># Default .*</span>
+      <span class="n">goal_constraints</span><span class="p">:</span> <span class="p">[</span><span class="n">Regex</span> <span class="k">for</span> <span class="n">the</span> <span class="n">goal</span> <span class="n">constraints</span> <span class="n">to</span> <span class="n">benchmark</span><span class="p">]</span>              <span class="c1"># Default &quot;&quot;</span>
+      <span class="n">trajectory_constraints</span><span class="p">:</span> <span class="p">[</span><span class="n">Regex</span> <span class="k">for</span> <span class="n">the</span> <span class="n">trajectory</span> <span class="n">constraints</span> <span class="n">to</span> <span class="n">benchmark</span><span class="p">]</span>  <span class="c1"># Default &quot;&quot;</span>
 
-      workspace: [Bounds of the workspace the robot plans in.  This is an AABB]    # Optional
-          frame_id: [The frame the workspace parameters are specified in]
-          min_corner: [Coordinates of the minimum corner of the AABB]
-              x: [x-value]
-              y: [y-value]
-              z: [z-value]
-          max_corner: [Coordinates of the maximum corner of the AABB]
-              x: [x-value]
-              y: [y-value]
-              z: [z-value]
+      <span class="n">workspace</span><span class="p">:</span> <span class="p">[</span><span class="n">Bounds</span> <span class="n">of</span> <span class="n">the</span> <span class="n">workspace</span> <span class="n">the</span> <span class="n">robot</span> <span class="n">plans</span> <span class="ow">in</span><span class="o">.</span>  <span class="n">This</span> <span class="ow">is</span> <span class="n">an</span> <span class="n">AABB</span><span class="p">]</span>    <span class="c1"># Optional</span>
+          <span class="n">frame_id</span><span class="p">:</span> <span class="p">[</span><span class="n">The</span> <span class="n">frame</span> <span class="n">the</span> <span class="n">workspace</span> <span class="n">parameters</span> <span class="n">are</span> <span class="n">specified</span> <span class="ow">in</span><span class="p">]</span>
+          <span class="n">min_corner</span><span class="p">:</span> <span class="p">[</span><span class="n">Coordinates</span> <span class="n">of</span> <span class="n">the</span> <span class="n">minimum</span> <span class="n">corner</span> <span class="n">of</span> <span class="n">the</span> <span class="n">AABB</span><span class="p">]</span>
+              <span class="n">x</span><span class="p">:</span> <span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="n">value</span><span class="p">]</span>
+              <span class="n">y</span><span class="p">:</span> <span class="p">[</span><span class="n">y</span><span class="o">-</span><span class="n">value</span><span class="p">]</span>
+              <span class="n">z</span><span class="p">:</span> <span class="p">[</span><span class="n">z</span><span class="o">-</span><span class="n">value</span><span class="p">]</span>
+          <span class="n">max_corner</span><span class="p">:</span> <span class="p">[</span><span class="n">Coordinates</span> <span class="n">of</span> <span class="n">the</span> <span class="n">maximum</span> <span class="n">corner</span> <span class="n">of</span> <span class="n">the</span> <span class="n">AABB</span><span class="p">]</span>
+              <span class="n">x</span><span class="p">:</span> <span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="n">value</span><span class="p">]</span>
+              <span class="n">y</span><span class="p">:</span> <span class="p">[</span><span class="n">y</span><span class="o">-</span><span class="n">value</span><span class="p">]</span>
+              <span class="n">z</span><span class="p">:</span> <span class="p">[</span><span class="n">z</span><span class="o">-</span><span class="n">value</span><span class="p">]</span>
 
-  planning_pipelines:
-      - name: [Name of the planning pipeline used as relative parameter namespace] # REQUIRED
-        planners:                                                                  # REQUIRED
-          - A list of planners
-          - available in the
-          - planning pipeline
-          - to benchmark the
-          - queries in.
-      - name: ...
-          - ...
+  <span class="n">planning_pipelines</span><span class="p">:</span>
+      <span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="p">[</span><span class="n">Name</span> <span class="n">of</span> <span class="n">the</span> <span class="n">planning</span> <span class="n">pipeline</span> <span class="n">used</span> <span class="k">as</span> <span class="n">relative</span> <span class="n">parameter</span> <span class="n">namespace</span><span class="p">]</span> <span class="c1"># REQUIRED</span>
+        <span class="n">planners</span><span class="p">:</span>                                                                  <span class="c1"># REQUIRED</span>
+          <span class="o">-</span> <span class="n">A</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">planners</span>
+          <span class="o">-</span> <span class="n">available</span> <span class="ow">in</span> <span class="n">the</span>
+          <span class="o">-</span> <span class="n">planning</span> <span class="n">pipeline</span>
+          <span class="o">-</span> <span class="n">to</span> <span class="n">benchmark</span> <span class="n">the</span>
+          <span class="o">-</span> <span class="n">queries</span> <span class="ow">in</span><span class="o">.</span>
+      <span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="o">...</span>
+          <span class="o">-</span> <span class="o">...</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="parameters-of-the-benchmarkexecutor-class">
 <h2>Parameters of the BenchmarkExecutor Class<a class="headerlink" href="#parameters-of-the-benchmarkexecutor-class" title="Permalink to this headline">¶</a></h2>
-<p>This class creates a set of <code class="docutils literal"><span class="pre">MotionPlanRequests</span></code> that respect the parameters given in the supplied instance of <code class="docutils literal"><span class="pre">BenchmarkOptions</span></code> and then executes the requests on each of the planners specified.  From the <code class="docutils literal"><span class="pre">BenchmarkOptions</span></code>, queries, <code class="docutils literal"><span class="pre">goal_constraints</span></code>, and <code class="docutils literal"><span class="pre">trajectory_constraints</span></code> are treated as separate queries.  If a set of <code class="docutils literal"><span class="pre">start_states</span></code> is specified, each query, <code class="docutils literal"><span class="pre">goal_constraint</span></code>, and <code class="docutils literal"><span class="pre">trajectory_constraint</span></code> is attempted with each start state (existing start states from a query are ignored).  Similarly, the (optional) set of path constraints is combined combinatorially with the start query and start <code class="docutils literal"><span class="pre">goal_constraint</span></code> pairs (existing <code class="docutils literal"><span class="pre">path_constraint</span></code> from a query are ignored).  The workspace, if specified, overrides any existing workspace parameters.</p>
-<p>The benchmarking pipeline does not utilize <code class="docutils literal"><span class="pre">MoveGroup</span></code>.
-Instead, the planning pipelines are initialized and run directly including all specified <code class="docutils literal"><span class="pre">PlanningRequestAdapters</span></code>.
+<p>This class creates a set of <code class="docutils literal notranslate"><span class="pre">MotionPlanRequests</span></code> that respect the parameters given in the supplied instance of <code class="docutils literal notranslate"><span class="pre">BenchmarkOptions</span></code> and then executes the requests on each of the planners specified.  From the <code class="docutils literal notranslate"><span class="pre">BenchmarkOptions</span></code>, queries, <code class="docutils literal notranslate"><span class="pre">goal_constraints</span></code>, and <code class="docutils literal notranslate"><span class="pre">trajectory_constraints</span></code> are treated as separate queries.  If a set of <code class="docutils literal notranslate"><span class="pre">start_states</span></code> is specified, each query, <code class="docutils literal notranslate"><span class="pre">goal_constraint</span></code>, and <code class="docutils literal notranslate"><span class="pre">trajectory_constraint</span></code> is attempted with each start state (existing start states from a query are ignored).  Similarly, the (optional) set of path constraints is combined combinatorially with the start query and start <code class="docutils literal notranslate"><span class="pre">goal_constraint</span></code> pairs (existing <code class="docutils literal notranslate"><span class="pre">path_constraint</span></code> from a query are ignored).  The workspace, if specified, overrides any existing workspace parameters.</p>
+<p>The benchmarking pipeline does not utilize <code class="docutils literal notranslate"><span class="pre">MoveGroup</span></code>.
+Instead, the planning pipelines are initialized and run directly including all specified <code class="docutils literal notranslate"><span class="pre">PlanningRequestAdapters</span></code>.
 This is especially useful for benchmarking the effects of smoothing adapters.</p>
-<p>It is possible to customize a benchmark run by deriving a class from <code class="docutils literal"><span class="pre">BenchmarkExecutor</span></code> and overriding one or more of the virtual functions.
-For instance, overriding the functions <code class="docutils literal"><span class="pre">initializeBenchmarks()</span></code> or <code class="docutils literal"><span class="pre">loadBenchmarkQueryData()</span></code> allows to specify the benchmark queries directly and to provide a custom planning scene without using ROS warehouse.
-An example is the custom benchmark <code class="docutils literal"><span class="pre">CombinePredefinedPosesBenchmark</span></code> which expects a list of predefined joint states and then creates queries for all pair-wise combinations.
-See the config file <code class="docutils literal"><span class="pre">demo_panda_predefined_poses.yaml</span></code> for how to configure the poses.
+<p>It is possible to customize a benchmark run by deriving a class from <code class="docutils literal notranslate"><span class="pre">BenchmarkExecutor</span></code> and overriding one or more of the virtual functions.
+For instance, overriding the functions <code class="docutils literal notranslate"><span class="pre">initializeBenchmarks()</span></code> or <code class="docutils literal notranslate"><span class="pre">loadBenchmarkQueryData()</span></code> allows to specify the benchmark queries directly and to provide a custom planning scene without using ROS warehouse.
+An example is the custom benchmark <code class="docutils literal notranslate"><span class="pre">CombinePredefinedPosesBenchmark</span></code> which expects a list of predefined joint states and then creates queries for all pair-wise combinations.
+See the config file <code class="docutils literal notranslate"><span class="pre">demo_panda_predefined_poses.yaml</span></code> for how to configure the poses.
 You can run this example with:</p>
-<div class="highlight-python"><div class="highlight"><pre>roslaunch moveit_ros_benchmarks demo_panda_predefined_poses.launch
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">roslaunch</span> <span class="n">moveit_ros_benchmarks</span> <span class="n">demo_panda_predefined_poses</span><span class="o">.</span><span class="n">launch</span>
 </pre></div>
 </div>
 <p>Additionally, a set of functions exists for ease of customization in derived classes:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">preRunEvent</span></code>: invoked immediately before each call to solve</li>
-<li><code class="docutils literal"><span class="pre">postRunEvent</span></code>: invoked immediately after each call to solve</li>
-<li><code class="docutils literal"><span class="pre">plannerSwitchEvent</span></code>: invoked when the planner changes during benchmarking</li>
-<li><code class="docutils literal"><span class="pre">querySwitchEvent</span></code>: invoked before a new benchmark problem begin execution</li>
+<li><code class="docutils literal notranslate"><span class="pre">preRunEvent</span></code>: invoked immediately before each call to solve</li>
+<li><code class="docutils literal notranslate"><span class="pre">postRunEvent</span></code>: invoked immediately after each call to solve</li>
+<li><code class="docutils literal notranslate"><span class="pre">plannerSwitchEvent</span></code>: invoked when the planner changes during benchmarking</li>
+<li><code class="docutils literal notranslate"><span class="pre">querySwitchEvent</span></code>: invoked before a new benchmark problem begin execution</li>
 </ul>
-<p>Note, in the above, a benchmark is a concrete instance of a <code class="docutils literal"><span class="pre">PlanningScene</span></code>, start state, goal constraints / <code class="docutils literal"><span class="pre">trajectory_constraints</span></code>, and (optionally) <code class="docutils literal"><span class="pre">path_constraints</span></code>.  A run is one attempt by a specific planner to solve the benchmark.</p>
+<p>Note, in the above, a benchmark is a concrete instance of a <code class="docutils literal notranslate"><span class="pre">PlanningScene</span></code>, start state, goal constraints / <code class="docutils literal notranslate"><span class="pre">trajectory_constraints</span></code>, and (optionally) <code class="docutils literal notranslate"><span class="pre">path_constraints</span></code>.  A run is one attempt by a specific planner to solve the benchmark.</p>
 </div>
 <div class="section" id="benchmarking-of-different-motion-planners-chomp-stomp-and-ompl">
 <h2>Benchmarking of Different Motion Planners: CHOMP, STOMP and OMPL<a class="headerlink" href="#benchmarking-of-different-motion-planners-chomp-stomp-and-ompl" title="Permalink to this headline">¶</a></h2>
 <p>This section contains the instructions for benchmarking different motion planners present in MoveIt: CHOMP, STOMP and OMPL. These planners can be compared with each other for a well defined benchmark (which is for the same environment, start states, queries and goal states). Different metrics for each of the planners can be reported to get quantitative statistics which could aid in proper selection of a particular planner in a defined environment. The statistics reported for each of the planners includes: time taken to compute the path, path length, path time, whether a valid path was found or not, etc.</p>
 <div class="section" id="benchmarking-in-a-scene-without-obstacles">
 <h3>Benchmarking in a scene without obstacles<a class="headerlink" href="#benchmarking-in-a-scene-without-obstacles" title="Permalink to this headline">¶</a></h3>
-<p>To benchmark different planners in a simple environment without obstacles, open one terminal and follow the steps in the <a class="reference external" href="../benchmarking/benchmarking_tutorial.html#example">Example section</a> at the top of this page. In the last two steps instead of editing <code class="docutils literal"><span class="pre">demo1.yaml</span></code> and launching <code class="docutils literal"><span class="pre">demo_panda.launch</span></code>, edit <code class="docutils literal"><span class="pre">demo_panda_all_planners.yaml</span></code> and launch <code class="docutils literal"><span class="pre">demo_panda_all_planners.launch</span></code>.</p>
+<p>To benchmark different planners in a simple environment without obstacles, open one terminal and follow the steps in the <a class="reference external" href="../benchmarking/benchmarking_tutorial.html#example">Example section</a> at the top of this page. In the last two steps instead of editing <code class="docutils literal notranslate"><span class="pre">demo1.yaml</span></code> and launching <code class="docutils literal notranslate"><span class="pre">demo_panda.launch</span></code>, edit <code class="docutils literal notranslate"><span class="pre">demo_panda_all_planners.yaml</span></code> and launch <code class="docutils literal notranslate"><span class="pre">demo_panda_all_planners.launch</span></code>.</p>
 </div>
 <div class="section" id="benchmarking-in-a-scene-with-obstacles">
 <h3>Benchmarking in a scene with obstacles<a class="headerlink" href="#benchmarking-in-a-scene-with-obstacles" title="Permalink to this headline">¶</a></h3>
 <p>To benchmark motion planners in a scene filled with obstacles, open two terminals. In the first terminal start RViz and wait for everything to finish loading:</p>
-<div class="highlight-python"><div class="highlight"><pre>roslaunch panda_moveit_config demo.launch db:=true
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">roslaunch</span> <span class="n">panda_moveit_config</span> <span class="n">demo</span><span class="o">.</span><span class="n">launch</span> <span class="n">db</span><span class="p">:</span><span class="o">=</span><span class="n">true</span>
 </pre></div>
 </div>
 <p>In the second terminal, run either of the two commands:</p>
-<div class="highlight-python"><div class="highlight"><pre>rosrun moveit_tutorials collision_scene_example.py sparse
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rosrun</span> <span class="n">moveit_tutorials</span> <span class="n">collision_scene_example</span><span class="o">.</span><span class="n">py</span> <span class="n">sparse</span>
 </pre></div>
 </div>
 <p>or:</p>
-<div class="highlight-python"><div class="highlight"><pre>rosrun moveit_tutorials collision_scene_example.py cluttered
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rosrun</span> <span class="n">moveit_tutorials</span> <span class="n">collision_scene_example</span><span class="o">.</span><span class="n">py</span> <span class="n">cluttered</span>
 </pre></div>
 </div>
 <p>Now follow these steps:</p>
 <ol class="arabic">
 <li><p class="first">Within the <em>Motion Planning</em> RViz plugin, connect to the database by pressing the <em>Connect</em> button in the <em>Context</em> tab.</p>
 </li>
-<li><p class="first">Save a scene on the <em>Stored Scenes</em> tab and name it <code class="docutils literal"><span class="pre">ObstaclesScene</span></code> by double clicking the scene in the list.</p>
+<li><p class="first">Save a scene on the <em>Stored Scenes</em> tab and name it <code class="docutils literal notranslate"><span class="pre">ObstaclesScene</span></code> by double clicking the scene in the list.</p>
 </li>
 <li><p class="first">Move the start and goal states of the Panda arm by using the interactive markers.</p>
 </li>
-<li><p class="first">Save an associated query for the <code class="docutils literal"><span class="pre">ObstaclesScene</span></code> scene and name the query <code class="docutils literal"><span class="pre">Pick1</span></code>.</p>
+<li><p class="first">Save an associated query for the <code class="docutils literal notranslate"><span class="pre">ObstaclesScene</span></code> scene and name the query <code class="docutils literal notranslate"><span class="pre">Pick1</span></code>.</p>
 </li>
-<li><p class="first">Also save a start state for the robot on the <em>Stored States</em> tab and name it <code class="docutils literal"><span class="pre">Start1</span></code>.</p>
+<li><p class="first">Also save a start state for the robot on the <em>Stored States</em> tab and name it <code class="docutils literal notranslate"><span class="pre">Start1</span></code>.</p>
 </li>
-<li><p class="first">The config file <code class="docutils literal"><span class="pre">moveit_ros/benchmarks/examples/demo_obstacles.yaml</span></code> refers to the scenes, queries and start states used for benchmarking. Modify them appropriately.</p>
+<li><p class="first">The config file <code class="docutils literal notranslate"><span class="pre">moveit_ros/benchmarks/examples/demo_obstacles.yaml</span></code> refers to the scenes, queries and start states used for benchmarking. Modify them appropriately.</p>
 </li>
-<li><p class="first">Bring down your previous launch file (<code class="docutils literal"><span class="pre">ctrl+c</span></code>).</p>
+<li><p class="first">Bring down your previous launch file (<code class="docutils literal notranslate"><span class="pre">ctrl+c</span></code>).</p>
 </li>
-<li><p class="first">Change the location <code class="docutils literal"><span class="pre">output_directory</span></code> to export the benchmarked files:</p>
-<div class="highlight-python"><div class="highlight"><pre>rosed moveit_ros_benchmarks demo_obstacles.yaml
+<li><p class="first">Change the location <code class="docutils literal notranslate"><span class="pre">output_directory</span></code> to export the benchmarked files:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rosed</span> <span class="n">moveit_ros_benchmarks</span> <span class="n">demo_obstacles</span><span class="o">.</span><span class="n">yaml</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">Run the benchmarks:</p>
-<div class="highlight-python"><div class="highlight"><pre>roslaunch moveit_ros_benchmarks demo_panda_all_planners_obstacles.launch
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">roslaunch</span> <span class="n">moveit_ros_benchmarks</span> <span class="n">demo_panda_all_planners_obstacles</span><span class="o">.</span><span class="n">launch</span>
 </pre></div>
 </div>
 </li>
@@ -1016,7 +1068,7 @@ You can run this example with:</p>
 
     </section>
   </div>
-  
+
   
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
@@ -1030,6 +1082,7 @@ You can run this example with:</p>
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/language_data.js"></script>
 
   
 

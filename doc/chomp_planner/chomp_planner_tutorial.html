@@ -34,6 +34,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="moveit_tutorials Noetic documentation" href="../../index.html"/>
         <link rel="next" title="STOMP Planner" href="../stomp_planner/stomp_planner_tutorial.html"/>
         <link rel="prev" title="OMPL Planner" href="../ompl_interface/ompl_interface_tutorial.html"/> 
@@ -65,18 +68,18 @@
         <a href="http://moveit.ros.org">
           <img src="../../_static/logo.png"/>
         </a>
-        
+
         <div class="version">
-          <div class="version-dropdown">
-            <lable for="version-list">Version:</lable>
-          <select class="version-list" id="version-list" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-              <option value=''>Noetic</option>
-              <option value="http://docs.ros.org/en/melodic/api/moveit_tutorials/html/index.html">Melodic</option>
-              <option value="http://docs.ros.org/en/kinetic/api/moveit_tutorials/html/index.html">Kinetic</option>
-              <option value="http://docs.ros.org/en/indigo/api/moveit_tutorials/html/index.html">Indigo (EOL)</option>
-          </select>
-          </div>
-        </div><br>
+    <div class="version-dropdown">
+        <lable for="version-list">Version:</lable>
+    <select class="version-list" id="version-list" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+        <option value="http://moveit2_tutorials.picknik.ai">Moveit 2 - Foxy</option>
+        <option value='' selected>MoveIt 1 - Noetic</option>
+        <option value="http://docs.ros.org/en/melodic/api/moveit_tutorials/html/index.html">MoveIt 1 - Melodic</option>
+        <option value="http://docs.ros.org/en/kinetic/api/moveit_tutorials/html/index.html">MoveIt 1 - Kinetic</option>
+    </select>
+    </div>
+</div><br>
         
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -113,6 +116,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#step-4-use-motion-planning-with-the-panda">Step 4: Use Motion Planning with the Panda</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#choosing-specific-start-goal-states">Choosing Specific Start/Goal States</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#introspecting-trajectory-waypoints">Introspecting Trajectory Waypoints</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#plan-cartesian-motions">Plan Cartesian motions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#executing-trajectories-adjusting-speed">Executing Trajectories, Adjusting Speed</a></li>
@@ -346,7 +350,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../pick_place/pick_place_tutorial.html">Pick and Place</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#running-the-demo">Running The Demo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#understanding-moveit-msgs-grasp">Understanding <code class="docutils literal"><span class="pre">moveit_msgs::Grasp</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#understanding-moveit-msgs-grasp">Understanding <code class="docutils literal notranslate"><span class="pre">moveit_msgs::Grasp</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#the-entire-code">The Entire Code</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#creating-environment">Creating Environment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#pick-pipeline">Pick Pipeline</a><ul>
@@ -461,6 +465,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../bullet_collision_checker/bullet_collision_checker.html#launch-file">Launch file</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html">Mesh Filter with UR5 and Kinect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#running-the-demo">Running the Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#how-to-add-sensor-to-arm-in-simulation">How to add sensor to arm in simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#references">References</a></li>
+</ul>
+</li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html">MoveIt Setup Assistant</a><ul>
@@ -478,7 +489,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-10-ros-control">Step 10: ROS Control</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-11-add-author-information">Step 11: Add Author Information</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-12-generate-configuration-files">Step 12: Generate Configuration Files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#what-s-next">What&#8217;s Next</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#what-s-next">What’s Next</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#additional-reading">Additional Reading</a></li>
 </ul>
 </li>
@@ -591,6 +602,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../trac_ik/trac_ik_tutorial.html#usage">Usage</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html">OPW Kinematics Solver for Industrial Manipulators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#intro">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#sharing-opw-descriptions">Sharing OPW descriptions</a></li>
+</ul>
+</li>
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html">Kinematics Configuration</a><ul>
@@ -598,6 +617,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#parameters">Parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-kdl-kinematics-plugin">The KDL Kinematics Plugin</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-lma-kinematics-plugin">The LMA Kinematics Plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-cached-ik-plugin">The Cached IK Plugin</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#position-only-ik">Position Only IK</a></li>
@@ -607,6 +627,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#creating-a-constraint-sampler">Creating a constraint sampler</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../planning_constraints/planning_constraints.html">Representation and Evaluation of Constraints</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../planning_constraints/planning_constraints.html#see-also">See Also</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../ompl_interface/ompl_interface_tutorial.html">OMPL Planner</a><ul>
@@ -626,7 +650,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ompl_interface/ompl_interface_tutorial.html#persistent-roadmaps">Persistent Roadmaps</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">CHOMP Planner</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">CHOMP Planner</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#using-chomp-with-your-robot">Using CHOMP with Your Robot</a></li>
@@ -668,18 +692,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#cartesian-limits">Cartesian Limits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-interface">Planning Interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-ptp-motion-command">The PTP motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#input-parameters-in-moveit-msgs-motionplanrequest">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-results-in-moveit-msg-motionplanresponse">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#input-parameters-in-moveit-msgs-motionplanrequest">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-results-in-moveit-msg-motionplanresponse">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-lin-motion-command">The LIN motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id1">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id2">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id1">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id2">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-circ-motion-command">The CIRC motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id3">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id4">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id3">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id4">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#example">Example</a></li>
@@ -688,7 +712,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#sequence-of-multiple-segments">Sequence of multiple segments</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#user-interface-sequence-capability">User interface sequence capability</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#restrictions-for-motionsequencerequest">Restrictions for <code class="docutils literal"><span class="pre">MotionSequenceRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#restrictions-for-motionsequencerequest">Restrictions for <code class="docutils literal notranslate"><span class="pre">MotionSequenceRequest</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#action-interface">Action interface</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#service-interface">Service interface</a></li>
 </ul>
@@ -711,6 +735,20 @@
 </li>
 </ul>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html">Gazebo Simulation Integration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#after-moveit-setup-assistant">After MoveIt Setup Assistant</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#fix-the-robot-to-the-world-coordinate-system">1. Fix the robot to the world coordinate system</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-damping-to-the-joint-specifications">2. Add damping to the joint specifications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-inertia-matrices-and-masses-to-the-links">3. Add inertia matrices and masses to the links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-friction-and-colorize-the-links">4. Add friction and colorize the links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#configure-gazebo-ros-control-transmissions-and-actuators">5. Configure gazebo_ros_control, transmissions and actuators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#adjust-auto-generated-ros-controllers-yaml">6. Adjust auto-generated ros_controllers.yaml</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#adjust-auto-generated-ros-controllers-launch-in-the-panda-moveit-config-package">7. Adjust auto-generated <code class="code docutils literal notranslate"><span class="pre">ros_controllers.launch</span></code> in the <code class="code docutils literal notranslate"><span class="pre">panda_moveit_config</span></code> package.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#change-the-way-robot-description-is-loaded-to-parameter-server">8. Change the way <code class="code docutils literal notranslate"><span class="pre">robot_description</span></code> is loaded to Parameter Server.</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html">Joystick Control Teleoperation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html#running-the-code">Running the Code</a></li>
@@ -753,6 +791,19 @@
 <li class="toctree-l2"><a class="reference internal" href="../tests/tests_tutorial.html#code-coverage">Code Coverage</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html">Debugging Tests</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#ci-failures">CI Failures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#launch-docker-environment">Launch Docker Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#setup-environment">Setup Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#checkout-code">Checkout Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#install-dependencies">Install Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#configure-and-build">Configure and Build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#build-the-tests">Build the Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#run-the-tests">Run the Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#run-one-test">Run One Test</a></li>
+</ul>
+</li>
 </ul>
 
           
@@ -789,7 +840,8 @@
   <br />
 <div class="admonition note">
 <p class="first admonition-title">Tutorials Version: Noetic</p>
-<p class="last">This is the latest version, which is actively developed and best for beginners. If you are still running a Melodic release, please use the <a class="reference external" href="http://docs.ros.org/melodic/api/moveit_tutorials/html/index.html">Melodic tutorials</a>.</p>
+<p class="last">This is the latest (and last) version of MoveIt 1 for ROS Noetic, which is still actively developed. See also <a class="reference external" href="http://moveit2_tutorials.picknik.ai/">MoveIt 2 tutorials</a> and other available versions in drop down box on left.
+</p>
 </div>
   <hr/>
 </div>
@@ -806,30 +858,30 @@
 <p>Covariant Hamiltonian optimization for motion planning (CHOMP) is a gradient-based trajectory optimization procedure that makes many everyday motion planning problems both simple and trainable (Ratliff et al., 2009c). While most high-dimensional motion planners separate trajectory generation into distinct planning and optimization stages, this algorithm capitalizes on covariant gradient and functional gradient approaches to the optimization stage to design a motion planning algorithm based entirely on trajectory optimization. Given an infeasible naive trajectory, CHOMP reacts to the surrounding environment to quickly pull the trajectory out of collision while simultaneously optimizing dynamical quantities such as joint velocities and accelerations. It rapidly converges to a smooth collision-free trajectory that can be executed efficiently on the robot. Integration into latest version of MoveIt is <a class="reference external" href="https://github.com/ros-planning/moveit/issues/702">work in progress</a>. <a class="reference external" href="http://www.nathanratliff.com/thesis-research/chomp">More info</a></p>
 <div class="section" id="getting-started">
 <h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
-<p>If you haven&#8217;t already done so, make sure you&#8217;ve completed the steps in <a class="reference external" href="../getting_started/getting_started.html">Getting Started</a>.</p>
+<p>If you haven’t already done so, make sure you’ve completed the steps in <a class="reference external" href="../getting_started/getting_started.html">Getting Started</a>.</p>
 <p>You should also have gone through the steps in <a class="reference external" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html">Visualization with MoveIt RViz Plugin</a></p>
 </div>
 <div class="section" id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li>On ROS Melodic you do not need to build MoveIt from source, but for older versions of MoveIt you do (see previous tutorial versions).</li>
-<li>To use CHOMP with your robot you must already have a MoveIt configuration package for your robot already. For example, if you have a Panda robot, it&#8217;s called <code class="docutils literal"><span class="pre">panda_moveit_config</span></code>. This is typically configured using the <a class="reference external" href="../setup_assistant/setup_assistant_tutorial.html">MoveIt Setup Assistant</a>.</li>
+<li>To use CHOMP with your robot you must already have a MoveIt configuration package for your robot already. For example, if you have a Panda robot, it’s called <code class="docutils literal notranslate"><span class="pre">panda_moveit_config</span></code>. This is typically configured using the <a class="reference external" href="../setup_assistant/setup_assistant_tutorial.html">MoveIt Setup Assistant</a>.</li>
 </ol>
 </div>
 <div class="section" id="using-chomp-with-your-robot">
 <h2>Using CHOMP with Your Robot<a class="headerlink" href="#using-chomp-with-your-robot" title="Permalink to this headline">¶</a></h2>
-<p><strong>Note:</strong> if you are following this demo using the <code class="docutils literal"><span class="pre">panda_moveit_config</span></code> from the <a class="reference external" href="https://github.com/ros-planning/panda_moveit_config">ros-planning/panda_moveit_config</a> repository, these steps are already done for you and you can skip this section.</p>
+<p><strong>Note:</strong> if you are following this demo using the <code class="docutils literal notranslate"><span class="pre">panda_moveit_config</span></code> from the <a class="reference external" href="https://github.com/ros-planning/panda_moveit_config">ros-planning/panda_moveit_config</a> repository, these steps are already done for you and you can skip this section.</p>
 <ol class="arabic simple">
-<li>Simply download <a class="reference external" href="https://github.com/ros-planning/panda_moveit_config/blob/melodic-devel/launch/chomp_planning_pipeline.launch.xml">chomp_planning_pipeline.launch.xml</a> file into the launch directory of your MoveIt config package. In our case, we will save this file in the <code class="docutils literal"><span class="pre">panda_moveit_config/launch</span></code> directory.</li>
-<li>Adjust the line <code class="docutils literal"><span class="pre">&lt;rosparam</span> <span class="pre">command=&quot;load&quot;</span> <span class="pre">file=&quot;$(find</span> <span class="pre">panda_moveit_config)/config/chomp_planning.yaml&quot;</span> <span class="pre">/&gt;</span></code> to <code class="docutils literal"><span class="pre">&lt;rosparam</span> <span class="pre">command=&quot;load&quot;</span> <span class="pre">file=&quot;$(find</span> <span class="pre">&lt;robot_moveit_config&gt;)/config/chomp_planning.yaml&quot;</span> <span class="pre">/&gt;</span></code> replacing <code class="docutils literal"><span class="pre">&lt;robot_moveit_config&gt;</span></code> with the name of your MoveIt configuration package.</li>
-<li>Download <a class="reference external" href="https://github.com/ros-planning/panda_moveit_config/blob/melodic-devel/config/chomp_planning.yaml">chomp_planning.yaml</a> file into the config directory of your MoveIt config package. In our case, we will save this file in the <code class="docutils literal"><span class="pre">panda_moveit_config/config</span></code> directory.</li>
-<li>Open <code class="docutils literal"><span class="pre">chomp_planning.yaml</span></code> in your favorite editor and change <code class="docutils literal"><span class="pre">animate_endeffector_segment:</span> <span class="pre">&quot;panda_rightfinger&quot;</span></code> to the appropriate link for your robot.</li>
+<li>Simply download <a class="reference external" href="https://github.com/ros-planning/panda_moveit_config/blob/melodic-devel/launch/chomp_planning_pipeline.launch.xml">chomp_planning_pipeline.launch.xml</a> file into the launch directory of your MoveIt config package. In our case, we will save this file in the <code class="docutils literal notranslate"><span class="pre">panda_moveit_config/launch</span></code> directory.</li>
+<li>Adjust the line <code class="docutils literal notranslate"><span class="pre">&lt;rosparam</span> <span class="pre">command=&quot;load&quot;</span> <span class="pre">file=&quot;$(find</span> <span class="pre">panda_moveit_config)/config/chomp_planning.yaml&quot;</span> <span class="pre">/&gt;</span></code> to <code class="docutils literal notranslate"><span class="pre">&lt;rosparam</span> <span class="pre">command=&quot;load&quot;</span> <span class="pre">file=&quot;$(find</span> <span class="pre">&lt;robot_moveit_config&gt;)/config/chomp_planning.yaml&quot;</span> <span class="pre">/&gt;</span></code> replacing <code class="docutils literal notranslate"><span class="pre">&lt;robot_moveit_config&gt;</span></code> with the name of your MoveIt configuration package.</li>
+<li>Download <a class="reference external" href="https://github.com/ros-planning/panda_moveit_config/blob/melodic-devel/config/chomp_planning.yaml">chomp_planning.yaml</a> file into the config directory of your MoveIt config package. In our case, we will save this file in the <code class="docutils literal notranslate"><span class="pre">panda_moveit_config/config</span></code> directory.</li>
+<li>Open <code class="docutils literal notranslate"><span class="pre">chomp_planning.yaml</span></code> in your favorite editor and change <code class="docutils literal notranslate"><span class="pre">animate_endeffector_segment:</span> <span class="pre">&quot;panda_rightfinger&quot;</span></code> to the appropriate link for your robot.</li>
 </ol>
 </div>
 <div class="section" id="running-the-demo">
 <h2>Running the Demo<a class="headerlink" href="#running-the-demo" title="Permalink to this headline">¶</a></h2>
-<p>If you have the <code class="docutils literal"><span class="pre">panda_moveit_config</span></code> from the <a class="reference external" href="https://github.com/ros-planning/panda_moveit_config">ros-planning/panda_moveit_config</a> repository you should be able to simply run the demo:</p>
-<div class="highlight-python"><div class="highlight"><pre>roslaunch panda_moveit_config demo.launch pipeline:=chomp
+<p>If you have the <code class="docutils literal notranslate"><span class="pre">panda_moveit_config</span></code> from the <a class="reference external" href="https://github.com/ros-planning/panda_moveit_config">ros-planning/panda_moveit_config</a> repository you should be able to simply run the demo:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">roslaunch</span> <span class="n">panda_moveit_config</span> <span class="n">demo</span><span class="o">.</span><span class="n">launch</span> <span class="n">pipeline</span><span class="p">:</span><span class="o">=</span><span class="n">chomp</span>
 </pre></div>
 </div>
 <div class="section" id="running-chomp-with-obstacles-in-the-scene">
@@ -839,15 +891,15 @@
 <div><a class="reference external" href="https://github.com/ros-planning/moveit_tutorials/blob/master/doc/collision_environments/scripts/collision_scene_example.py">collision_scene_example.py</a>.</div></blockquote>
 <p>This script creates a cluttered scene with four obstacles or a simple scene with one obstacle depending on the argument given to the script. One can also change the position/size of the obstacles to change the scene.</p>
 <p>To run the CHOMP planner with obstacles, open two shells. In the first shell start RViz and wait for everything to finish loading:</p>
-<div class="highlight-python"><div class="highlight"><pre>roslaunch panda_moveit_config demo.launch pipeline:=chomp
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">roslaunch</span> <span class="n">panda_moveit_config</span> <span class="n">demo</span><span class="o">.</span><span class="n">launch</span> <span class="n">pipeline</span><span class="p">:</span><span class="o">=</span><span class="n">chomp</span>
 </pre></div>
 </div>
 <p>In the second shell, run either of the two commands:</p>
-<div class="highlight-python"><div class="highlight"><pre>rosrun moveit_tutorials collision_scene_example.py cluttered
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rosrun</span> <span class="n">moveit_tutorials</span> <span class="n">collision_scene_example</span><span class="o">.</span><span class="n">py</span> <span class="n">cluttered</span>
 </pre></div>
 </div>
 <p>or:</p>
-<div class="highlight-python"><div class="highlight"><pre>rosrun moveit_tutorials collision_scene_example.py sparse
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rosrun</span> <span class="n">moveit_tutorials</span> <span class="n">collision_scene_example</span><span class="o">.</span><span class="n">py</span> <span class="n">sparse</span>
 </pre></div>
 </div>
 <p>Next, in RViz, select CHOMP in the MotionPlanning pannel under the Context tab. Set the desired start and goal states by moving the end-effector around with the imarker and then click on the Plan button under the Planning tab in the MotionPlanning pannel to start planning. The planner will now attempt to find a feasible solution between the given start and end position.</p>
@@ -857,26 +909,54 @@
 <h2>Tweaking some of the parameters for CHOMP<a class="headerlink" href="#tweaking-some-of-the-parameters-for-chomp" title="Permalink to this headline">¶</a></h2>
 <p>CHOMP has some optimization parameters associated with it. These can be modified for the given environment/robot you are working with and is normally present in the <a class="reference external" href="https://github.com/ros-planning/panda_moveit_config/blob/melodic-devel/config/chomp_planning.yaml">chomp_planning.yaml</a> file in config folder of the robot you are working with. If this file does not exist for your robot, you can create it and set the parameter values as you want. The following are some of the insights to set up these parameter values for some of them:</p>
 <ul class="simple">
-<li><em>planning_time_limit</em>: the maximum time the optimizer can take to find a solution before terminating</li>
-<li><em>max_iterations</em>: this is the maximum number of iterations that the planner can take to find a good solution while optimization</li>
-<li><em>max_iterations_after_collision_free</em>: maximum iterations to be performed after a collision-free path is found.</li>
-<li><em>smoothness_cost_weight</em>:  the smoothness_cost_weight parameters controls its weight in the final cost that CHOMP is actually optimizing over</li>
-<li><em>obstacle_cost_weight</em>: this controls the weight to be given to obstacles towards the final cost CHOMP optimizes over. e.g., 0.0 would have obstacles to be ignored, 1.0 would be a hard constraint</li>
-<li><em>learning_rate</em>: this is the learning rate used by the optimizer to find the local / global minima while reducing the total cost.</li>
-<li><em>smoothness_cost_velocity, smoothness_cost_acceleration, smoothness_cost_jerk</em>: variables associated with the cost in velocity, acceleration and jerk.</li>
-<li><em>ridge_factor</em>: the noise added to the diagonal of the total <a class="reference external" href="https://github.com/ros-planning/moveit/blob/master/moveit_planners/chomp/chomp_motion_planner/src/chomp_cost.cpp#L62/">quadratic cost matrix</a> in the objective function. Addition of small noise (e.g., 0.001) allows CHOMP to avoid obstacles at the cost of smoothness in trajectory.</li>
-<li><em>use_pseudo_inverse</em>: enable pseudo inverse calculations or not.</li>
-<li><em>pseudo_inverse_ridge_factor</em>: set the ridge factor if pseudo inverse is enabled.</li>
-<li><em>joint_update_limit</em>: set the update limit for the robot joints</li>
-<li><em>collision_clearance</em>: the minimum distance that needs to be maintained to avoid obstacles.</li>
-<li><em>collision_threshold</em>: the collision threshold cost that needs to be maintained to avoid collisions</li>
-<li><em>use_stochastic_descent</em>: set this to true/false if you want to use stochastic descent while optimizing the cost. In stochastic descent, a random point from the trajectory is used, rather than all the trajectory points. This is faster and guaranteed to converge, but it may take more iterations in the worst case.</li>
-<li><em>enable failure recovery</em>: if this is set to true, CHOMP tweaks ceratin parameters in the hope to find a solution when one does not exist with the default paramters specified in the <code class="docutils literal"><span class="pre">chomp_planning.yaml</span></code> file.</li>
-<li><em>max_recovery_attempts</em>: this is the maximum times that CHOMP is run with a varied set of parameters after the first attempt with the default parameters.</li>
-<li><em>trajectory_initializaiton_method</em>: the type of initialization of the trajectory can be supplied here for CHOMP, this can be <code class="docutils literal"><span class="pre">quintic-spline</span></code>, <code class="docutils literal"><span class="pre">linear</span></code>, <code class="docutils literal"><span class="pre">cubic</span></code> or <code class="docutils literal"><span class="pre">fillTrajectory</span></code>. The first three options refer to the interpolation methods used for trajectory initialization between start and goal states. <code class="docutils literal"><span class="pre">fillTrajectory</span></code> provides an option of initializing the trajectory from path computed from an existing motion planner like OMPL.</li>
+<li><strong>planning_time_limit</strong>: ::
+The maximum time the optimizer can take to find a solution before terminating</li>
+<li><strong>max_iterations</strong>: ::
+This is the maximum number of iterations that the planner can take to find a good solution while optimization</li>
+<li><strong>max_iterations_after_collision_free</strong>: ::
+Maximum iterations to be performed after a collision-free path is found.</li>
+<li><strong>smoothness_cost_weight</strong>:  ::
+The smoothness_cost_weight parameters controls its weight in the final cost that CHOMP is actually optimizing over.</li>
+<li><strong>obstacle_cost_weight</strong>: ::
+This controls the weight to be given to obstacles towards the final cost CHOMP optimizes over. e.g., 0.0 would have obstacles to be ignored, 1.0 would be a hard constraint</li>
+<li><strong>learning_rate</strong>: ::
+This is the learning rate used by the optimizer to find the local / global minima while reducing the total cost.</li>
+<li><strong>smoothness_cost_velocity, smoothness_cost_acceleration, smoothness_cost_jerk</strong>: ::
+Variables associated with the cost in velocity, acceleration and jerk.</li>
+<li><strong>ridge_factor</strong>: ::
+The noise added to the diagonal of the total <a class="reference external" href="https://github.com/ros-planning/moveit/blob/master/moveit_planners/chomp/chomp_motion_planner/src/chomp_cost.cpp#L62/">quadratic cost matrix</a> in the objective function. Addition of small noise (e.g., 0.001) allows CHOMP to avoid obstacles at the cost of smoothness in trajectory.</li>
+<li><strong>use_pseudo_inverse</strong>: ::
+Enable pseudo inverse calculations or not.</li>
+<li><strong>pseudo_inverse_ridge_factor</strong>: ::
+Set the ridge factor if pseudo inverse is enabled.</li>
+<li><strong>joint_update_limit</strong>: ::
+Set the update limit for the robot joints</li>
+<li><strong>collision_clearance</strong>: ::
+The minimum distance that needs to be maintained to avoid obstacles.</li>
+<li><strong>collision_threshold</strong>: ::
+The collision threshold cost that needs to be maintained to avoid collisions</li>
+<li><strong>use_stochastic_descent</strong>: ::
+Set this to true/false if you want to use stochastic descent while optimizing the cost. In stochastic descent, a random point from the trajectory is used, rather than all the trajectory points. This is faster and guaranteed to converge, but it may take more iterations in the worst case.</li>
+<li><strong>enable failure recovery</strong>: ::
+If this is set to true, CHOMP tweaks ceratin parameters in the hope to find a solution when one does not exist with the default paramters specified in the <code class="docutils literal notranslate"><span class="pre">chomp_planning.yaml</span></code> file.</li>
+<li><strong>max_recovery_attempts</strong>: ::
+This is the maximum times that CHOMP is run with a varied set of parameters after the first attempt with the default parameters.</li>
+<li><strong>trajectory_initializaiton_method</strong>: ::
+The type of initialization of the trajectory can be supplied here for CHOMP, this can be <code class="docutils literal notranslate"><span class="pre">quintic-spline</span></code>, <code class="docutils literal notranslate"><span class="pre">linear</span></code>, <code class="docutils literal notranslate"><span class="pre">cubic</span></code> or <code class="docutils literal notranslate"><span class="pre">fillTrajectory</span></code>. The first three options refer to the interpolation methods used for trajectory initialization between start and goal states. <code class="docutils literal notranslate"><span class="pre">fillTrajectory</span></code> provides an option of initializing the trajectory from path computed from an existing motion planner like OMPL.</li>
 </ul>
 <p>Choosing parameters for CHOMP requires some intuition that is informed by the planning environment. For instance, the default parameters for CHOMP work well in environments without obstacles; however, in environments with many obstacles the default parameters will likely cause CHOMP to get stuck in local minima. By tweaking parameters, we can improve the quality of plans generated by CHOMP.</p>
-<p>Some of the unused/commented parameters are <em>hmc_stochasticity</em>, <em>hmc_annealing_factor</em>, <em>hmc_discretization</em>, <em>use_hamiltonian_montecarlo</em>, <em>animate_endeffector</em>, <em>animate_endeffector_segment</em>, <em>animate_path</em>, <em>random_jump_amount</em>, <em>add_randomness</em>.</p>
+<p>Some of the unused/commented parameters are:</p>
+<ul class="simple">
+<li>hmc_stochasticity</li>
+<li>hmc_annealing_factor</li>
+<li>hmc_discretization</li>
+<li>use_hamiltonian_montecarlo</li>
+<li>animate_endeffector</li>
+<li>animate_endeffector_segment</li>
+<li>animate_path</li>
+<li>random_jump_amount</li>
+<li>add_randomness</li>
+</ul>
 </div>
 <div class="section" id="difference-between-plans-obtained-by-chomp-and-ompl">
 <h2>Difference between plans obtained by CHOMP and OMPL<a class="headerlink" href="#difference-between-plans-obtained-by-chomp-and-ompl" title="Permalink to this headline">¶</a></h2>
@@ -890,8 +970,8 @@
 <p>Here, it is demonstrated that CHOMP can also be used as a post-processing optimization technique for plans obtained by other planning algorithms. The intuition behind this is that some randomized planning algorithm produces an initial guess for CHOMP. CHOMP then takes this initial guess and further optimizes the trajectory.
 To achieve this, follow the steps:</p>
 <ol class="arabic">
-<li><p class="first">Create a new launch file <code class="docutils literal"><span class="pre">ompl-chomp_planning_pipeline.launch</span></code> in the <code class="docutils literal"><span class="pre">&lt;robot_moveit_config&gt;/launch</span></code> folder of your robot with the following contents:</p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;launch&gt;
+<li><p class="first">Create a new launch file <code class="docutils literal notranslate"><span class="pre">ompl-chomp_planning_pipeline.launch</span></code> in the <code class="docutils literal notranslate"><span class="pre">&lt;robot_moveit_config&gt;/launch</span></code> folder of your robot with the following contents:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;launch&gt;
   &lt;!-- load OMPL planning pipeline, but add the CHOMP planning adapter. --&gt;
   &lt;include file=&quot;$(find panda_moveit_config)/launch/ompl_planning_pipeline.launch.xml&quot;&gt;
     &lt;arg name=&quot;planning_adapters&quot; value=&quot;
@@ -911,16 +991,16 @@ To achieve this, follow the steps:</p>
 </pre></div>
 </div>
 </li>
-<li><p class="first">This launch file defines the new planning pipeline <code class="docutils literal"><span class="pre">ompl-chomp</span></code>, deriving from the <code class="docutils literal"><span class="pre">ompl</span></code> pipeline,
-but adding the CHOMP post-processor as a planning adapter. Also, the <code class="docutils literal"><span class="pre">trajectory_initialization_method</span></code> is overriden to use the OMPL-generated trajectory.</p>
+<li><p class="first">This launch file defines the new planning pipeline <code class="docutils literal notranslate"><span class="pre">ompl-chomp</span></code>, deriving from the <code class="docutils literal notranslate"><span class="pre">ompl</span></code> pipeline,
+but adding the CHOMP post-processor as a planning adapter. Also, the <code class="docutils literal notranslate"><span class="pre">trajectory_initialization_method</span></code> is overriden to use the OMPL-generated trajectory.</p>
 </li>
 <li><p class="first">Now you can launch the newly configure planning pipeline as follows:</p>
-<div class="highlight-python"><div class="highlight"><pre>roslaunch panda_moveit_config demo.launch pipeline:=ompl-chomp
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">roslaunch</span> <span class="n">panda_moveit_config</span> <span class="n">demo</span><span class="o">.</span><span class="n">launch</span> <span class="n">pipeline</span><span class="p">:</span><span class="o">=</span><span class="n">ompl</span><span class="o">-</span><span class="n">chomp</span>
 </pre></div>
 </div>
 </li>
 </ol>
-<p>This will launch RViz, select OMPL in the Motion Planning panel under the Context tab. Set the desired start and goal states by moving the end-effector around in the same way as was done for CHOMP above. Finally click on the Plan button to start planning. The planner will now first run OMPL, then run CHOMP on OMPL&#8217;s output to produce an optimized path.</p>
+<p>This will launch RViz, select OMPL in the Motion Planning panel under the Context tab. Set the desired start and goal states by moving the end-effector around in the same way as was done for CHOMP above. Finally click on the Plan button to start planning. The planner will now first run OMPL, then run CHOMP on OMPL’s output to produce an optimized path.</p>
 </div>
 </div>
 
@@ -959,7 +1039,7 @@ but adding the CHOMP post-processor as a planning adapter. Also, the <code class
 
     </section>
   </div>
-  
+
   
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
@@ -973,6 +1053,7 @@ but adding the CHOMP post-processor as a planning adapter. Also, the <code class
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/language_data.js"></script>
 
   
 

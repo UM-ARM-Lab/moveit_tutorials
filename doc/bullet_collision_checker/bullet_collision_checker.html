@@ -34,8 +34,11 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="moveit_tutorials Noetic documentation" href="../../index.html"/>
-        <link rel="next" title="MoveIt Setup Assistant" href="../setup_assistant/setup_assistant_tutorial.html"/>
+        <link rel="next" title="Mesh Filter with UR5 and Kinect" href="../mesh_filter/mesh_filter_tutorial.html"/>
         <link rel="prev" title="MoveItCpp Tutorial" href="../moveit_cpp/moveitcpp_tutorial.html"/> 
 
   
@@ -65,18 +68,18 @@
         <a href="http://moveit.ros.org">
           <img src="../../_static/logo.png"/>
         </a>
-        
+
         <div class="version">
-          <div class="version-dropdown">
-            <lable for="version-list">Version:</lable>
-          <select class="version-list" id="version-list" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-              <option value=''>Noetic</option>
-              <option value="http://docs.ros.org/en/melodic/api/moveit_tutorials/html/index.html">Melodic</option>
-              <option value="http://docs.ros.org/en/kinetic/api/moveit_tutorials/html/index.html">Kinetic</option>
-              <option value="http://docs.ros.org/en/indigo/api/moveit_tutorials/html/index.html">Indigo (EOL)</option>
-          </select>
-          </div>
-        </div><br>
+    <div class="version-dropdown">
+        <lable for="version-list">Version:</lable>
+    <select class="version-list" id="version-list" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+        <option value="http://moveit2_tutorials.picknik.ai">Moveit 2 - Foxy</option>
+        <option value='' selected>MoveIt 1 - Noetic</option>
+        <option value="http://docs.ros.org/en/melodic/api/moveit_tutorials/html/index.html">MoveIt 1 - Melodic</option>
+        <option value="http://docs.ros.org/en/kinetic/api/moveit_tutorials/html/index.html">MoveIt 1 - Kinetic</option>
+    </select>
+    </div>
+</div><br>
         
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -113,6 +116,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#step-4-use-motion-planning-with-the-panda">Step 4: Use Motion Planning with the Panda</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#choosing-specific-start-goal-states">Choosing Specific Start/Goal States</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#introspecting-trajectory-waypoints">Introspecting Trajectory Waypoints</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#plan-cartesian-motions">Plan Cartesian motions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../quickstart_in_rviz/quickstart_in_rviz_tutorial.html#executing-trajectories-adjusting-speed">Executing Trajectories, Adjusting Speed</a></li>
@@ -346,7 +350,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../pick_place/pick_place_tutorial.html">Pick and Place</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#running-the-demo">Running The Demo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#understanding-moveit-msgs-grasp">Understanding <code class="docutils literal"><span class="pre">moveit_msgs::Grasp</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#understanding-moveit-msgs-grasp">Understanding <code class="docutils literal notranslate"><span class="pre">moveit_msgs::Grasp</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#the-entire-code">The Entire Code</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#creating-environment">Creating Environment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#pick-pipeline">Pick Pipeline</a><ul>
@@ -447,7 +451,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../moveit_cpp/moveitcpp_tutorial.html#the-launch-file">The Launch File</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Using Bullet for Collision Checking</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Using Bullet for Collision Checking</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#running-the-code">Running the Code</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#continuous-collision-detection">Continuous Collision Detection</a></li>
@@ -459,6 +463,13 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#launch-file">Launch file</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html">Mesh Filter with UR5 and Kinect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#running-the-demo">Running the Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#how-to-add-sensor-to-arm-in-simulation">How to add sensor to arm in simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_filter/mesh_filter_tutorial.html#references">References</a></li>
 </ul>
 </li>
 </ul>
@@ -478,7 +489,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-10-ros-control">Step 10: ROS Control</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-11-add-author-information">Step 11: Add Author Information</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-12-generate-configuration-files">Step 12: Generate Configuration Files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#what-s-next">What&#8217;s Next</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#what-s-next">What’s Next</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#additional-reading">Additional Reading</a></li>
 </ul>
 </li>
@@ -591,6 +602,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../trac_ik/trac_ik_tutorial.html#usage">Usage</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html">OPW Kinematics Solver for Industrial Manipulators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#intro">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../opw_kinematics/opw_kinematics_tutorial.html#sharing-opw-descriptions">Sharing OPW descriptions</a></li>
+</ul>
+</li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html">Kinematics Configuration</a><ul>
@@ -598,6 +617,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#parameters">Parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-kdl-kinematics-plugin">The KDL Kinematics Plugin</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-lma-kinematics-plugin">The LMA Kinematics Plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#the-cached-ik-plugin">The Cached IK Plugin</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../kinematics_configuration/kinematics_configuration_tutorial.html#position-only-ik">Position Only IK</a></li>
@@ -607,6 +627,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../custom_constraint_samplers/custom_constraint_samplers_tutorial.html#creating-a-constraint-sampler">Creating a constraint sampler</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../planning_constraints/planning_constraints.html">Representation and Evaluation of Constraints</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../planning_constraints/planning_constraints.html#see-also">See Also</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../ompl_interface/ompl_interface_tutorial.html">OMPL Planner</a><ul>
@@ -668,18 +692,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#cartesian-limits">Cartesian Limits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-interface">Planning Interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-ptp-motion-command">The PTP motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#input-parameters-in-moveit-msgs-motionplanrequest">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-results-in-moveit-msg-motionplanresponse">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#input-parameters-in-moveit-msgs-motionplanrequest">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#planning-results-in-moveit-msg-motionplanresponse">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-lin-motion-command">The LIN motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id1">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id2">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id1">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id2">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#the-circ-motion-command">The CIRC motion command</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id3">Input parameters in <code class="docutils literal"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id4">Planning results in <code class="docutils literal"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id3">Input parameters in <code class="docutils literal notranslate"><span class="pre">moveit_msgs::MotionPlanRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#id4">Planning results in <code class="docutils literal notranslate"><span class="pre">moveit_msg::MotionPlanResponse</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#example">Example</a></li>
@@ -688,7 +712,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#sequence-of-multiple-segments">Sequence of multiple segments</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#user-interface-sequence-capability">User interface sequence capability</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#restrictions-for-motionsequencerequest">Restrictions for <code class="docutils literal"><span class="pre">MotionSequenceRequest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#restrictions-for-motionsequencerequest">Restrictions for <code class="docutils literal notranslate"><span class="pre">MotionSequenceRequest</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#action-interface">Action interface</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pilz_industrial_motion_planner/pilz_industrial_motion_planner.html#service-interface">Service interface</a></li>
 </ul>
@@ -711,6 +735,20 @@
 </li>
 </ul>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html">Gazebo Simulation Integration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#after-moveit-setup-assistant">After MoveIt Setup Assistant</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#fix-the-robot-to-the-world-coordinate-system">1. Fix the robot to the world coordinate system</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-damping-to-the-joint-specifications">2. Add damping to the joint specifications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-inertia-matrices-and-masses-to-the-links">3. Add inertia matrices and masses to the links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#add-friction-and-colorize-the-links">4. Add friction and colorize the links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#configure-gazebo-ros-control-transmissions-and-actuators">5. Configure gazebo_ros_control, transmissions and actuators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#adjust-auto-generated-ros-controllers-yaml">6. Adjust auto-generated ros_controllers.yaml</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#adjust-auto-generated-ros-controllers-launch-in-the-panda-moveit-config-package">7. Adjust auto-generated <code class="code docutils literal notranslate"><span class="pre">ros_controllers.launch</span></code> in the <code class="code docutils literal notranslate"><span class="pre">panda_moveit_config</span></code> package.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gazebo_simulation/gazebo_simulation.html#change-the-way-robot-description-is-loaded-to-parameter-server">8. Change the way <code class="code docutils literal notranslate"><span class="pre">robot_description</span></code> is loaded to Parameter Server.</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html">Joystick Control Teleoperation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../joystick_control_teleoperation/joystick_control_teleoperation_tutorial.html#running-the-code">Running the Code</a></li>
@@ -753,6 +791,19 @@
 <li class="toctree-l2"><a class="reference internal" href="../tests/tests_tutorial.html#code-coverage">Code Coverage</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html">Debugging Tests</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#ci-failures">CI Failures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#launch-docker-environment">Launch Docker Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#setup-environment">Setup Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#checkout-code">Checkout Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#install-dependencies">Install Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#configure-and-build">Configure and Build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#build-the-tests">Build the Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#run-the-tests">Run the Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_debugging/test_debugging_tutorial.html#run-one-test">Run One Test</a></li>
+</ul>
+</li>
 </ul>
 
           
@@ -789,7 +840,8 @@
   <br />
 <div class="admonition note">
 <p class="first admonition-title">Tutorials Version: Noetic</p>
-<p class="last">This is the latest version, which is actively developed and best for beginners. If you are still running a Melodic release, please use the <a class="reference external" href="http://docs.ros.org/melodic/api/moveit_tutorials/html/index.html">Melodic tutorials</a>.</p>
+<p class="last">This is the latest (and last) version of MoveIt 1 for ROS Noetic, which is still actively developed. See also <a class="reference external" href="http://moveit2_tutorials.picknik.ai/">MoveIt 2 tutorials</a> and other available versions in drop down box on left.
+</p>
 </div>
   <hr/>
 </div>
@@ -807,12 +859,12 @@
 <p>Furthermore, Continuous Collision Detection (CCD) is available and demonstrated with Bullet.</p>
 <div class="section" id="getting-started">
 <h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
-<p>If you haven&#8217;t already done so, make sure you&#8217;ve completed the steps in <a class="reference external" href="../getting_started/getting_started.html">Getting Started</a>.</p>
+<p>If you haven’t already done so, make sure you’ve completed the steps in <a class="reference external" href="../getting_started/getting_started.html">Getting Started</a>.</p>
 </div>
 <div class="section" id="running-the-code">
 <h2>Running the Code<a class="headerlink" href="#running-the-code" title="Permalink to this headline">¶</a></h2>
 <p>Roslaunch the launch file to run the code directly from moveit_tutorials:</p>
-<div class="highlight-python"><div class="highlight"><pre>roslaunch moveit_tutorials bullet_collision_checker_tutorial.launch
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">roslaunch</span> <span class="n">moveit_tutorials</span> <span class="n">bullet_collision_checker_tutorial</span><span class="o">.</span><span class="n">launch</span>
 </pre></div>
 </div>
 <p>You should now see the Panda robot and a box both with interactive markers which you can drag around. Note that different to FCL, Bullet does not calculate all individual contact points for a shape but only the point of deepest penetration.</p>
@@ -824,31 +876,34 @@ Left: FCL collision results. Right: Bullet collision results.</div>
 <p>Please note that the current implementation of Bullet as a collision detector is not thread safe as the internal collision managers are mutable members.</p>
 <div class="section" id="continuous-collision-detection">
 <h3>Continuous Collision Detection<a class="headerlink" href="#continuous-collision-detection" title="Permalink to this headline">¶</a></h3>
-<p>Additionally, Bullet has continuous collision capabilities. This means that it can be guaranteed that no collision occurs during the transition between two discrete robot states with the environment. To get a demonstration of the CCD click the <code class="docutils literal"><span class="pre">Next</span></code> button of the <code class="docutils literal"><span class="pre">moveit_visual_tools</span></code> panel on the bottom left in RViz. The interactive robot disappears and the robot appears in a state where its hand is just behind a box. On pressing next again, the robot jumps to a configuration where the hand is right in front of the box. In both states, no collision is detected (see terminal output).</p>
+<p>Additionally, Bullet has continuous collision capabilities. This means that it can be guaranteed that no collision occurs during the transition between two discrete robot states with the environment. To get a demonstration of the CCD click the <code class="docutils literal notranslate"><span class="pre">Next</span></code> button of the <code class="docutils literal notranslate"><span class="pre">moveit_visual_tools</span></code> panel on the bottom left in RViz. The interactive robot disappears and the robot appears in a state where its hand is just behind a box. On pressing next again, the robot jumps to a configuration where the hand is right in front of the box. In both states, no collision is detected (see terminal output).</p>
 <div class="figure">
 <img alt="../../_images/bullet_CCD_discrete.png" src="../../_images/bullet_CCD_discrete.png" />
 <div class="legend">
 Left: robot in configuration 1. Right: robot in configuration 2.</div>
 </div>
-<p>On a following <code class="docutils literal"><span class="pre">Next</span></code>, CCD is performed using a casted robot model between the two discrete poses. A collision is reported
+<p>On a following <code class="docutils literal notranslate"><span class="pre">Next</span></code>, CCD is performed using a casted robot model between the two discrete poses. A collision is reported
 (see terminal output for details).</p>
 <a class="reference internal image-reference" href="../../_images/bullet_CCD_both_states.png"><img alt="../../_images/bullet_CCD_both_states.png" src="../../_images/bullet_CCD_both_states.png" style="width: 600px;" /></a>
-<p>Pressing <code class="docutils literal"><span class="pre">Next</span></code> one more time finishes the tutorial.</p>
+<p>Pressing <code class="docutils literal notranslate"><span class="pre">Next</span></code> one more time finishes the tutorial.</p>
 </div>
 </div>
 <div class="section" id="relevant-code">
 <h2>Relevant Code<a class="headerlink" href="#relevant-code" title="Permalink to this headline">¶</a></h2>
 <p>The entire code can be seen <a class="reference external" href="https://github.com/ros-planning/moveit_tutorials/blob/master/doc/bullet_collision_checker">here</a> in the moveit_tutorials GitHub project. A lot of information necessary for understanding how this demo works is left out to keep this tutorial focused on Bullet. Please see <a class="reference external" href="../visualizing_collisions/visualizing_collisions_tutorial.html">Visualizing Collisions</a> for code explanation regarding the visualizing of the collisions.</p>
 <p>The code starts with creating an interactive robot and a new planning scene.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">InteractiveRobot</span> <span class="nf">interactive_robot</span><span class="p">(</span><span class="s">&quot;robot_description&quot;</span><span class="p">,</span> <span class="s">&quot;bullet_collision_tutorial/interactive_robot_state&quot;</span><span class="p">);</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">InteractiveRobot</span> <span class="nf">interactive_robot</span><span class="p">(</span><span class="s">&quot;robot_description&quot;</span><span class="p">,</span> <span class="s">&quot;bullet_collision_tutorial/interactive_robot_state&quot;</span><span class="p">);</span>
 <span class="n">g_planning_scene</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_unique</span><span class="o">&lt;</span><span class="n">planning_scene</span><span class="o">::</span><span class="n">PlanningScene</span><span class="o">&gt;</span><span class="p">(</span><span class="n">interactive_robot</span><span class="p">.</span><span class="n">robotModel</span><span class="p">());</span>
 </pre></div>
 </div>
 <div class="section" id="changing-the-collision-detector-to-bullet">
 <h3>Changing the collision detector to Bullet<a class="headerlink" href="#changing-the-collision-detector-to-bullet" title="Permalink to this headline">¶</a></h3>
 <p>The active collision detector is set from the planning scene using the specific collision detector allocator for
-Bullet.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">g_planning_scene</span><span class="o">-&gt;</span><span class="n">setActiveCollisionDetector</span><span class="p">(</span><span class="n">collision_detection</span><span class="o">::</span><span class="n">CollisionDetectorAllocatorBullet</span><span class="o">::</span><span class="n">create</span><span class="p">());</span>
+Bullet. The second argument indicates that Bullet will be the exclusive collision detection algorithm; the
+default FCL will not be available anymore. Having one exclusive collision detection algorithm helps performance
+a bit and is much more common.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">g_planning_scene</span><span class="o">-&gt;</span><span class="n">setActiveCollisionDetector</span><span class="p">(</span><span class="n">collision_detection</span><span class="o">::</span><span class="n">CollisionDetectorAllocatorBullet</span><span class="o">::</span><span class="n">create</span><span class="p">(),</span>
+                                             <span class="nb">true</span> <span class="cm">/* exclusive */</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>For understanding the interactive interactive_robot, please refer to the Visualizing Collisions tutorial.</p>
@@ -857,13 +912,14 @@ Bullet.</p>
 <h3>Continuous Collision Detection<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>For the CCD demonstration, the Panda robot is loaded again and with it a new planning scene created. Bullet is
 again set as the active collision detector.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">robot_model</span><span class="o">::</span><span class="n">RobotModelPtr</span> <span class="n">robot_model</span> <span class="o">=</span> <span class="n">moveit</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">loadTestingRobotModel</span><span class="p">(</span><span class="s">&quot;panda&quot;</span><span class="p">);</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">robot_model</span><span class="o">::</span><span class="n">RobotModelPtr</span> <span class="n">robot_model</span> <span class="o">=</span> <span class="n">moveit</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">loadTestingRobotModel</span><span class="p">(</span><span class="s">&quot;panda&quot;</span><span class="p">);</span>
 <span class="k">auto</span> <span class="n">planning_scene</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">planning_scene</span><span class="o">::</span><span class="n">PlanningScene</span><span class="o">&gt;</span><span class="p">(</span><span class="n">robot_model</span><span class="p">);</span>
-<span class="n">planning_scene</span><span class="o">-&gt;</span><span class="n">setActiveCollisionDetector</span><span class="p">(</span><span class="n">collision_detection</span><span class="o">::</span><span class="n">CollisionDetectorAllocatorBullet</span><span class="o">::</span><span class="n">create</span><span class="p">());</span>
+<span class="n">planning_scene</span><span class="o">-&gt;</span><span class="n">setActiveCollisionDetector</span><span class="p">(</span><span class="n">collision_detection</span><span class="o">::</span><span class="n">CollisionDetectorAllocatorBullet</span><span class="o">::</span><span class="n">create</span><span class="p">(),</span>
+                                           <span class="cm">/* exclusive = */</span> <span class="nb">true</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>The box is added and the robot brought into its position.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">Eigen</span><span class="o">::</span><span class="n">Isometry3d</span> <span class="n">box_pose</span><span class="p">{</span> <span class="n">Eigen</span><span class="o">::</span><span class="n">Isometry3d</span><span class="o">::</span><span class="n">Identity</span><span class="p">()</span> <span class="p">};</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">Eigen</span><span class="o">::</span><span class="n">Isometry3d</span> <span class="n">box_pose</span><span class="p">{</span> <span class="n">Eigen</span><span class="o">::</span><span class="n">Isometry3d</span><span class="o">::</span><span class="n">Identity</span><span class="p">()</span> <span class="p">};</span>
 <span class="n">box_pose</span><span class="p">.</span><span class="n">translation</span><span class="p">().</span><span class="n">x</span><span class="p">()</span> <span class="o">=</span> <span class="mf">0.43</span><span class="p">;</span>
 <span class="n">box_pose</span><span class="p">.</span><span class="n">translation</span><span class="p">().</span><span class="n">y</span><span class="p">()</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 <span class="n">box_pose</span><span class="p">.</span><span class="n">translation</span><span class="p">().</span><span class="n">z</span><span class="p">()</span> <span class="o">=</span> <span class="mf">0.55</span><span class="p">;</span>
@@ -888,7 +944,7 @@ again set as the active collision detector.</p>
 </pre></div>
 </div>
 <p>Finally, a collision check is performed and the result printed to the terminal.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">collision_detection</span><span class="o">::</span><span class="n">CollisionResult</span> <span class="n">res</span><span class="p">;</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">collision_detection</span><span class="o">::</span><span class="n">CollisionResult</span> <span class="n">res</span><span class="p">;</span>
 <span class="n">collision_detection</span><span class="o">::</span><span class="n">CollisionRequest</span> <span class="n">req</span><span class="p">;</span>
 <span class="n">req</span><span class="p">.</span><span class="n">contacts</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
 <span class="n">planning_scene</span><span class="o">-&gt;</span><span class="n">checkCollision</span><span class="p">(</span><span class="n">req</span><span class="p">,</span> <span class="n">res</span><span class="p">);</span>
@@ -897,24 +953,24 @@ again set as the active collision detector.</p>
 </div>
 <p>This code is repeated for the second robot configuration.
 For the CCD check, we display both robot states at the same time.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">moveit_msgs</span><span class="o">::</span><span class="n">DisplayRobotState</span> <span class="n">msg_state_before</span><span class="p">;</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">moveit_msgs</span><span class="o">::</span><span class="n">DisplayRobotState</span> <span class="n">msg_state_before</span><span class="p">;</span>
 <span class="n">robot_state</span><span class="o">::</span><span class="n">robotStateToRobotStateMsg</span><span class="p">(</span><span class="n">state_before</span><span class="p">,</span> <span class="n">msg_state_before</span><span class="p">.</span><span class="n">state</span><span class="p">);</span>
 <span class="n">robot_state_publisher_2</span><span class="p">.</span><span class="n">publish</span><span class="p">(</span><span class="n">msg_state_before</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Now a continuous collision check using the two different robot states can be performed. As the planning scene does
 not yet contain any direct functions to do CCD, we have to access the collision environment and perform the check.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="n">res</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">res</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
 <span class="n">planning_scene</span><span class="o">-&gt;</span><span class="n">getCollisionEnv</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">checkRobotCollision</span><span class="p">(</span><span class="n">req</span><span class="p">,</span> <span class="n">res</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">state_before</span><span class="p">);</span>
 <span class="n">ROS_INFO_STREAM_NAMED</span><span class="p">(</span><span class="s">&quot;bullet_tutorial&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">res</span><span class="p">.</span><span class="n">collision</span> <span class="o">?</span> <span class="s">&quot;In collision.&quot;</span> <span class="o">:</span> <span class="s">&quot;Not in collision.&quot;</span><span class="p">));</span>
 </pre></div>
 </div>
-<p>Note that the terminal output displays &#8220;In collision.&#8221;.</p>
+<p>Note that the terminal output displays “In collision.”.</p>
 </div>
 </div>
 <div class="section" id="launch-file">
 <h2>Launch file<a class="headerlink" href="#launch-file" title="Permalink to this headline">¶</a></h2>
-<p>The entire launch file is  <a class="reference external" href="https://github.com/ros-planning/moveit_tutorials/blob/master/doc/bullet_collision_checker">here</a> on GitHub. All the code in this tutorial can be compiled and run from the <code class="docutils literal"><span class="pre">moveit_tutorials</span></code> package.</p>
+<p>The entire launch file is  <a class="reference external" href="https://github.com/ros-planning/moveit_tutorials/blob/master/doc/bullet_collision_checker">here</a> on GitHub. All the code in this tutorial can be compiled and run from the <code class="docutils literal notranslate"><span class="pre">moveit_tutorials</span></code> package.</p>
 </div>
 </div>
 
@@ -931,7 +987,7 @@ not yet contain any direct functions to do CCD, we have to access the collision 
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../setup_assistant/setup_assistant_tutorial.html" class="btn btn-neutral float-right" title="MoveIt Setup Assistant" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../mesh_filter/mesh_filter_tutorial.html" class="btn btn-neutral float-right" title="Mesh Filter with UR5 and Kinect" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../moveit_cpp/moveitcpp_tutorial.html" class="btn btn-neutral" title="MoveItCpp Tutorial" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -953,7 +1009,7 @@ not yet contain any direct functions to do CCD, we have to access the collision 
 
     </section>
   </div>
-  
+
   
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
@@ -967,6 +1023,7 @@ not yet contain any direct functions to do CCD, we have to access the collision 
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/language_data.js"></script>
 
   
 
